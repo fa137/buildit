@@ -1,0 +1,62 @@
+body {
+	
+}
+* {
+	margin:0;
+	padding:0;
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box;
+}
+header, nav, section, article, aside, footer {
+   display:block;
+}
+.container {
+	
+}
+.error {
+	color:red !important;
+	border-color:red !important;
+}
+.wrapper {
+	
+	.inner {
+		
+	}
+}
+.base {
+	
+}
+form {
+	width:100%;
+	overflow:hidden;
+}
+input, textarea {
+	width:100%;
+	
+}
+input[type=submit] {
+	@extend .btn;
+	
+}
+section {
+	width: 100%;
+	overflow: hidden;
+	clear: both;
+}
+section.everythingcentered {
+	overflow:hidden;
+	padding:50px 0;
+	h2 {
+	 	text-align: center;
+	}
+	p {
+		text-align: center;
+	}
+}
+.hide {
+	display: none;
+}
+.show {
+	display:block;
+}
