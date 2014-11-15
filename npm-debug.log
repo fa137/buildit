@@ -1,0 +1,2490 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@2.0.0-alpha-5
+3 info using node@v0.10.29
+4 verbose readDependencies using package.json deps
+5 verbose install where, deps [ '/Users/fa137/GitHub/buildit',
+5 verbose install   [ 'express',
+5 verbose install     'morgan',
+5 verbose install     'body-parser',
+5 verbose install     'method-override',
+5 verbose install     'serve-favicon',
+5 verbose install     'cookie-parser',
+5 verbose install     'express-session',
+5 verbose install     'errorhandler',
+5 verbose install     'compression',
+5 verbose install     'lodash',
+5 verbose install     'jade',
+5 verbose install     'mongoose',
+5 verbose install     'jsonwebtoken',
+5 verbose install     'express-jwt',
+5 verbose install     'passport',
+5 verbose install     'passport-local',
+5 verbose install     'passport-facebook',
+5 verbose install     'composable-middleware',
+5 verbose install     'connect-mongo',
+5 verbose install     'grunt',
+5 verbose install     'grunt-autoprefixer',
+5 verbose install     'grunt-wiredep',
+5 verbose install     'grunt-concurrent',
+5 verbose install     'grunt-contrib-clean',
+5 verbose install     'grunt-contrib-concat',
+5 verbose install     'grunt-contrib-copy',
+5 verbose install     'grunt-contrib-cssmin',
+5 verbose install     'grunt-contrib-htmlmin',
+5 verbose install     'grunt-contrib-imagemin',
+5 verbose install     'grunt-contrib-jshint',
+5 verbose install     'grunt-contrib-uglify',
+5 verbose install     'grunt-contrib-watch',
+5 verbose install     'grunt-contrib-jade',
+5 verbose install     'grunt-google-cdn',
+5 verbose install     'grunt-newer',
+5 verbose install     'grunt-ng-annotate',
+5 verbose install     'grunt-rev',
+5 verbose install     'grunt-svgmin',
+5 verbose install     'grunt-usemin',
+5 verbose install     'grunt-env',
+5 verbose install     'grunt-node-inspector',
+5 verbose install     'grunt-nodemon',
+5 verbose install     'grunt-angular-templates',
+5 verbose install     'grunt-dom-munger',
+5 verbose install     'grunt-protractor-runner',
+5 verbose install     'grunt-asset-injector',
+5 verbose install     'grunt-karma',
+5 verbose install     'grunt-build-control',
+5 verbose install     'grunt-mocha-test',
+5 verbose install     'grunt-contrib-sass',
+5 verbose install     'jit-grunt',
+5 verbose install     'time-grunt',
+5 verbose install     'grunt-express-server',
+5 verbose install     'grunt-open',
+5 verbose install     'open',
+5 verbose install     'jshint-stylish',
+5 verbose install     'connect-livereload',
+5 verbose install     'karma-ng-scenario',
+5 verbose install     'karma-firefox-launcher',
+5 verbose install     'karma-script-launcher',
+5 verbose install     'karma-html2js-preprocessor',
+5 verbose install     'karma-ng-jade2js-preprocessor',
+5 verbose install     'karma-jasmine',
+5 verbose install     'karma-chrome-launcher',
+5 verbose install     'requirejs',
+5 verbose install     'karma-requirejs',
+5 verbose install     'karma-coffee-preprocessor',
+5 verbose install     'karma-jade-preprocessor',
+5 verbose install     'karma-phantomjs-launcher',
+5 verbose install     'karma',
+5 verbose install     'karma-ng-html2js-preprocessor',
+5 verbose install     'supertest',
+5 verbose install     'should' ] ]
+6 info preinstall buildit@0.0.0
+7 verbose readDependencies using package.json deps
+8 verbose cache add [ 'method-override@~1.0.0', null ]
+9 verbose cache add spec="method-override@~1.0.0" args=["method-override@~1.0.0",null]
+10 verbose cache add [ 'cookie-parser@~1.0.1', null ]
+11 verbose cache add spec="cookie-parser@~1.0.1" args=["cookie-parser@~1.0.1",null]
+12 verbose cache add [ 'serve-favicon@~2.0.1', null ]
+13 verbose cache add spec="serve-favicon@~2.0.1" args=["serve-favicon@~2.0.1",null]
+14 verbose cache add [ 'express-session@~1.0.2', null ]
+15 verbose cache add spec="express-session@~1.0.2" args=["express-session@~1.0.2",null]
+16 verbose cache add [ 'errorhandler@~1.0.0', null ]
+17 verbose cache add spec="errorhandler@~1.0.0" args=["errorhandler@~1.0.0",null]
+18 verbose cache add [ 'compression@~1.0.1', null ]
+19 verbose cache add spec="compression@~1.0.1" args=["compression@~1.0.1",null]
+20 verbose cache add [ 'lodash@~2.4.1', null ]
+21 verbose cache add spec="lodash@~2.4.1" args=["lodash@~2.4.1",null]
+22 verbose parsed spec { raw: 'method-override@~1.0.0',
+22 verbose parsed spec   scope: null,
+22 verbose parsed spec   name: 'method-override',
+22 verbose parsed spec   rawSpec: '~1.0.0',
+22 verbose parsed spec   spec: '>=1.0.0-0 <1.1.0-0',
+22 verbose parsed spec   type: 'range' }
+23 verbose addNamed [ 'method-override', '>=1.0.0-0 <1.1.0-0' ]
+24 verbose addNamed [ null, '>=1.0.0-0 <1.1.0-0' ]
+25 verbose parsed spec { raw: 'cookie-parser@~1.0.1',
+25 verbose parsed spec   scope: null,
+25 verbose parsed spec   name: 'cookie-parser',
+25 verbose parsed spec   rawSpec: '~1.0.1',
+25 verbose parsed spec   spec: '>=1.0.1-0 <1.1.0-0',
+25 verbose parsed spec   type: 'range' }
+26 verbose addNamed [ 'cookie-parser', '>=1.0.1-0 <1.1.0-0' ]
+27 verbose addNamed [ null, '>=1.0.1-0 <1.1.0-0' ]
+28 verbose parsed spec { raw: 'serve-favicon@~2.0.1',
+28 verbose parsed spec   scope: null,
+28 verbose parsed spec   name: 'serve-favicon',
+28 verbose parsed spec   rawSpec: '~2.0.1',
+28 verbose parsed spec   spec: '>=2.0.1-0 <2.1.0-0',
+28 verbose parsed spec   type: 'range' }
+29 verbose addNamed [ 'serve-favicon', '>=2.0.1-0 <2.1.0-0' ]
+30 verbose addNamed [ null, '>=2.0.1-0 <2.1.0-0' ]
+31 verbose parsed spec { raw: 'express-session@~1.0.2',
+31 verbose parsed spec   scope: null,
+31 verbose parsed spec   name: 'express-session',
+31 verbose parsed spec   rawSpec: '~1.0.2',
+31 verbose parsed spec   spec: '>=1.0.2-0 <1.1.0-0',
+31 verbose parsed spec   type: 'range' }
+32 verbose addNamed [ 'express-session', '>=1.0.2-0 <1.1.0-0' ]
+33 verbose addNamed [ null, '>=1.0.2-0 <1.1.0-0' ]
+34 verbose parsed spec { raw: 'errorhandler@~1.0.0',
+34 verbose parsed spec   scope: null,
+34 verbose parsed spec   name: 'errorhandler',
+34 verbose parsed spec   rawSpec: '~1.0.0',
+34 verbose parsed spec   spec: '>=1.0.0-0 <1.1.0-0',
+34 verbose parsed spec   type: 'range' }
+35 verbose addNamed [ 'errorhandler', '>=1.0.0-0 <1.1.0-0' ]
+36 verbose addNamed [ null, '>=1.0.0-0 <1.1.0-0' ]
+37 verbose parsed spec { raw: 'compression@~1.0.1',
+37 verbose parsed spec   scope: null,
+37 verbose parsed spec   name: 'compression',
+37 verbose parsed spec   rawSpec: '~1.0.1',
+37 verbose parsed spec   spec: '>=1.0.1-0 <1.1.0-0',
+37 verbose parsed spec   type: 'range' }
+38 verbose addNamed [ 'compression', '>=1.0.1-0 <1.1.0-0' ]
+39 verbose addNamed [ null, '>=1.0.1-0 <1.1.0-0' ]
+40 verbose cache add [ 'jade@~1.2.0', null ]
+41 verbose cache add spec="jade@~1.2.0" args=["jade@~1.2.0",null]
+42 verbose cache add [ 'mongoose@~3.8.8', null ]
+43 verbose cache add spec="mongoose@~3.8.8" args=["mongoose@~3.8.8",null]
+44 verbose cache add [ 'jsonwebtoken@^0.3.0', null ]
+45 verbose cache add spec="jsonwebtoken@^0.3.0" args=["jsonwebtoken@^0.3.0",null]
+46 verbose cache add [ 'express-jwt@^0.1.3', null ]
+47 verbose cache add spec="express-jwt@^0.1.3" args=["express-jwt@^0.1.3",null]
+48 verbose cache add [ 'passport@~0.2.0', null ]
+49 verbose cache add spec="passport@~0.2.0" args=["passport@~0.2.0",null]
+50 verbose cache add [ 'passport-local@~0.1.6', null ]
+51 verbose cache add spec="passport-local@~0.1.6" args=["passport-local@~0.1.6",null]
+52 verbose cache add [ 'passport-facebook@latest', null ]
+53 verbose cache add spec="passport-facebook@latest" args=["passport-facebook@latest",null]
+54 verbose cache add [ 'composable-middleware@^0.3.0', null ]
+55 verbose cache add spec="composable-middleware@^0.3.0" args=["composable-middleware@^0.3.0",null]
+56 verbose parsed spec { raw: 'lodash@~2.4.1',
+56 verbose parsed spec   scope: null,
+56 verbose parsed spec   name: 'lodash',
+56 verbose parsed spec   rawSpec: '~2.4.1',
+56 verbose parsed spec   spec: '>=2.4.1-0 <2.5.0-0',
+56 verbose parsed spec   type: 'range' }
+57 verbose addNamed [ 'lodash', '>=2.4.1-0 <2.5.0-0' ]
+58 verbose addNamed [ null, '>=2.4.1-0 <2.5.0-0' ]
+59 silly lockFile d40f10c6-method-override-1-0-0-0-1-1-0-0 method-override@>=1.0.0-0 <1.1.0-0
+60 verbose lock method-override@>=1.0.0-0 <1.1.0-0 /Users/fa137/.npm/d40f10c6-method-override-1-0-0-0-1-1-0-0.lock
+61 silly lockFile 4ba900e1-cookie-parser-1-0-1-0-1-1-0-0 cookie-parser@>=1.0.1-0 <1.1.0-0
+62 verbose lock cookie-parser@>=1.0.1-0 <1.1.0-0 /Users/fa137/.npm/4ba900e1-cookie-parser-1-0-1-0-1-1-0-0.lock
+63 silly lockFile 87c09421-serve-favicon-2-0-1-0-2-1-0-0 serve-favicon@>=2.0.1-0 <2.1.0-0
+64 verbose lock serve-favicon@>=2.0.1-0 <2.1.0-0 /Users/fa137/.npm/87c09421-serve-favicon-2-0-1-0-2-1-0-0.lock
+65 silly lockFile 94ffc0f3-express-session-1-0-2-0-1-1-0-0 express-session@>=1.0.2-0 <1.1.0-0
+66 verbose lock express-session@>=1.0.2-0 <1.1.0-0 /Users/fa137/.npm/94ffc0f3-express-session-1-0-2-0-1-1-0-0.lock
+67 silly lockFile e6585398-errorhandler-1-0-0-0-1-1-0-0 errorhandler@>=1.0.0-0 <1.1.0-0
+68 verbose lock errorhandler@>=1.0.0-0 <1.1.0-0 /Users/fa137/.npm/e6585398-errorhandler-1-0-0-0-1-1-0-0.lock
+69 silly lockFile ccccdba5-compression-1-0-1-0-1-1-0-0 compression@>=1.0.1-0 <1.1.0-0
+70 verbose lock compression@>=1.0.1-0 <1.1.0-0 /Users/fa137/.npm/ccccdba5-compression-1-0-1-0-1-1-0-0.lock
+71 silly lockFile ba1b6e8c-lodash-2-4-1-0-2-5-0-0 lodash@>=2.4.1-0 <2.5.0-0
+72 verbose lock lodash@>=2.4.1-0 <2.5.0-0 /Users/fa137/.npm/ba1b6e8c-lodash-2-4-1-0-2-5-0-0.lock
+73 verbose parsed spec { raw: 'jade@~1.2.0',
+73 verbose parsed spec   scope: null,
+73 verbose parsed spec   name: 'jade',
+73 verbose parsed spec   rawSpec: '~1.2.0',
+73 verbose parsed spec   spec: '>=1.2.0-0 <1.3.0-0',
+73 verbose parsed spec   type: 'range' }
+74 verbose addNamed [ 'jade', '>=1.2.0-0 <1.3.0-0' ]
+75 verbose addNamed [ null, '>=1.2.0-0 <1.3.0-0' ]
+76 silly lockFile 4e974a00-jade-1-2-0-0-1-3-0-0 jade@>=1.2.0-0 <1.3.0-0
+77 verbose lock jade@>=1.2.0-0 <1.3.0-0 /Users/fa137/.npm/4e974a00-jade-1-2-0-0-1-3-0-0.lock
+78 verbose parsed spec { raw: 'mongoose@~3.8.8',
+78 verbose parsed spec   scope: null,
+78 verbose parsed spec   name: 'mongoose',
+78 verbose parsed spec   rawSpec: '~3.8.8',
+78 verbose parsed spec   spec: '>=3.8.8-0 <3.9.0-0',
+78 verbose parsed spec   type: 'range' }
+79 verbose addNamed [ 'mongoose', '>=3.8.8-0 <3.9.0-0' ]
+80 verbose addNamed [ null, '>=3.8.8-0 <3.9.0-0' ]
+81 silly lockFile bbdf5be1-mongoose-3-8-8-0-3-9-0-0 mongoose@>=3.8.8-0 <3.9.0-0
+82 verbose lock mongoose@>=3.8.8-0 <3.9.0-0 /Users/fa137/.npm/bbdf5be1-mongoose-3-8-8-0-3-9-0-0.lock
+83 verbose parsed spec { raw: 'jsonwebtoken@^0.3.0',
+83 verbose parsed spec   scope: null,
+83 verbose parsed spec   name: 'jsonwebtoken',
+83 verbose parsed spec   rawSpec: '^0.3.0',
+83 verbose parsed spec   spec: '>=0.3.0-0 <0.4.0-0',
+83 verbose parsed spec   type: 'range' }
+84 verbose addNamed [ 'jsonwebtoken', '>=0.3.0-0 <0.4.0-0' ]
+85 verbose addNamed [ null, '>=0.3.0-0 <0.4.0-0' ]
+86 silly lockFile e8fb9bff-jsonwebtoken-0-3-0-0-0-4-0-0 jsonwebtoken@>=0.3.0-0 <0.4.0-0
+87 verbose lock jsonwebtoken@>=0.3.0-0 <0.4.0-0 /Users/fa137/.npm/e8fb9bff-jsonwebtoken-0-3-0-0-0-4-0-0.lock
+88 verbose parsed spec { raw: 'express-jwt@^0.1.3',
+88 verbose parsed spec   scope: null,
+88 verbose parsed spec   name: 'express-jwt',
+88 verbose parsed spec   rawSpec: '^0.1.3',
+88 verbose parsed spec   spec: '>=0.1.3-0 <0.2.0-0',
+88 verbose parsed spec   type: 'range' }
+89 verbose addNamed [ 'express-jwt', '>=0.1.3-0 <0.2.0-0' ]
+90 verbose addNamed [ null, '>=0.1.3-0 <0.2.0-0' ]
+91 silly lockFile af031a0d-express-jwt-0-1-3-0-0-2-0-0 express-jwt@>=0.1.3-0 <0.2.0-0
+92 verbose lock express-jwt@>=0.1.3-0 <0.2.0-0 /Users/fa137/.npm/af031a0d-express-jwt-0-1-3-0-0-2-0-0.lock
+93 verbose parsed spec { raw: 'passport@~0.2.0',
+93 verbose parsed spec   scope: null,
+93 verbose parsed spec   name: 'passport',
+93 verbose parsed spec   rawSpec: '~0.2.0',
+93 verbose parsed spec   spec: '>=0.2.0-0 <0.3.0-0',
+93 verbose parsed spec   type: 'range' }
+94 verbose addNamed [ 'passport', '>=0.2.0-0 <0.3.0-0' ]
+95 verbose addNamed [ null, '>=0.2.0-0 <0.3.0-0' ]
+96 silly lockFile e7b1ce3d-passport-0-2-0-0-0-3-0-0 passport@>=0.2.0-0 <0.3.0-0
+97 verbose lock passport@>=0.2.0-0 <0.3.0-0 /Users/fa137/.npm/e7b1ce3d-passport-0-2-0-0-0-3-0-0.lock
+98 verbose parsed spec { raw: 'passport-local@~0.1.6',
+98 verbose parsed spec   scope: null,
+98 verbose parsed spec   name: 'passport-local',
+98 verbose parsed spec   rawSpec: '~0.1.6',
+98 verbose parsed spec   spec: '>=0.1.6-0 <0.2.0-0',
+98 verbose parsed spec   type: 'range' }
+99 verbose addNamed [ 'passport-local', '>=0.1.6-0 <0.2.0-0' ]
+100 verbose addNamed [ null, '>=0.1.6-0 <0.2.0-0' ]
+101 silly lockFile 421cb9ef-passport-local-0-1-6-0-0-2-0-0 passport-local@>=0.1.6-0 <0.2.0-0
+102 verbose lock passport-local@>=0.1.6-0 <0.2.0-0 /Users/fa137/.npm/421cb9ef-passport-local-0-1-6-0-0-2-0-0.lock
+103 verbose parsed spec { raw: 'passport-facebook@latest',
+103 verbose parsed spec   scope: null,
+103 verbose parsed spec   name: 'passport-facebook',
+103 verbose parsed spec   rawSpec: 'latest',
+103 verbose parsed spec   spec: 'latest',
+103 verbose parsed spec   type: 'tag' }
+104 verbose addNamed [ 'passport-facebook', 'latest' ]
+105 verbose addNamed [ null, null ]
+106 silly lockFile 82ca5952-passport-facebook-latest passport-facebook@latest
+107 verbose lock passport-facebook@latest /Users/fa137/.npm/82ca5952-passport-facebook-latest.lock
+108 verbose cache add [ 'connect-mongo@^0.4.1', null ]
+109 verbose cache add spec="connect-mongo@^0.4.1" args=["connect-mongo@^0.4.1",null]
+110 verbose cache add [ 'grunt@~0.4.4', null ]
+111 verbose cache add spec="grunt@~0.4.4" args=["grunt@~0.4.4",null]
+112 verbose cache add [ 'grunt-autoprefixer@~0.7.2', null ]
+113 verbose cache add spec="grunt-autoprefixer@~0.7.2" args=["grunt-autoprefixer@~0.7.2",null]
+114 verbose cache add [ 'grunt-wiredep@~1.8.0', null ]
+115 verbose cache add spec="grunt-wiredep@~1.8.0" args=["grunt-wiredep@~1.8.0",null]
+116 verbose cache add [ 'grunt-concurrent@~0.5.0', null ]
+117 verbose cache add spec="grunt-concurrent@~0.5.0" args=["grunt-concurrent@~0.5.0",null]
+118 verbose cache add [ 'grunt-contrib-clean@~0.5.0', null ]
+119 verbose cache add spec="grunt-contrib-clean@~0.5.0" args=["grunt-contrib-clean@~0.5.0",null]
+120 verbose cache add [ 'grunt-contrib-concat@~0.4.0', null ]
+121 verbose cache add spec="grunt-contrib-concat@~0.4.0" args=["grunt-contrib-concat@~0.4.0",null]
+122 verbose cache add [ 'grunt-contrib-copy@~0.5.0', null ]
+123 verbose cache add spec="grunt-contrib-copy@~0.5.0" args=["grunt-contrib-copy@~0.5.0",null]
+124 verbose cache add [ 'grunt-contrib-cssmin@~0.9.0', null ]
+125 verbose cache add spec="grunt-contrib-cssmin@~0.9.0" args=["grunt-contrib-cssmin@~0.9.0",null]
+126 verbose cache add [ 'grunt-contrib-htmlmin@~0.2.0', null ]
+127 verbose cache add spec="grunt-contrib-htmlmin@~0.2.0" args=["grunt-contrib-htmlmin@~0.2.0",null]
+128 verbose parsed spec { raw: 'composable-middleware@^0.3.0',
+128 verbose parsed spec   scope: null,
+128 verbose parsed spec   name: 'composable-middleware',
+128 verbose parsed spec   rawSpec: '^0.3.0',
+128 verbose parsed spec   spec: '>=0.3.0-0 <0.4.0-0',
+128 verbose parsed spec   type: 'range' }
+129 verbose addNamed [ 'composable-middleware', '>=0.3.0-0 <0.4.0-0' ]
+130 verbose addNamed [ null, '>=0.3.0-0 <0.4.0-0' ]
+131 silly lockFile 86ae7d1a-sable-middleware-0-3-0-0-0-4-0-0 composable-middleware@>=0.3.0-0 <0.4.0-0
+132 verbose lock composable-middleware@>=0.3.0-0 <0.4.0-0 /Users/fa137/.npm/86ae7d1a-sable-middleware-0-3-0-0-0-4-0-0.lock
+133 verbose parsed spec { raw: 'connect-mongo@^0.4.1',
+133 verbose parsed spec   scope: null,
+133 verbose parsed spec   name: 'connect-mongo',
+133 verbose parsed spec   rawSpec: '^0.4.1',
+133 verbose parsed spec   spec: '>=0.4.1-0 <0.5.0-0',
+133 verbose parsed spec   type: 'range' }
+134 verbose addNamed [ 'connect-mongo', '>=0.4.1-0 <0.5.0-0' ]
+135 verbose addNamed [ null, '>=0.4.1-0 <0.5.0-0' ]
+136 silly lockFile 9f78722c-connect-mongo-0-4-1-0-0-5-0-0 connect-mongo@>=0.4.1-0 <0.5.0-0
+137 verbose lock connect-mongo@>=0.4.1-0 <0.5.0-0 /Users/fa137/.npm/9f78722c-connect-mongo-0-4-1-0-0-5-0-0.lock
+138 verbose parsed spec { raw: 'grunt@~0.4.4',
+138 verbose parsed spec   scope: null,
+138 verbose parsed spec   name: 'grunt',
+138 verbose parsed spec   rawSpec: '~0.4.4',
+138 verbose parsed spec   spec: '>=0.4.4-0 <0.5.0-0',
+138 verbose parsed spec   type: 'range' }
+139 verbose addNamed [ 'grunt', '>=0.4.4-0 <0.5.0-0' ]
+140 verbose addNamed [ null, '>=0.4.4-0 <0.5.0-0' ]
+141 silly lockFile 4417f56d-grunt-0-4-4-0-0-5-0-0 grunt@>=0.4.4-0 <0.5.0-0
+142 verbose lock grunt@>=0.4.4-0 <0.5.0-0 /Users/fa137/.npm/4417f56d-grunt-0-4-4-0-0-5-0-0.lock
+143 verbose parsed spec { raw: 'grunt-autoprefixer@~0.7.2',
+143 verbose parsed spec   scope: null,
+143 verbose parsed spec   name: 'grunt-autoprefixer',
+143 verbose parsed spec   rawSpec: '~0.7.2',
+143 verbose parsed spec   spec: '>=0.7.2-0 <0.8.0-0',
+143 verbose parsed spec   type: 'range' }
+144 verbose addNamed [ 'grunt-autoprefixer', '>=0.7.2-0 <0.8.0-0' ]
+145 verbose addNamed [ null, '>=0.7.2-0 <0.8.0-0' ]
+146 silly lockFile 1f9f4c01-unt-autoprefixer-0-7-2-0-0-8-0-0 grunt-autoprefixer@>=0.7.2-0 <0.8.0-0
+147 verbose lock grunt-autoprefixer@>=0.7.2-0 <0.8.0-0 /Users/fa137/.npm/1f9f4c01-unt-autoprefixer-0-7-2-0-0-8-0-0.lock
+148 verbose parsed spec { raw: 'grunt-wiredep@~1.8.0',
+148 verbose parsed spec   scope: null,
+148 verbose parsed spec   name: 'grunt-wiredep',
+148 verbose parsed spec   rawSpec: '~1.8.0',
+148 verbose parsed spec   spec: '>=1.8.0-0 <1.9.0-0',
+148 verbose parsed spec   type: 'range' }
+149 verbose addNamed [ 'grunt-wiredep', '>=1.8.0-0 <1.9.0-0' ]
+150 verbose addNamed [ null, '>=1.8.0-0 <1.9.0-0' ]
+151 silly lockFile 7959e71e-grunt-wiredep-1-8-0-0-1-9-0-0 grunt-wiredep@>=1.8.0-0 <1.9.0-0
+152 verbose lock grunt-wiredep@>=1.8.0-0 <1.9.0-0 /Users/fa137/.npm/7959e71e-grunt-wiredep-1-8-0-0-1-9-0-0.lock
+153 verbose parsed spec { raw: 'grunt-concurrent@~0.5.0',
+153 verbose parsed spec   scope: null,
+153 verbose parsed spec   name: 'grunt-concurrent',
+153 verbose parsed spec   rawSpec: '~0.5.0',
+153 verbose parsed spec   spec: '>=0.5.0-0 <0.6.0-0',
+153 verbose parsed spec   type: 'range' }
+154 verbose addNamed [ 'grunt-concurrent', '>=0.5.0-0 <0.6.0-0' ]
+155 verbose addNamed [ null, '>=0.5.0-0 <0.6.0-0' ]
+156 silly lockFile 732b986d-grunt-concurrent-0-5-0-0-0-6-0-0 grunt-concurrent@>=0.5.0-0 <0.6.0-0
+157 verbose lock grunt-concurrent@>=0.5.0-0 <0.6.0-0 /Users/fa137/.npm/732b986d-grunt-concurrent-0-5-0-0-0-6-0-0.lock
+158 verbose parsed spec { raw: 'grunt-contrib-clean@~0.5.0',
+158 verbose parsed spec   scope: null,
+158 verbose parsed spec   name: 'grunt-contrib-clean',
+158 verbose parsed spec   rawSpec: '~0.5.0',
+158 verbose parsed spec   spec: '>=0.5.0-0 <0.6.0-0',
+158 verbose parsed spec   type: 'range' }
+159 verbose addNamed [ 'grunt-contrib-clean', '>=0.5.0-0 <0.6.0-0' ]
+160 verbose addNamed [ null, '>=0.5.0-0 <0.6.0-0' ]
+161 silly lockFile 8e74c0a0-nt-contrib-clean-0-5-0-0-0-6-0-0 grunt-contrib-clean@>=0.5.0-0 <0.6.0-0
+162 verbose lock grunt-contrib-clean@>=0.5.0-0 <0.6.0-0 /Users/fa137/.npm/8e74c0a0-nt-contrib-clean-0-5-0-0-0-6-0-0.lock
+163 verbose parsed spec { raw: 'grunt-contrib-concat@~0.4.0',
+163 verbose parsed spec   scope: null,
+163 verbose parsed spec   name: 'grunt-contrib-concat',
+163 verbose parsed spec   rawSpec: '~0.4.0',
+163 verbose parsed spec   spec: '>=0.4.0-0 <0.5.0-0',
+163 verbose parsed spec   type: 'range' }
+164 verbose addNamed [ 'grunt-contrib-concat', '>=0.4.0-0 <0.5.0-0' ]
+165 verbose addNamed [ null, '>=0.4.0-0 <0.5.0-0' ]
+166 silly lockFile e5aa59d3-t-contrib-concat-0-4-0-0-0-5-0-0 grunt-contrib-concat@>=0.4.0-0 <0.5.0-0
+167 verbose lock grunt-contrib-concat@>=0.4.0-0 <0.5.0-0 /Users/fa137/.npm/e5aa59d3-t-contrib-concat-0-4-0-0-0-5-0-0.lock
+168 verbose parsed spec { raw: 'grunt-contrib-copy@~0.5.0',
+168 verbose parsed spec   scope: null,
+168 verbose parsed spec   name: 'grunt-contrib-copy',
+168 verbose parsed spec   rawSpec: '~0.5.0',
+168 verbose parsed spec   spec: '>=0.5.0-0 <0.6.0-0',
+168 verbose parsed spec   type: 'range' }
+169 verbose addNamed [ 'grunt-contrib-copy', '>=0.5.0-0 <0.6.0-0' ]
+170 verbose addNamed [ null, '>=0.5.0-0 <0.6.0-0' ]
+171 silly lockFile 527ab240-unt-contrib-copy-0-5-0-0-0-6-0-0 grunt-contrib-copy@>=0.5.0-0 <0.6.0-0
+172 verbose lock grunt-contrib-copy@>=0.5.0-0 <0.6.0-0 /Users/fa137/.npm/527ab240-unt-contrib-copy-0-5-0-0-0-6-0-0.lock
+173 verbose parsed spec { raw: 'grunt-contrib-cssmin@~0.9.0',
+173 verbose parsed spec   scope: null,
+173 verbose parsed spec   name: 'grunt-contrib-cssmin',
+173 verbose parsed spec   rawSpec: '~0.9.0',
+173 verbose parsed spec   spec: '>=0.9.0-0 <0.10.0-0',
+173 verbose parsed spec   type: 'range' }
+174 verbose addNamed [ 'grunt-contrib-cssmin', '>=0.9.0-0 <0.10.0-0' ]
+175 verbose addNamed [ null, '>=0.9.0-0 <0.10.0-0' ]
+176 silly lockFile a371d0d7--contrib-cssmin-0-9-0-0-0-10-0-0 grunt-contrib-cssmin@>=0.9.0-0 <0.10.0-0
+177 verbose lock grunt-contrib-cssmin@>=0.9.0-0 <0.10.0-0 /Users/fa137/.npm/a371d0d7--contrib-cssmin-0-9-0-0-0-10-0-0.lock
+178 verbose cache add [ 'grunt-contrib-imagemin@~0.7.1', null ]
+179 verbose cache add spec="grunt-contrib-imagemin@~0.7.1" args=["grunt-contrib-imagemin@~0.7.1",null]
+180 verbose cache add [ 'grunt-contrib-jshint@~0.10.0', null ]
+181 verbose cache add spec="grunt-contrib-jshint@~0.10.0" args=["grunt-contrib-jshint@~0.10.0",null]
+182 verbose cache add [ 'grunt-contrib-uglify@~0.4.0', null ]
+183 verbose cache add spec="grunt-contrib-uglify@~0.4.0" args=["grunt-contrib-uglify@~0.4.0",null]
+184 verbose cache add [ 'grunt-contrib-watch@~0.6.1', null ]
+185 verbose cache add spec="grunt-contrib-watch@~0.6.1" args=["grunt-contrib-watch@~0.6.1",null]
+186 verbose cache add [ 'grunt-contrib-jade@^0.11.0', null ]
+187 verbose cache add spec="grunt-contrib-jade@^0.11.0" args=["grunt-contrib-jade@^0.11.0",null]
+188 verbose cache add [ 'grunt-google-cdn@~0.4.0', null ]
+189 verbose cache add spec="grunt-google-cdn@~0.4.0" args=["grunt-google-cdn@~0.4.0",null]
+190 verbose cache add [ 'grunt-newer@~0.7.0', null ]
+191 verbose cache add spec="grunt-newer@~0.7.0" args=["grunt-newer@~0.7.0",null]
+192 verbose cache add [ 'grunt-ng-annotate@^0.2.3', null ]
+193 verbose cache add spec="grunt-ng-annotate@^0.2.3" args=["grunt-ng-annotate@^0.2.3",null]
+194 verbose cache add [ 'grunt-rev@~0.1.0', null ]
+195 verbose cache add spec="grunt-rev@~0.1.0" args=["grunt-rev@~0.1.0",null]
+196 verbose cache add [ 'grunt-svgmin@~0.4.0', null ]
+197 verbose cache add spec="grunt-svgmin@~0.4.0" args=["grunt-svgmin@~0.4.0",null]
+198 verbose cache add [ 'grunt-usemin@~2.1.1', null ]
+199 verbose cache add spec="grunt-usemin@~2.1.1" args=["grunt-usemin@~2.1.1",null]
+200 verbose cache add [ 'grunt-env@~0.4.1', null ]
+201 verbose cache add spec="grunt-env@~0.4.1" args=["grunt-env@~0.4.1",null]
+202 verbose cache add [ 'grunt-node-inspector@~0.1.5', null ]
+203 verbose cache add spec="grunt-node-inspector@~0.1.5" args=["grunt-node-inspector@~0.1.5",null]
+204 verbose cache add [ 'grunt-nodemon@~0.2.0', null ]
+205 verbose cache add spec="grunt-nodemon@~0.2.0" args=["grunt-nodemon@~0.2.0",null]
+206 verbose parsed spec { raw: 'grunt-contrib-htmlmin@~0.2.0',
+206 verbose parsed spec   scope: null,
+206 verbose parsed spec   name: 'grunt-contrib-htmlmin',
+206 verbose parsed spec   rawSpec: '~0.2.0',
+206 verbose parsed spec   spec: '>=0.2.0-0 <0.3.0-0',
+206 verbose parsed spec   type: 'range' }
+207 verbose addNamed [ 'grunt-contrib-htmlmin', '>=0.2.0-0 <0.3.0-0' ]
+208 verbose addNamed [ null, '>=0.2.0-0 <0.3.0-0' ]
+209 silly lockFile 7b912c18--contrib-htmlmin-0-2-0-0-0-3-0-0 grunt-contrib-htmlmin@>=0.2.0-0 <0.3.0-0
+210 verbose lock grunt-contrib-htmlmin@>=0.2.0-0 <0.3.0-0 /Users/fa137/.npm/7b912c18--contrib-htmlmin-0-2-0-0-0-3-0-0.lock
+211 silly addNameRange { name: 'method-override',
+211 silly addNameRange   range: '>=1.0.0-0 <1.1.0-0',
+211 silly addNameRange   hasData: false }
+212 verbose mapToRegistry name method-override
+213 verbose mapToRegistry uri https://registry.npmjs.org/method-override
+214 silly addNameRange { name: 'cookie-parser',
+214 silly addNameRange   range: '>=1.0.1-0 <1.1.0-0',
+214 silly addNameRange   hasData: false }
+215 verbose mapToRegistry name cookie-parser
+216 verbose mapToRegistry uri https://registry.npmjs.org/cookie-parser
+217 silly addNameRange { name: 'serve-favicon',
+217 silly addNameRange   range: '>=2.0.1-0 <2.1.0-0',
+217 silly addNameRange   hasData: false }
+218 verbose mapToRegistry name serve-favicon
+219 verbose mapToRegistry uri https://registry.npmjs.org/serve-favicon
+220 silly addNameRange { name: 'express-session',
+220 silly addNameRange   range: '>=1.0.2-0 <1.1.0-0',
+220 silly addNameRange   hasData: false }
+221 verbose mapToRegistry name express-session
+222 verbose mapToRegistry uri https://registry.npmjs.org/express-session
+223 silly addNameRange { name: 'errorhandler',
+223 silly addNameRange   range: '>=1.0.0-0 <1.1.0-0',
+223 silly addNameRange   hasData: false }
+224 verbose mapToRegistry name errorhandler
+225 verbose mapToRegistry uri https://registry.npmjs.org/errorhandler
+226 silly addNameRange { name: 'compression',
+226 silly addNameRange   range: '>=1.0.1-0 <1.1.0-0',
+226 silly addNameRange   hasData: false }
+227 verbose mapToRegistry name compression
+228 verbose mapToRegistry uri https://registry.npmjs.org/compression
+229 silly addNameRange { name: 'lodash', range: '>=2.4.1-0 <2.5.0-0', hasData: false }
+230 verbose mapToRegistry name lodash
+231 verbose mapToRegistry uri https://registry.npmjs.org/lodash
+232 silly addNameRange { name: 'jade', range: '>=1.2.0-0 <1.3.0-0', hasData: false }
+233 verbose mapToRegistry name jade
+234 verbose mapToRegistry uri https://registry.npmjs.org/jade
+235 silly addNameRange { name: 'mongoose', range: '>=3.8.8-0 <3.9.0-0', hasData: false }
+236 verbose mapToRegistry name mongoose
+237 verbose mapToRegistry uri https://registry.npmjs.org/mongoose
+238 silly addNameRange { name: 'jsonwebtoken',
+238 silly addNameRange   range: '>=0.3.0-0 <0.4.0-0',
+238 silly addNameRange   hasData: false }
+239 verbose mapToRegistry name jsonwebtoken
+240 verbose mapToRegistry uri https://registry.npmjs.org/jsonwebtoken
+241 silly addNameRange { name: 'express-jwt',
+241 silly addNameRange   range: '>=0.1.3-0 <0.2.0-0',
+241 silly addNameRange   hasData: false }
+242 verbose mapToRegistry name express-jwt
+243 verbose mapToRegistry uri https://registry.npmjs.org/express-jwt
+244 silly addNameRange { name: 'passport', range: '>=0.2.0-0 <0.3.0-0', hasData: false }
+245 verbose mapToRegistry name passport
+246 verbose mapToRegistry uri https://registry.npmjs.org/passport
+247 silly addNameRange { name: 'passport-local',
+247 silly addNameRange   range: '>=0.1.6-0 <0.2.0-0',
+247 silly addNameRange   hasData: false }
+248 verbose mapToRegistry name passport-local
+249 verbose mapToRegistry uri https://registry.npmjs.org/passport-local
+250 info addNameTag [ 'passport-facebook', 'latest' ]
+251 verbose mapToRegistry name passport-facebook
+252 verbose mapToRegistry uri https://registry.npmjs.org/passport-facebook
+253 verbose parsed spec { raw: 'grunt-contrib-imagemin@~0.7.1',
+253 verbose parsed spec   scope: null,
+253 verbose parsed spec   name: 'grunt-contrib-imagemin',
+253 verbose parsed spec   rawSpec: '~0.7.1',
+253 verbose parsed spec   spec: '>=0.7.1-0 <0.8.0-0',
+253 verbose parsed spec   type: 'range' }
+254 verbose addNamed [ 'grunt-contrib-imagemin', '>=0.7.1-0 <0.8.0-0' ]
+255 verbose addNamed [ null, '>=0.7.1-0 <0.8.0-0' ]
+256 silly lockFile c93fefe8-contrib-imagemin-0-7-1-0-0-8-0-0 grunt-contrib-imagemin@>=0.7.1-0 <0.8.0-0
+257 verbose lock grunt-contrib-imagemin@>=0.7.1-0 <0.8.0-0 /Users/fa137/.npm/c93fefe8-contrib-imagemin-0-7-1-0-0-8-0-0.lock
+258 verbose parsed spec { raw: 'grunt-contrib-jshint@~0.10.0',
+258 verbose parsed spec   scope: null,
+258 verbose parsed spec   name: 'grunt-contrib-jshint',
+258 verbose parsed spec   rawSpec: '~0.10.0',
+258 verbose parsed spec   spec: '>=0.10.0-0 <0.11.0-0',
+258 verbose parsed spec   type: 'range' }
+259 verbose addNamed [ 'grunt-contrib-jshint', '>=0.10.0-0 <0.11.0-0' ]
+260 verbose addNamed [ null, '>=0.10.0-0 <0.11.0-0' ]
+261 silly lockFile 26113986-contrib-jshint-0-10-0-0-0-11-0-0 grunt-contrib-jshint@>=0.10.0-0 <0.11.0-0
+262 verbose lock grunt-contrib-jshint@>=0.10.0-0 <0.11.0-0 /Users/fa137/.npm/26113986-contrib-jshint-0-10-0-0-0-11-0-0.lock
+263 verbose parsed spec { raw: 'grunt-contrib-uglify@~0.4.0',
+263 verbose parsed spec   scope: null,
+263 verbose parsed spec   name: 'grunt-contrib-uglify',
+263 verbose parsed spec   rawSpec: '~0.4.0',
+263 verbose parsed spec   spec: '>=0.4.0-0 <0.5.0-0',
+263 verbose parsed spec   type: 'range' }
+264 verbose addNamed [ 'grunt-contrib-uglify', '>=0.4.0-0 <0.5.0-0' ]
+265 verbose addNamed [ null, '>=0.4.0-0 <0.5.0-0' ]
+266 silly lockFile 373d20ec-t-contrib-uglify-0-4-0-0-0-5-0-0 grunt-contrib-uglify@>=0.4.0-0 <0.5.0-0
+267 verbose lock grunt-contrib-uglify@>=0.4.0-0 <0.5.0-0 /Users/fa137/.npm/373d20ec-t-contrib-uglify-0-4-0-0-0-5-0-0.lock
+268 verbose parsed spec { raw: 'grunt-contrib-watch@~0.6.1',
+268 verbose parsed spec   scope: null,
+268 verbose parsed spec   name: 'grunt-contrib-watch',
+268 verbose parsed spec   rawSpec: '~0.6.1',
+268 verbose parsed spec   spec: '>=0.6.1-0 <0.7.0-0',
+268 verbose parsed spec   type: 'range' }
+269 verbose addNamed [ 'grunt-contrib-watch', '>=0.6.1-0 <0.7.0-0' ]
+270 verbose addNamed [ null, '>=0.6.1-0 <0.7.0-0' ]
+271 silly lockFile 82767388-nt-contrib-watch-0-6-1-0-0-7-0-0 grunt-contrib-watch@>=0.6.1-0 <0.7.0-0
+272 verbose lock grunt-contrib-watch@>=0.6.1-0 <0.7.0-0 /Users/fa137/.npm/82767388-nt-contrib-watch-0-6-1-0-0-7-0-0.lock
+273 verbose parsed spec { raw: 'grunt-contrib-jade@^0.11.0',
+273 verbose parsed spec   scope: null,
+273 verbose parsed spec   name: 'grunt-contrib-jade',
+273 verbose parsed spec   rawSpec: '^0.11.0',
+273 verbose parsed spec   spec: '>=0.11.0-0 <0.12.0-0',
+273 verbose parsed spec   type: 'range' }
+274 verbose addNamed [ 'grunt-contrib-jade', '>=0.11.0-0 <0.12.0-0' ]
+275 verbose addNamed [ null, '>=0.11.0-0 <0.12.0-0' ]
+276 silly lockFile aa709871-t-contrib-jade-0-11-0-0-0-12-0-0 grunt-contrib-jade@>=0.11.0-0 <0.12.0-0
+277 verbose lock grunt-contrib-jade@>=0.11.0-0 <0.12.0-0 /Users/fa137/.npm/aa709871-t-contrib-jade-0-11-0-0-0-12-0-0.lock
+278 verbose parsed spec { raw: 'grunt-google-cdn@~0.4.0',
+278 verbose parsed spec   scope: null,
+278 verbose parsed spec   name: 'grunt-google-cdn',
+278 verbose parsed spec   rawSpec: '~0.4.0',
+278 verbose parsed spec   spec: '>=0.4.0-0 <0.5.0-0',
+278 verbose parsed spec   type: 'range' }
+279 verbose addNamed [ 'grunt-google-cdn', '>=0.4.0-0 <0.5.0-0' ]
+280 verbose addNamed [ null, '>=0.4.0-0 <0.5.0-0' ]
+281 silly lockFile 86044a12-grunt-google-cdn-0-4-0-0-0-5-0-0 grunt-google-cdn@>=0.4.0-0 <0.5.0-0
+282 verbose lock grunt-google-cdn@>=0.4.0-0 <0.5.0-0 /Users/fa137/.npm/86044a12-grunt-google-cdn-0-4-0-0-0-5-0-0.lock
+283 verbose parsed spec { raw: 'grunt-newer@~0.7.0',
+283 verbose parsed spec   scope: null,
+283 verbose parsed spec   name: 'grunt-newer',
+283 verbose parsed spec   rawSpec: '~0.7.0',
+283 verbose parsed spec   spec: '>=0.7.0-0 <0.8.0-0',
+283 verbose parsed spec   type: 'range' }
+284 verbose addNamed [ 'grunt-newer', '>=0.7.0-0 <0.8.0-0' ]
+285 verbose addNamed [ null, '>=0.7.0-0 <0.8.0-0' ]
+286 silly lockFile 86d061e1-grunt-newer-0-7-0-0-0-8-0-0 grunt-newer@>=0.7.0-0 <0.8.0-0
+287 verbose lock grunt-newer@>=0.7.0-0 <0.8.0-0 /Users/fa137/.npm/86d061e1-grunt-newer-0-7-0-0-0-8-0-0.lock
+288 verbose parsed spec { raw: 'grunt-ng-annotate@^0.2.3',
+288 verbose parsed spec   scope: null,
+288 verbose parsed spec   name: 'grunt-ng-annotate',
+288 verbose parsed spec   rawSpec: '^0.2.3',
+288 verbose parsed spec   spec: '>=0.2.3-0 <0.3.0-0',
+288 verbose parsed spec   type: 'range' }
+289 verbose addNamed [ 'grunt-ng-annotate', '>=0.2.3-0 <0.3.0-0' ]
+290 verbose addNamed [ null, '>=0.2.3-0 <0.3.0-0' ]
+291 silly lockFile f5997ca8-runt-ng-annotate-0-2-3-0-0-3-0-0 grunt-ng-annotate@>=0.2.3-0 <0.3.0-0
+292 verbose lock grunt-ng-annotate@>=0.2.3-0 <0.3.0-0 /Users/fa137/.npm/f5997ca8-runt-ng-annotate-0-2-3-0-0-3-0-0.lock
+293 verbose parsed spec { raw: 'grunt-rev@~0.1.0',
+293 verbose parsed spec   scope: null,
+293 verbose parsed spec   name: 'grunt-rev',
+293 verbose parsed spec   rawSpec: '~0.1.0',
+293 verbose parsed spec   spec: '>=0.1.0-0 <0.2.0-0',
+293 verbose parsed spec   type: 'range' }
+294 verbose addNamed [ 'grunt-rev', '>=0.1.0-0 <0.2.0-0' ]
+295 verbose addNamed [ null, '>=0.1.0-0 <0.2.0-0' ]
+296 silly lockFile eb4f0ae1-grunt-rev-0-1-0-0-0-2-0-0 grunt-rev@>=0.1.0-0 <0.2.0-0
+297 verbose lock grunt-rev@>=0.1.0-0 <0.2.0-0 /Users/fa137/.npm/eb4f0ae1-grunt-rev-0-1-0-0-0-2-0-0.lock
+298 verbose parsed spec { raw: 'grunt-svgmin@~0.4.0',
+298 verbose parsed spec   scope: null,
+298 verbose parsed spec   name: 'grunt-svgmin',
+298 verbose parsed spec   rawSpec: '~0.4.0',
+298 verbose parsed spec   spec: '>=0.4.0-0 <0.5.0-0',
+298 verbose parsed spec   type: 'range' }
+299 verbose addNamed [ 'grunt-svgmin', '>=0.4.0-0 <0.5.0-0' ]
+300 verbose addNamed [ null, '>=0.4.0-0 <0.5.0-0' ]
+301 silly lockFile e56259d3-grunt-svgmin-0-4-0-0-0-5-0-0 grunt-svgmin@>=0.4.0-0 <0.5.0-0
+302 verbose lock grunt-svgmin@>=0.4.0-0 <0.5.0-0 /Users/fa137/.npm/e56259d3-grunt-svgmin-0-4-0-0-0-5-0-0.lock
+303 verbose parsed spec { raw: 'grunt-usemin@~2.1.1',
+303 verbose parsed spec   scope: null,
+303 verbose parsed spec   name: 'grunt-usemin',
+303 verbose parsed spec   rawSpec: '~2.1.1',
+303 verbose parsed spec   spec: '>=2.1.1-0 <2.2.0-0',
+303 verbose parsed spec   type: 'range' }
+304 verbose addNamed [ 'grunt-usemin', '>=2.1.1-0 <2.2.0-0' ]
+305 verbose addNamed [ null, '>=2.1.1-0 <2.2.0-0' ]
+306 silly lockFile 43faf084-grunt-usemin-2-1-1-0-2-2-0-0 grunt-usemin@>=2.1.1-0 <2.2.0-0
+307 verbose lock grunt-usemin@>=2.1.1-0 <2.2.0-0 /Users/fa137/.npm/43faf084-grunt-usemin-2-1-1-0-2-2-0-0.lock
+308 verbose parsed spec { raw: 'grunt-env@~0.4.1',
+308 verbose parsed spec   scope: null,
+308 verbose parsed spec   name: 'grunt-env',
+308 verbose parsed spec   rawSpec: '~0.4.1',
+308 verbose parsed spec   spec: '>=0.4.1-0 <0.5.0-0',
+308 verbose parsed spec   type: 'range' }
+309 verbose addNamed [ 'grunt-env', '>=0.4.1-0 <0.5.0-0' ]
+310 verbose addNamed [ null, '>=0.4.1-0 <0.5.0-0' ]
+311 silly lockFile 940b5dc9-grunt-env-0-4-1-0-0-5-0-0 grunt-env@>=0.4.1-0 <0.5.0-0
+312 verbose lock grunt-env@>=0.4.1-0 <0.5.0-0 /Users/fa137/.npm/940b5dc9-grunt-env-0-4-1-0-0-5-0-0.lock
+313 verbose cache add [ 'grunt-angular-templates@^0.5.4', null ]
+314 verbose cache add spec="grunt-angular-templates@^0.5.4" args=["grunt-angular-templates@^0.5.4",null]
+315 verbose cache add [ 'grunt-dom-munger@^3.4.0', null ]
+316 verbose cache add spec="grunt-dom-munger@^3.4.0" args=["grunt-dom-munger@^3.4.0",null]
+317 verbose cache add [ 'grunt-protractor-runner@^1.1.0', null ]
+318 verbose cache add spec="grunt-protractor-runner@^1.1.0" args=["grunt-protractor-runner@^1.1.0",null]
+319 verbose cache add [ 'grunt-asset-injector@^0.1.0', null ]
+320 verbose cache add spec="grunt-asset-injector@^0.1.0" args=["grunt-asset-injector@^0.1.0",null]
+321 verbose cache add [ 'grunt-karma@~0.8.2', null ]
+322 verbose cache add spec="grunt-karma@~0.8.2" args=["grunt-karma@~0.8.2",null]
+323 verbose cache add [ 'grunt-build-control@git+https://github.com/DaftMonk/grunt-build-control',
+323 verbose cache add   null ]
+324 verbose cache add spec="grunt-build-control@git+https://github.com/DaftMonk/grunt-build-control" args=["grunt-build-control@git+https://github.com/DaftMonk/grunt-build-control",null]
+325 verbose cache add [ 'grunt-mocha-test@~0.10.2', null ]
+326 verbose cache add spec="grunt-mocha-test@~0.10.2" args=["grunt-mocha-test@~0.10.2",null]
+327 verbose cache add [ 'grunt-contrib-sass@^0.7.3', null ]
+328 verbose cache add spec="grunt-contrib-sass@^0.7.3" args=["grunt-contrib-sass@^0.7.3",null]
+329 verbose cache add [ 'jit-grunt@^0.5.0', null ]
+330 verbose cache add spec="jit-grunt@^0.5.0" args=["jit-grunt@^0.5.0",null]
+331 verbose cache add [ 'time-grunt@~0.3.1', null ]
+332 verbose cache add spec="time-grunt@~0.3.1" args=["time-grunt@~0.3.1",null]
+333 verbose cache add [ 'grunt-express-server@~0.4.17', null ]
+334 verbose cache add spec="grunt-express-server@~0.4.17" args=["grunt-express-server@~0.4.17",null]
+335 verbose cache add [ 'grunt-open@~0.2.3', null ]
+336 verbose cache add spec="grunt-open@~0.2.3" args=["grunt-open@~0.2.3",null]
+337 verbose cache add [ 'open@~0.0.4', null ]
+338 verbose cache add spec="open@~0.0.4" args=["open@~0.0.4",null]
+339 verbose cache add [ 'jshint-stylish@~0.1.5', null ]
+340 verbose cache add spec="jshint-stylish@~0.1.5" args=["jshint-stylish@~0.1.5",null]
+341 verbose cache add [ 'connect-livereload@~0.4.0', null ]
+342 verbose cache add spec="connect-livereload@~0.4.0" args=["connect-livereload@~0.4.0",null]
+343 verbose cache add [ 'karma-ng-scenario@~0.1.0', null ]
+344 verbose cache add spec="karma-ng-scenario@~0.1.0" args=["karma-ng-scenario@~0.1.0",null]
+345 verbose cache add [ 'karma-firefox-launcher@~0.1.3', null ]
+346 verbose cache add spec="karma-firefox-launcher@~0.1.3" args=["karma-firefox-launcher@~0.1.3",null]
+347 verbose cache add [ 'karma-script-launcher@~0.1.0', null ]
+348 verbose cache add spec="karma-script-launcher@~0.1.0" args=["karma-script-launcher@~0.1.0",null]
+349 verbose cache add [ 'karma-html2js-preprocessor@~0.1.0', null ]
+350 verbose cache add spec="karma-html2js-preprocessor@~0.1.0" args=["karma-html2js-preprocessor@~0.1.0",null]
+351 verbose cache add [ 'karma-ng-jade2js-preprocessor@^0.1.2', null ]
+352 verbose cache add spec="karma-ng-jade2js-preprocessor@^0.1.2" args=["karma-ng-jade2js-preprocessor@^0.1.2",null]
+353 verbose cache add [ 'karma-jasmine@~0.1.5', null ]
+354 verbose cache add spec="karma-jasmine@~0.1.5" args=["karma-jasmine@~0.1.5",null]
+355 verbose cache add [ 'karma-chrome-launcher@~0.1.3', null ]
+356 verbose cache add spec="karma-chrome-launcher@~0.1.3" args=["karma-chrome-launcher@~0.1.3",null]
+357 verbose cache add [ 'requirejs@~2.1.11', null ]
+358 verbose cache add spec="requirejs@~2.1.11" args=["requirejs@~2.1.11",null]
+359 verbose cache add [ 'karma-requirejs@~0.2.1', null ]
+360 verbose cache add spec="karma-requirejs@~0.2.1" args=["karma-requirejs@~0.2.1",null]
+361 verbose cache add [ 'karma-coffee-preprocessor@~0.2.1', null ]
+362 verbose cache add spec="karma-coffee-preprocessor@~0.2.1" args=["karma-coffee-preprocessor@~0.2.1",null]
+363 verbose cache add [ 'karma-jade-preprocessor@0.0.11', null ]
+364 verbose cache add spec="karma-jade-preprocessor@0.0.11" args=["karma-jade-preprocessor@0.0.11",null]
+365 verbose cache add [ 'karma-phantomjs-launcher@~0.1.4', null ]
+366 verbose cache add spec="karma-phantomjs-launcher@~0.1.4" args=["karma-phantomjs-launcher@~0.1.4",null]
+367 verbose cache add [ 'karma@~0.12.9', null ]
+368 verbose cache add spec="karma@~0.12.9" args=["karma@~0.12.9",null]
+369 verbose cache add [ 'karma-ng-html2js-preprocessor@~0.1.0', null ]
+370 verbose cache add spec="karma-ng-html2js-preprocessor@~0.1.0" args=["karma-ng-html2js-preprocessor@~0.1.0",null]
+371 verbose cache add [ 'supertest@~0.11.0', null ]
+372 verbose cache add spec="supertest@~0.11.0" args=["supertest@~0.11.0",null]
+373 verbose cache add [ 'should@~3.3.1', null ]
+374 verbose cache add spec="should@~3.3.1" args=["should@~3.3.1",null]
+375 verbose cache add [ 'express@~4.0.0', null ]
+376 verbose cache add spec="express@~4.0.0" args=["express@~4.0.0",null]
+377 verbose cache add [ 'morgan@~1.0.0', null ]
+378 verbose cache add spec="morgan@~1.0.0" args=["morgan@~1.0.0",null]
+379 verbose parsed spec { raw: 'grunt-node-inspector@~0.1.5',
+379 verbose parsed spec   scope: null,
+379 verbose parsed spec   name: 'grunt-node-inspector',
+379 verbose parsed spec   rawSpec: '~0.1.5',
+379 verbose parsed spec   spec: '>=0.1.5-0 <0.2.0-0',
+379 verbose parsed spec   type: 'range' }
+380 verbose addNamed [ 'grunt-node-inspector', '>=0.1.5-0 <0.2.0-0' ]
+381 verbose addNamed [ null, '>=0.1.5-0 <0.2.0-0' ]
+382 silly lockFile 13811df4-t-node-inspector-0-1-5-0-0-2-0-0 grunt-node-inspector@>=0.1.5-0 <0.2.0-0
+383 verbose lock grunt-node-inspector@>=0.1.5-0 <0.2.0-0 /Users/fa137/.npm/13811df4-t-node-inspector-0-1-5-0-0-2-0-0.lock
+384 verbose parsed spec { raw: 'grunt-nodemon@~0.2.0',
+384 verbose parsed spec   scope: null,
+384 verbose parsed spec   name: 'grunt-nodemon',
+384 verbose parsed spec   rawSpec: '~0.2.0',
+384 verbose parsed spec   spec: '>=0.2.0-0 <0.3.0-0',
+384 verbose parsed spec   type: 'range' }
+385 verbose addNamed [ 'grunt-nodemon', '>=0.2.0-0 <0.3.0-0' ]
+386 verbose addNamed [ null, '>=0.2.0-0 <0.3.0-0' ]
+387 silly lockFile f787504b-grunt-nodemon-0-2-0-0-0-3-0-0 grunt-nodemon@>=0.2.0-0 <0.3.0-0
+388 verbose lock grunt-nodemon@>=0.2.0-0 <0.3.0-0 /Users/fa137/.npm/f787504b-grunt-nodemon-0-2-0-0-0-3-0-0.lock
+389 silly addNameRange { name: 'composable-middleware',
+389 silly addNameRange   range: '>=0.3.0-0 <0.4.0-0',
+389 silly addNameRange   hasData: false }
+390 verbose mapToRegistry name composable-middleware
+391 verbose mapToRegistry uri https://registry.npmjs.org/composable-middleware
+392 silly addNameRange { name: 'connect-mongo',
+392 silly addNameRange   range: '>=0.4.1-0 <0.5.0-0',
+392 silly addNameRange   hasData: false }
+393 verbose mapToRegistry name connect-mongo
+394 verbose mapToRegistry uri https://registry.npmjs.org/connect-mongo
+395 silly addNameRange { name: 'grunt', range: '>=0.4.4-0 <0.5.0-0', hasData: false }
+396 verbose mapToRegistry name grunt
+397 verbose mapToRegistry uri https://registry.npmjs.org/grunt
+398 silly addNameRange { name: 'grunt-autoprefixer',
+398 silly addNameRange   range: '>=0.7.2-0 <0.8.0-0',
+398 silly addNameRange   hasData: false }
+399 verbose mapToRegistry name grunt-autoprefixer
+400 verbose mapToRegistry uri https://registry.npmjs.org/grunt-autoprefixer
+401 silly addNameRange { name: 'grunt-wiredep',
+401 silly addNameRange   range: '>=1.8.0-0 <1.9.0-0',
+401 silly addNameRange   hasData: false }
+402 verbose mapToRegistry name grunt-wiredep
+403 verbose mapToRegistry uri https://registry.npmjs.org/grunt-wiredep
+404 silly addNameRange { name: 'grunt-concurrent',
+404 silly addNameRange   range: '>=0.5.0-0 <0.6.0-0',
+404 silly addNameRange   hasData: false }
+405 verbose mapToRegistry name grunt-concurrent
+406 verbose mapToRegistry uri https://registry.npmjs.org/grunt-concurrent
+407 silly addNameRange { name: 'grunt-contrib-clean',
+407 silly addNameRange   range: '>=0.5.0-0 <0.6.0-0',
+407 silly addNameRange   hasData: false }
+408 verbose mapToRegistry name grunt-contrib-clean
+409 verbose mapToRegistry uri https://registry.npmjs.org/grunt-contrib-clean
+410 silly addNameRange { name: 'grunt-contrib-concat',
+410 silly addNameRange   range: '>=0.4.0-0 <0.5.0-0',
+410 silly addNameRange   hasData: false }
+411 verbose mapToRegistry name grunt-contrib-concat
+412 verbose mapToRegistry uri https://registry.npmjs.org/grunt-contrib-concat
+413 silly addNameRange { name: 'grunt-contrib-copy',
+413 silly addNameRange   range: '>=0.5.0-0 <0.6.0-0',
+413 silly addNameRange   hasData: false }
+414 verbose mapToRegistry name grunt-contrib-copy
+415 verbose mapToRegistry uri https://registry.npmjs.org/grunt-contrib-copy
+416 silly addNameRange { name: 'grunt-contrib-cssmin',
+416 silly addNameRange   range: '>=0.9.0-0 <0.10.0-0',
+416 silly addNameRange   hasData: false }
+417 verbose mapToRegistry name grunt-contrib-cssmin
+418 verbose mapToRegistry uri https://registry.npmjs.org/grunt-contrib-cssmin
+419 verbose parsed spec { raw: 'grunt-angular-templates@^0.5.4',
+419 verbose parsed spec   scope: null,
+419 verbose parsed spec   name: 'grunt-angular-templates',
+419 verbose parsed spec   rawSpec: '^0.5.4',
+419 verbose parsed spec   spec: '>=0.5.4-0 <0.6.0-0',
+419 verbose parsed spec   type: 'range' }
+420 verbose addNamed [ 'grunt-angular-templates', '>=0.5.4-0 <0.6.0-0' ]
+421 verbose addNamed [ null, '>=0.5.4-0 <0.6.0-0' ]
+422 silly lockFile c7d30e2d-ngular-templates-0-5-4-0-0-6-0-0 grunt-angular-templates@>=0.5.4-0 <0.6.0-0
+423 verbose lock grunt-angular-templates@>=0.5.4-0 <0.6.0-0 /Users/fa137/.npm/c7d30e2d-ngular-templates-0-5-4-0-0-6-0-0.lock
+424 verbose parsed spec { raw: 'grunt-dom-munger@^3.4.0',
+424 verbose parsed spec   scope: null,
+424 verbose parsed spec   name: 'grunt-dom-munger',
+424 verbose parsed spec   rawSpec: '^3.4.0',
+424 verbose parsed spec   spec: '>=3.4.0-0 <4.0.0-0',
+424 verbose parsed spec   type: 'range' }
+425 verbose addNamed [ 'grunt-dom-munger', '>=3.4.0-0 <4.0.0-0' ]
+426 verbose addNamed [ null, '>=3.4.0-0 <4.0.0-0' ]
+427 silly lockFile fee93007-grunt-dom-munger-3-4-0-0-4-0-0-0 grunt-dom-munger@>=3.4.0-0 <4.0.0-0
+428 verbose lock grunt-dom-munger@>=3.4.0-0 <4.0.0-0 /Users/fa137/.npm/fee93007-grunt-dom-munger-3-4-0-0-4-0-0-0.lock
+429 verbose parsed spec { raw: 'grunt-asset-injector@^0.1.0',
+429 verbose parsed spec   scope: null,
+429 verbose parsed spec   name: 'grunt-asset-injector',
+429 verbose parsed spec   rawSpec: '^0.1.0',
+429 verbose parsed spec   spec: '>=0.1.0-0 <0.2.0-0',
+429 verbose parsed spec   type: 'range' }
+430 verbose addNamed [ 'grunt-asset-injector', '>=0.1.0-0 <0.2.0-0' ]
+431 verbose addNamed [ null, '>=0.1.0-0 <0.2.0-0' ]
+432 silly lockFile e399d3eb-t-asset-injector-0-1-0-0-0-2-0-0 grunt-asset-injector@>=0.1.0-0 <0.2.0-0
+433 verbose lock grunt-asset-injector@>=0.1.0-0 <0.2.0-0 /Users/fa137/.npm/e399d3eb-t-asset-injector-0-1-0-0-0-2-0-0.lock
+434 verbose parsed spec { raw: 'grunt-protractor-runner@^1.1.0',
+434 verbose parsed spec   scope: null,
+434 verbose parsed spec   name: 'grunt-protractor-runner',
+434 verbose parsed spec   rawSpec: '^1.1.0',
+434 verbose parsed spec   spec: '>=1.1.0-0 <2.0.0-0',
+434 verbose parsed spec   type: 'range' }
+435 verbose addNamed [ 'grunt-protractor-runner', '>=1.1.0-0 <2.0.0-0' ]
+436 verbose addNamed [ null, '>=1.1.0-0 <2.0.0-0' ]
+437 silly lockFile 4aec7e1f-rotractor-runner-1-1-0-0-2-0-0-0 grunt-protractor-runner@>=1.1.0-0 <2.0.0-0
+438 verbose lock grunt-protractor-runner@>=1.1.0-0 <2.0.0-0 /Users/fa137/.npm/4aec7e1f-rotractor-runner-1-1-0-0-2-0-0-0.lock
+439 verbose parsed spec { raw: 'grunt-karma@~0.8.2',
+439 verbose parsed spec   scope: null,
+439 verbose parsed spec   name: 'grunt-karma',
+439 verbose parsed spec   rawSpec: '~0.8.2',
+439 verbose parsed spec   spec: '>=0.8.2-0 <0.9.0-0',
+439 verbose parsed spec   type: 'range' }
+440 verbose addNamed [ 'grunt-karma', '>=0.8.2-0 <0.9.0-0' ]
+441 verbose addNamed [ null, '>=0.8.2-0 <0.9.0-0' ]
+442 silly lockFile 1688349a-grunt-karma-0-8-2-0-0-9-0-0 grunt-karma@>=0.8.2-0 <0.9.0-0
+443 verbose lock grunt-karma@>=0.8.2-0 <0.9.0-0 /Users/fa137/.npm/1688349a-grunt-karma-0-8-2-0-0-9-0-0.lock
+444 verbose parsed spec { raw: 'grunt-build-control@git+https://github.com/DaftMonk/grunt-build-control',
+444 verbose parsed spec   scope: null,
+444 verbose parsed spec   name: 'grunt-build-control',
+444 verbose parsed spec   rawSpec: 'git+https://github.com/DaftMonk/grunt-build-control',
+444 verbose parsed spec   spec: 'https://github.com/DaftMonk/grunt-build-control',
+444 verbose parsed spec   type: 'git' }
+445 verbose addRemoteGit u="https://github.com/DaftMonk/grunt-build-control" silent=false
+446 silly addRemoteGit parsed { protocol: 'https:',
+446 silly addRemoteGit   slashes: true,
+446 silly addRemoteGit   auth: null,
+446 silly addRemoteGit   host: 'github.com',
+446 silly addRemoteGit   port: null,
+446 silly addRemoteGit   hostname: 'github.com',
+446 silly addRemoteGit   hash: null,
+446 silly addRemoteGit   search: '',
+446 silly addRemoteGit   query: {},
+446 silly addRemoteGit   pathname: '/DaftMonk/grunt-build-control',
+446 silly addRemoteGit   path: '/DaftMonk/grunt-build-control',
+446 silly addRemoteGit   href: 'https://github.com/DaftMonk/grunt-build-control' }
+447 silly lockFile 7e4d577b-com-DaftMonk-grunt-build-control https://github.com/DaftMonk/grunt-build-control
+448 verbose lock https://github.com/DaftMonk/grunt-build-control /Users/fa137/.npm/7e4d577b-com-DaftMonk-grunt-build-control.lock
+449 verbose parsed spec { raw: 'grunt-mocha-test@~0.10.2',
+449 verbose parsed spec   scope: null,
+449 verbose parsed spec   name: 'grunt-mocha-test',
+449 verbose parsed spec   rawSpec: '~0.10.2',
+449 verbose parsed spec   spec: '>=0.10.2-0 <0.11.0-0',
+449 verbose parsed spec   type: 'range' }
+450 verbose addNamed [ 'grunt-mocha-test', '>=0.10.2-0 <0.11.0-0' ]
+451 verbose addNamed [ null, '>=0.10.2-0 <0.11.0-0' ]
+452 silly lockFile 016906e4-unt-mocha-test-0-10-2-0-0-11-0-0 grunt-mocha-test@>=0.10.2-0 <0.11.0-0
+453 verbose lock grunt-mocha-test@>=0.10.2-0 <0.11.0-0 /Users/fa137/.npm/016906e4-unt-mocha-test-0-10-2-0-0-11-0-0.lock
+454 verbose parsed spec { raw: 'grunt-contrib-sass@^0.7.3',
+454 verbose parsed spec   scope: null,
+454 verbose parsed spec   name: 'grunt-contrib-sass',
+454 verbose parsed spec   rawSpec: '^0.7.3',
+454 verbose parsed spec   spec: '>=0.7.3-0 <0.8.0-0',
+454 verbose parsed spec   type: 'range' }
+455 verbose addNamed [ 'grunt-contrib-sass', '>=0.7.3-0 <0.8.0-0' ]
+456 verbose addNamed [ null, '>=0.7.3-0 <0.8.0-0' ]
+457 silly lockFile 984d0c28-unt-contrib-sass-0-7-3-0-0-8-0-0 grunt-contrib-sass@>=0.7.3-0 <0.8.0-0
+458 verbose lock grunt-contrib-sass@>=0.7.3-0 <0.8.0-0 /Users/fa137/.npm/984d0c28-unt-contrib-sass-0-7-3-0-0-8-0-0.lock
+459 verbose parsed spec { raw: 'jit-grunt@^0.5.0',
+459 verbose parsed spec   scope: null,
+459 verbose parsed spec   name: 'jit-grunt',
+459 verbose parsed spec   rawSpec: '^0.5.0',
+459 verbose parsed spec   spec: '>=0.5.0-0 <0.6.0-0',
+459 verbose parsed spec   type: 'range' }
+460 verbose addNamed [ 'jit-grunt', '>=0.5.0-0 <0.6.0-0' ]
+461 verbose addNamed [ null, '>=0.5.0-0 <0.6.0-0' ]
+462 silly lockFile fecf2623-jit-grunt-0-5-0-0-0-6-0-0 jit-grunt@>=0.5.0-0 <0.6.0-0
+463 verbose lock jit-grunt@>=0.5.0-0 <0.6.0-0 /Users/fa137/.npm/fecf2623-jit-grunt-0-5-0-0-0-6-0-0.lock
+464 verbose parsed spec { raw: 'time-grunt@~0.3.1',
+464 verbose parsed spec   scope: null,
+464 verbose parsed spec   name: 'time-grunt',
+464 verbose parsed spec   rawSpec: '~0.3.1',
+464 verbose parsed spec   spec: '>=0.3.1-0 <0.4.0-0',
+464 verbose parsed spec   type: 'range' }
+465 verbose addNamed [ 'time-grunt', '>=0.3.1-0 <0.4.0-0' ]
+466 verbose addNamed [ null, '>=0.3.1-0 <0.4.0-0' ]
+467 silly lockFile 46ed2713-time-grunt-0-3-1-0-0-4-0-0 time-grunt@>=0.3.1-0 <0.4.0-0
+468 verbose lock time-grunt@>=0.3.1-0 <0.4.0-0 /Users/fa137/.npm/46ed2713-time-grunt-0-3-1-0-0-4-0-0.lock
+469 verbose parsed spec { raw: 'grunt-express-server@~0.4.17',
+469 verbose parsed spec   scope: null,
+469 verbose parsed spec   name: 'grunt-express-server',
+469 verbose parsed spec   rawSpec: '~0.4.17',
+469 verbose parsed spec   spec: '>=0.4.17-0 <0.5.0-0',
+469 verbose parsed spec   type: 'range' }
+470 verbose addNamed [ 'grunt-express-server', '>=0.4.17-0 <0.5.0-0' ]
+471 verbose addNamed [ null, '>=0.4.17-0 <0.5.0-0' ]
+472 silly lockFile 50d1053a--express-server-0-4-17-0-0-5-0-0 grunt-express-server@>=0.4.17-0 <0.5.0-0
+473 verbose lock grunt-express-server@>=0.4.17-0 <0.5.0-0 /Users/fa137/.npm/50d1053a--express-server-0-4-17-0-0-5-0-0.lock
+474 verbose parsed spec { raw: 'grunt-open@~0.2.3',
+474 verbose parsed spec   scope: null,
+474 verbose parsed spec   name: 'grunt-open',
+474 verbose parsed spec   rawSpec: '~0.2.3',
+474 verbose parsed spec   spec: '>=0.2.3-0 <0.3.0-0',
+474 verbose parsed spec   type: 'range' }
+475 verbose addNamed [ 'grunt-open', '>=0.2.3-0 <0.3.0-0' ]
+476 verbose addNamed [ null, '>=0.2.3-0 <0.3.0-0' ]
+477 silly lockFile aa0dc00b-grunt-open-0-2-3-0-0-3-0-0 grunt-open@>=0.2.3-0 <0.3.0-0
+478 verbose lock grunt-open@>=0.2.3-0 <0.3.0-0 /Users/fa137/.npm/aa0dc00b-grunt-open-0-2-3-0-0-3-0-0.lock
+479 verbose parsed spec { raw: 'open@~0.0.4',
+479 verbose parsed spec   scope: null,
+479 verbose parsed spec   name: 'open',
+479 verbose parsed spec   rawSpec: '~0.0.4',
+479 verbose parsed spec   spec: '>=0.0.4-0 <0.1.0-0',
+479 verbose parsed spec   type: 'range' }
+480 verbose addNamed [ 'open', '>=0.0.4-0 <0.1.0-0' ]
+481 verbose addNamed [ null, '>=0.0.4-0 <0.1.0-0' ]
+482 silly lockFile 38e435d5-open-0-0-4-0-0-1-0-0 open@>=0.0.4-0 <0.1.0-0
+483 verbose lock open@>=0.0.4-0 <0.1.0-0 /Users/fa137/.npm/38e435d5-open-0-0-4-0-0-1-0-0.lock
+484 verbose parsed spec { raw: 'jshint-stylish@~0.1.5',
+484 verbose parsed spec   scope: null,
+484 verbose parsed spec   name: 'jshint-stylish',
+484 verbose parsed spec   rawSpec: '~0.1.5',
+484 verbose parsed spec   spec: '>=0.1.5-0 <0.2.0-0',
+484 verbose parsed spec   type: 'range' }
+485 verbose addNamed [ 'jshint-stylish', '>=0.1.5-0 <0.2.0-0' ]
+486 verbose addNamed [ null, '>=0.1.5-0 <0.2.0-0' ]
+487 silly lockFile f8453b7c-jshint-stylish-0-1-5-0-0-2-0-0 jshint-stylish@>=0.1.5-0 <0.2.0-0
+488 verbose lock jshint-stylish@>=0.1.5-0 <0.2.0-0 /Users/fa137/.npm/f8453b7c-jshint-stylish-0-1-5-0-0-2-0-0.lock
+489 verbose parsed spec { raw: 'connect-livereload@~0.4.0',
+489 verbose parsed spec   scope: null,
+489 verbose parsed spec   name: 'connect-livereload',
+489 verbose parsed spec   rawSpec: '~0.4.0',
+489 verbose parsed spec   spec: '>=0.4.0-0 <0.5.0-0',
+489 verbose parsed spec   type: 'range' }
+490 verbose addNamed [ 'connect-livereload', '>=0.4.0-0 <0.5.0-0' ]
+491 verbose addNamed [ null, '>=0.4.0-0 <0.5.0-0' ]
+492 silly lockFile f2fc9bfc-nnect-livereload-0-4-0-0-0-5-0-0 connect-livereload@>=0.4.0-0 <0.5.0-0
+493 verbose lock connect-livereload@>=0.4.0-0 <0.5.0-0 /Users/fa137/.npm/f2fc9bfc-nnect-livereload-0-4-0-0-0-5-0-0.lock
+494 verbose parsed spec { raw: 'karma-ng-scenario@~0.1.0',
+494 verbose parsed spec   scope: null,
+494 verbose parsed spec   name: 'karma-ng-scenario',
+494 verbose parsed spec   rawSpec: '~0.1.0',
+494 verbose parsed spec   spec: '>=0.1.0-0 <0.2.0-0',
+494 verbose parsed spec   type: 'range' }
+495 verbose addNamed [ 'karma-ng-scenario', '>=0.1.0-0 <0.2.0-0' ]
+496 verbose addNamed [ null, '>=0.1.0-0 <0.2.0-0' ]
+497 silly lockFile 82eed82e-arma-ng-scenario-0-1-0-0-0-2-0-0 karma-ng-scenario@>=0.1.0-0 <0.2.0-0
+498 verbose lock karma-ng-scenario@>=0.1.0-0 <0.2.0-0 /Users/fa137/.npm/82eed82e-arma-ng-scenario-0-1-0-0-0-2-0-0.lock
+499 verbose parsed spec { raw: 'karma-firefox-launcher@~0.1.3',
+499 verbose parsed spec   scope: null,
+499 verbose parsed spec   name: 'karma-firefox-launcher',
+499 verbose parsed spec   rawSpec: '~0.1.3',
+499 verbose parsed spec   spec: '>=0.1.3-0 <0.2.0-0',
+499 verbose parsed spec   type: 'range' }
+500 verbose addNamed [ 'karma-firefox-launcher', '>=0.1.3-0 <0.2.0-0' ]
+501 verbose addNamed [ null, '>=0.1.3-0 <0.2.0-0' ]
+502 silly lockFile 480a5d4a-firefox-launcher-0-1-3-0-0-2-0-0 karma-firefox-launcher@>=0.1.3-0 <0.2.0-0
+503 verbose lock karma-firefox-launcher@>=0.1.3-0 <0.2.0-0 /Users/fa137/.npm/480a5d4a-firefox-launcher-0-1-3-0-0-2-0-0.lock
+504 verbose parsed spec { raw: 'karma-script-launcher@~0.1.0',
+504 verbose parsed spec   scope: null,
+504 verbose parsed spec   name: 'karma-script-launcher',
+504 verbose parsed spec   rawSpec: '~0.1.0',
+504 verbose parsed spec   spec: '>=0.1.0-0 <0.2.0-0',
+504 verbose parsed spec   type: 'range' }
+505 verbose addNamed [ 'karma-script-launcher', '>=0.1.0-0 <0.2.0-0' ]
+506 verbose addNamed [ null, '>=0.1.0-0 <0.2.0-0' ]
+507 silly lockFile a62139ec--script-launcher-0-1-0-0-0-2-0-0 karma-script-launcher@>=0.1.0-0 <0.2.0-0
+508 verbose lock karma-script-launcher@>=0.1.0-0 <0.2.0-0 /Users/fa137/.npm/a62139ec--script-launcher-0-1-0-0-0-2-0-0.lock
+509 verbose parsed spec { raw: 'karma-html2js-preprocessor@~0.1.0',
+509 verbose parsed spec   scope: null,
+509 verbose parsed spec   name: 'karma-html2js-preprocessor',
+509 verbose parsed spec   rawSpec: '~0.1.0',
+509 verbose parsed spec   spec: '>=0.1.0-0 <0.2.0-0',
+509 verbose parsed spec   type: 'range' }
+510 verbose addNamed [ 'karma-html2js-preprocessor', '>=0.1.0-0 <0.2.0-0' ]
+511 verbose addNamed [ null, '>=0.1.0-0 <0.2.0-0' ]
+512 silly lockFile 6e946c69-2js-preprocessor-0-1-0-0-0-2-0-0 karma-html2js-preprocessor@>=0.1.0-0 <0.2.0-0
+513 verbose lock karma-html2js-preprocessor@>=0.1.0-0 <0.2.0-0 /Users/fa137/.npm/6e946c69-2js-preprocessor-0-1-0-0-0-2-0-0.lock
+514 verbose parsed spec { raw: 'karma-ng-jade2js-preprocessor@^0.1.2',
+514 verbose parsed spec   scope: null,
+514 verbose parsed spec   name: 'karma-ng-jade2js-preprocessor',
+514 verbose parsed spec   rawSpec: '^0.1.2',
+514 verbose parsed spec   spec: '>=0.1.2-0 <0.2.0-0',
+514 verbose parsed spec   type: 'range' }
+515 verbose addNamed [ 'karma-ng-jade2js-preprocessor', '>=0.1.2-0 <0.2.0-0' ]
+516 verbose addNamed [ null, '>=0.1.2-0 <0.2.0-0' ]
+517 silly lockFile 76143bcb-2js-preprocessor-0-1-2-0-0-2-0-0 karma-ng-jade2js-preprocessor@>=0.1.2-0 <0.2.0-0
+518 verbose lock karma-ng-jade2js-preprocessor@>=0.1.2-0 <0.2.0-0 /Users/fa137/.npm/76143bcb-2js-preprocessor-0-1-2-0-0-2-0-0.lock
+519 verbose parsed spec { raw: 'karma-jasmine@~0.1.5',
+519 verbose parsed spec   scope: null,
+519 verbose parsed spec   name: 'karma-jasmine',
+519 verbose parsed spec   rawSpec: '~0.1.5',
+519 verbose parsed spec   spec: '>=0.1.5-0 <0.2.0-0',
+519 verbose parsed spec   type: 'range' }
+520 verbose addNamed [ 'karma-jasmine', '>=0.1.5-0 <0.2.0-0' ]
+521 verbose addNamed [ null, '>=0.1.5-0 <0.2.0-0' ]
+522 silly lockFile 26fda08a-karma-jasmine-0-1-5-0-0-2-0-0 karma-jasmine@>=0.1.5-0 <0.2.0-0
+523 verbose lock karma-jasmine@>=0.1.5-0 <0.2.0-0 /Users/fa137/.npm/26fda08a-karma-jasmine-0-1-5-0-0-2-0-0.lock
+524 verbose parsed spec { raw: 'karma-chrome-launcher@~0.1.3',
+524 verbose parsed spec   scope: null,
+524 verbose parsed spec   name: 'karma-chrome-launcher',
+524 verbose parsed spec   rawSpec: '~0.1.3',
+524 verbose parsed spec   spec: '>=0.1.3-0 <0.2.0-0',
+524 verbose parsed spec   type: 'range' }
+525 verbose addNamed [ 'karma-chrome-launcher', '>=0.1.3-0 <0.2.0-0' ]
+526 verbose addNamed [ null, '>=0.1.3-0 <0.2.0-0' ]
+527 silly lockFile a9375a38--chrome-launcher-0-1-3-0-0-2-0-0 karma-chrome-launcher@>=0.1.3-0 <0.2.0-0
+528 verbose lock karma-chrome-launcher@>=0.1.3-0 <0.2.0-0 /Users/fa137/.npm/a9375a38--chrome-launcher-0-1-3-0-0-2-0-0.lock
+529 verbose parsed spec { raw: 'requirejs@~2.1.11',
+529 verbose parsed spec   scope: null,
+529 verbose parsed spec   name: 'requirejs',
+529 verbose parsed spec   rawSpec: '~2.1.11',
+529 verbose parsed spec   spec: '>=2.1.11-0 <2.2.0-0',
+529 verbose parsed spec   type: 'range' }
+530 verbose addNamed [ 'requirejs', '>=2.1.11-0 <2.2.0-0' ]
+531 verbose addNamed [ null, '>=2.1.11-0 <2.2.0-0' ]
+532 silly lockFile aaa55529-requirejs-2-1-11-0-2-2-0-0 requirejs@>=2.1.11-0 <2.2.0-0
+533 verbose lock requirejs@>=2.1.11-0 <2.2.0-0 /Users/fa137/.npm/aaa55529-requirejs-2-1-11-0-2-2-0-0.lock
+534 verbose parsed spec { raw: 'karma-requirejs@~0.2.1',
+534 verbose parsed spec   scope: null,
+534 verbose parsed spec   name: 'karma-requirejs',
+534 verbose parsed spec   rawSpec: '~0.2.1',
+534 verbose parsed spec   spec: '>=0.2.1-0 <0.3.0-0',
+534 verbose parsed spec   type: 'range' }
+535 verbose addNamed [ 'karma-requirejs', '>=0.2.1-0 <0.3.0-0' ]
+536 verbose addNamed [ null, '>=0.2.1-0 <0.3.0-0' ]
+537 silly lockFile ce6bc1c2-karma-requirejs-0-2-1-0-0-3-0-0 karma-requirejs@>=0.2.1-0 <0.3.0-0
+538 verbose lock karma-requirejs@>=0.2.1-0 <0.3.0-0 /Users/fa137/.npm/ce6bc1c2-karma-requirejs-0-2-1-0-0-3-0-0.lock
+539 verbose parsed spec { raw: 'karma-coffee-preprocessor@~0.2.1',
+539 verbose parsed spec   scope: null,
+539 verbose parsed spec   name: 'karma-coffee-preprocessor',
+539 verbose parsed spec   rawSpec: '~0.2.1',
+539 verbose parsed spec   spec: '>=0.2.1-0 <0.3.0-0',
+539 verbose parsed spec   type: 'range' }
+540 verbose addNamed [ 'karma-coffee-preprocessor', '>=0.2.1-0 <0.3.0-0' ]
+541 verbose addNamed [ null, '>=0.2.1-0 <0.3.0-0' ]
+542 silly lockFile 7dbbe70c-fee-preprocessor-0-2-1-0-0-3-0-0 karma-coffee-preprocessor@>=0.2.1-0 <0.3.0-0
+543 verbose lock karma-coffee-preprocessor@>=0.2.1-0 <0.3.0-0 /Users/fa137/.npm/7dbbe70c-fee-preprocessor-0-2-1-0-0-3-0-0.lock
+544 verbose parsed spec { raw: 'karma-jade-preprocessor@0.0.11',
+544 verbose parsed spec   scope: null,
+544 verbose parsed spec   name: 'karma-jade-preprocessor',
+544 verbose parsed spec   rawSpec: '0.0.11',
+544 verbose parsed spec   spec: '0.0.11',
+544 verbose parsed spec   type: 'version' }
+545 verbose addNamed [ 'karma-jade-preprocessor', '0.0.11' ]
+546 verbose addNamed [ '0.0.11', '0.0.11' ]
+547 silly lockFile 40c8e11f-karma-jade-preprocessor-0-0-11 karma-jade-preprocessor@0.0.11
+548 verbose lock karma-jade-preprocessor@0.0.11 /Users/fa137/.npm/40c8e11f-karma-jade-preprocessor-0-0-11.lock
+549 verbose parsed spec { raw: 'karma-phantomjs-launcher@~0.1.4',
+549 verbose parsed spec   scope: null,
+549 verbose parsed spec   name: 'karma-phantomjs-launcher',
+549 verbose parsed spec   rawSpec: '~0.1.4',
+549 verbose parsed spec   spec: '>=0.1.4-0 <0.2.0-0',
+549 verbose parsed spec   type: 'range' }
+550 verbose addNamed [ 'karma-phantomjs-launcher', '>=0.1.4-0 <0.2.0-0' ]
+551 verbose addNamed [ null, '>=0.1.4-0 <0.2.0-0' ]
+552 silly lockFile e3cf1558-antomjs-launcher-0-1-4-0-0-2-0-0 karma-phantomjs-launcher@>=0.1.4-0 <0.2.0-0
+553 verbose lock karma-phantomjs-launcher@>=0.1.4-0 <0.2.0-0 /Users/fa137/.npm/e3cf1558-antomjs-launcher-0-1-4-0-0-2-0-0.lock
+554 verbose parsed spec { raw: 'karma@~0.12.9',
+554 verbose parsed spec   scope: null,
+554 verbose parsed spec   name: 'karma',
+554 verbose parsed spec   rawSpec: '~0.12.9',
+554 verbose parsed spec   spec: '>=0.12.9-0 <0.13.0-0',
+554 verbose parsed spec   type: 'range' }
+555 verbose addNamed [ 'karma', '>=0.12.9-0 <0.13.0-0' ]
+556 verbose addNamed [ null, '>=0.12.9-0 <0.13.0-0' ]
+557 silly lockFile b55b08c3-karma-0-12-9-0-0-13-0-0 karma@>=0.12.9-0 <0.13.0-0
+558 verbose lock karma@>=0.12.9-0 <0.13.0-0 /Users/fa137/.npm/b55b08c3-karma-0-12-9-0-0-13-0-0.lock
+559 verbose parsed spec { raw: 'karma-ng-html2js-preprocessor@~0.1.0',
+559 verbose parsed spec   scope: null,
+559 verbose parsed spec   name: 'karma-ng-html2js-preprocessor',
+559 verbose parsed spec   rawSpec: '~0.1.0',
+559 verbose parsed spec   spec: '>=0.1.0-0 <0.2.0-0',
+559 verbose parsed spec   type: 'range' }
+560 verbose addNamed [ 'karma-ng-html2js-preprocessor', '>=0.1.0-0 <0.2.0-0' ]
+561 verbose addNamed [ null, '>=0.1.0-0 <0.2.0-0' ]
+562 silly lockFile bfa07680-2js-preprocessor-0-1-0-0-0-2-0-0 karma-ng-html2js-preprocessor@>=0.1.0-0 <0.2.0-0
+563 verbose lock karma-ng-html2js-preprocessor@>=0.1.0-0 <0.2.0-0 /Users/fa137/.npm/bfa07680-2js-preprocessor-0-1-0-0-0-2-0-0.lock
+564 verbose parsed spec { raw: 'supertest@~0.11.0',
+564 verbose parsed spec   scope: null,
+564 verbose parsed spec   name: 'supertest',
+564 verbose parsed spec   rawSpec: '~0.11.0',
+564 verbose parsed spec   spec: '>=0.11.0-0 <0.12.0-0',
+564 verbose parsed spec   type: 'range' }
+565 verbose addNamed [ 'supertest', '>=0.11.0-0 <0.12.0-0' ]
+566 verbose addNamed [ null, '>=0.11.0-0 <0.12.0-0' ]
+567 silly lockFile f9c2ad1c-supertest-0-11-0-0-0-12-0-0 supertest@>=0.11.0-0 <0.12.0-0
+568 verbose lock supertest@>=0.11.0-0 <0.12.0-0 /Users/fa137/.npm/f9c2ad1c-supertest-0-11-0-0-0-12-0-0.lock
+569 verbose parsed spec { raw: 'should@~3.3.1',
+569 verbose parsed spec   scope: null,
+569 verbose parsed spec   name: 'should',
+569 verbose parsed spec   rawSpec: '~3.3.1',
+569 verbose parsed spec   spec: '>=3.3.1-0 <3.4.0-0',
+569 verbose parsed spec   type: 'range' }
+570 verbose addNamed [ 'should', '>=3.3.1-0 <3.4.0-0' ]
+571 verbose addNamed [ null, '>=3.3.1-0 <3.4.0-0' ]
+572 silly lockFile 65345513-should-3-3-1-0-3-4-0-0 should@>=3.3.1-0 <3.4.0-0
+573 verbose lock should@>=3.3.1-0 <3.4.0-0 /Users/fa137/.npm/65345513-should-3-3-1-0-3-4-0-0.lock
+574 verbose cache add [ 'body-parser@~1.5.0', null ]
+575 verbose cache add spec="body-parser@~1.5.0" args=["body-parser@~1.5.0",null]
+576 verbose parsed spec { raw: 'express@~4.0.0',
+576 verbose parsed spec   scope: null,
+576 verbose parsed spec   name: 'express',
+576 verbose parsed spec   rawSpec: '~4.0.0',
+576 verbose parsed spec   spec: '>=4.0.0-0 <4.1.0-0',
+576 verbose parsed spec   type: 'range' }
+577 verbose addNamed [ 'express', '>=4.0.0-0 <4.1.0-0' ]
+578 verbose addNamed [ null, '>=4.0.0-0 <4.1.0-0' ]
+579 silly lockFile ea816c0c-express-4-0-0-0-4-1-0-0 express@>=4.0.0-0 <4.1.0-0
+580 verbose lock express@>=4.0.0-0 <4.1.0-0 /Users/fa137/.npm/ea816c0c-express-4-0-0-0-4-1-0-0.lock
+581 verbose parsed spec { raw: 'morgan@~1.0.0',
+581 verbose parsed spec   scope: null,
+581 verbose parsed spec   name: 'morgan',
+581 verbose parsed spec   rawSpec: '~1.0.0',
+581 verbose parsed spec   spec: '>=1.0.0-0 <1.1.0-0',
+581 verbose parsed spec   type: 'range' }
+582 verbose addNamed [ 'morgan', '>=1.0.0-0 <1.1.0-0' ]
+583 verbose addNamed [ null, '>=1.0.0-0 <1.1.0-0' ]
+584 silly lockFile a161fbf6-morgan-1-0-0-0-1-1-0-0 morgan@>=1.0.0-0 <1.1.0-0
+585 verbose lock morgan@>=1.0.0-0 <1.1.0-0 /Users/fa137/.npm/a161fbf6-morgan-1-0-0-0-1-1-0-0.lock
+586 silly addNameRange { name: 'grunt-contrib-htmlmin',
+586 silly addNameRange   range: '>=0.2.0-0 <0.3.0-0',
+586 silly addNameRange   hasData: false }
+587 verbose mapToRegistry name grunt-contrib-htmlmin
+588 verbose mapToRegistry uri https://registry.npmjs.org/grunt-contrib-htmlmin
+589 silly addNameRange { name: 'grunt-contrib-imagemin',
+589 silly addNameRange   range: '>=0.7.1-0 <0.8.0-0',
+589 silly addNameRange   hasData: false }
+590 verbose mapToRegistry name grunt-contrib-imagemin
+591 verbose mapToRegistry uri https://registry.npmjs.org/grunt-contrib-imagemin
+592 silly addNameRange { name: 'grunt-contrib-uglify',
+592 silly addNameRange   range: '>=0.4.0-0 <0.5.0-0',
+592 silly addNameRange   hasData: false }
+593 verbose mapToRegistry name grunt-contrib-uglify
+594 verbose mapToRegistry uri https://registry.npmjs.org/grunt-contrib-uglify
+595 silly addNameRange { name: 'grunt-contrib-jshint',
+595 silly addNameRange   range: '>=0.10.0-0 <0.11.0-0',
+595 silly addNameRange   hasData: false }
+596 verbose mapToRegistry name grunt-contrib-jshint
+597 verbose mapToRegistry uri https://registry.npmjs.org/grunt-contrib-jshint
+598 silly addNameRange { name: 'grunt-contrib-jade',
+598 silly addNameRange   range: '>=0.11.0-0 <0.12.0-0',
+598 silly addNameRange   hasData: false }
+599 verbose mapToRegistry name grunt-contrib-jade
+600 verbose mapToRegistry uri https://registry.npmjs.org/grunt-contrib-jade
+601 silly addNameRange { name: 'grunt-contrib-watch',
+601 silly addNameRange   range: '>=0.6.1-0 <0.7.0-0',
+601 silly addNameRange   hasData: false }
+602 verbose mapToRegistry name grunt-contrib-watch
+603 verbose mapToRegistry uri https://registry.npmjs.org/grunt-contrib-watch
+604 silly addNameRange { name: 'grunt-google-cdn',
+604 silly addNameRange   range: '>=0.4.0-0 <0.5.0-0',
+604 silly addNameRange   hasData: false }
+605 verbose mapToRegistry name grunt-google-cdn
+606 verbose mapToRegistry uri https://registry.npmjs.org/grunt-google-cdn
+607 silly addNameRange { name: 'grunt-newer',
+607 silly addNameRange   range: '>=0.7.0-0 <0.8.0-0',
+607 silly addNameRange   hasData: false }
+608 verbose mapToRegistry name grunt-newer
+609 verbose mapToRegistry uri https://registry.npmjs.org/grunt-newer
+610 silly addNameRange { name: 'grunt-rev',
+610 silly addNameRange   range: '>=0.1.0-0 <0.2.0-0',
+610 silly addNameRange   hasData: false }
+611 verbose mapToRegistry name grunt-rev
+612 verbose mapToRegistry uri https://registry.npmjs.org/grunt-rev
+613 silly addNameRange { name: 'grunt-ng-annotate',
+613 silly addNameRange   range: '>=0.2.3-0 <0.3.0-0',
+613 silly addNameRange   hasData: false }
+614 verbose mapToRegistry name grunt-ng-annotate
+615 verbose mapToRegistry uri https://registry.npmjs.org/grunt-ng-annotate
+616 silly addNameRange { name: 'grunt-svgmin',
+616 silly addNameRange   range: '>=0.4.0-0 <0.5.0-0',
+616 silly addNameRange   hasData: false }
+617 verbose mapToRegistry name grunt-svgmin
+618 verbose mapToRegistry uri https://registry.npmjs.org/grunt-svgmin
+619 silly addNameRange { name: 'grunt-usemin',
+619 silly addNameRange   range: '>=2.1.1-0 <2.2.0-0',
+619 silly addNameRange   hasData: false }
+620 verbose mapToRegistry name grunt-usemin
+621 verbose mapToRegistry uri https://registry.npmjs.org/grunt-usemin
+622 silly addNameRange { name: 'grunt-env',
+622 silly addNameRange   range: '>=0.4.1-0 <0.5.0-0',
+622 silly addNameRange   hasData: false }
+623 verbose mapToRegistry name grunt-env
+624 verbose mapToRegistry uri https://registry.npmjs.org/grunt-env
+625 verbose parsed spec { raw: 'body-parser@~1.5.0',
+625 verbose parsed spec   scope: null,
+625 verbose parsed spec   name: 'body-parser',
+625 verbose parsed spec   rawSpec: '~1.5.0',
+625 verbose parsed spec   spec: '>=1.5.0-0 <1.6.0-0',
+625 verbose parsed spec   type: 'range' }
+626 verbose addNamed [ 'body-parser', '>=1.5.0-0 <1.6.0-0' ]
+627 verbose addNamed [ null, '>=1.5.0-0 <1.6.0-0' ]
+628 silly lockFile 52fe5c99-body-parser-1-5-0-0-1-6-0-0 body-parser@>=1.5.0-0 <1.6.0-0
+629 verbose lock body-parser@>=1.5.0-0 <1.6.0-0 /Users/fa137/.npm/52fe5c99-body-parser-1-5-0-0-1-6-0-0.lock
+630 silly addNameRange { name: 'grunt-node-inspector',
+630 silly addNameRange   range: '>=0.1.5-0 <0.2.0-0',
+630 silly addNameRange   hasData: false }
+631 verbose mapToRegistry name grunt-node-inspector
+632 verbose mapToRegistry uri https://registry.npmjs.org/grunt-node-inspector
+633 silly addNameRange { name: 'grunt-nodemon',
+633 silly addNameRange   range: '>=0.2.0-0 <0.3.0-0',
+633 silly addNameRange   hasData: false }
+634 verbose mapToRegistry name grunt-nodemon
+635 verbose mapToRegistry uri https://registry.npmjs.org/grunt-nodemon
+636 silly addNameRange { name: 'grunt-angular-templates',
+636 silly addNameRange   range: '>=0.5.4-0 <0.6.0-0',
+636 silly addNameRange   hasData: false }
+637 verbose mapToRegistry name grunt-angular-templates
+638 verbose mapToRegistry uri https://registry.npmjs.org/grunt-angular-templates
+639 silly addNameRange { name: 'grunt-dom-munger',
+639 silly addNameRange   range: '>=3.4.0-0 <4.0.0-0',
+639 silly addNameRange   hasData: false }
+640 verbose mapToRegistry name grunt-dom-munger
+641 verbose mapToRegistry uri https://registry.npmjs.org/grunt-dom-munger
+642 silly addNameRange { name: 'grunt-asset-injector',
+642 silly addNameRange   range: '>=0.1.0-0 <0.2.0-0',
+642 silly addNameRange   hasData: false }
+643 verbose mapToRegistry name grunt-asset-injector
+644 verbose mapToRegistry uri https://registry.npmjs.org/grunt-asset-injector
+645 silly addNameRange { name: 'grunt-protractor-runner',
+645 silly addNameRange   range: '>=1.1.0-0 <2.0.0-0',
+645 silly addNameRange   hasData: false }
+646 verbose mapToRegistry name grunt-protractor-runner
+647 verbose mapToRegistry uri https://registry.npmjs.org/grunt-protractor-runner
+648 silly addNameRange { name: 'grunt-karma',
+648 silly addNameRange   range: '>=0.8.2-0 <0.9.0-0',
+648 silly addNameRange   hasData: false }
+649 verbose mapToRegistry name grunt-karma
+650 verbose mapToRegistry uri https://registry.npmjs.org/grunt-karma
+651 verbose addRemoteGit [ 'https://github.com/DaftMonk/grunt-build-control', 'master' ]
+652 silly addNameRange { name: 'grunt-mocha-test',
+652 silly addNameRange   range: '>=0.10.2-0 <0.11.0-0',
+652 silly addNameRange   hasData: false }
+653 verbose mapToRegistry name grunt-mocha-test
+654 verbose mapToRegistry uri https://registry.npmjs.org/grunt-mocha-test
+655 silly addNameRange { name: 'grunt-contrib-sass',
+655 silly addNameRange   range: '>=0.7.3-0 <0.8.0-0',
+655 silly addNameRange   hasData: false }
+656 verbose mapToRegistry name grunt-contrib-sass
+657 verbose mapToRegistry uri https://registry.npmjs.org/grunt-contrib-sass
+658 silly addNameRange { name: 'jit-grunt',
+658 silly addNameRange   range: '>=0.5.0-0 <0.6.0-0',
+658 silly addNameRange   hasData: false }
+659 verbose mapToRegistry name jit-grunt
+660 verbose mapToRegistry uri https://registry.npmjs.org/jit-grunt
+661 silly addNameRange { name: 'time-grunt',
+661 silly addNameRange   range: '>=0.3.1-0 <0.4.0-0',
+661 silly addNameRange   hasData: false }
+662 verbose mapToRegistry name time-grunt
+663 verbose mapToRegistry uri https://registry.npmjs.org/time-grunt
+664 silly addNameRange { name: 'grunt-express-server',
+664 silly addNameRange   range: '>=0.4.17-0 <0.5.0-0',
+664 silly addNameRange   hasData: false }
+665 verbose mapToRegistry name grunt-express-server
+666 verbose mapToRegistry uri https://registry.npmjs.org/grunt-express-server
+667 silly addNameRange { name: 'grunt-open',
+667 silly addNameRange   range: '>=0.2.3-0 <0.3.0-0',
+667 silly addNameRange   hasData: false }
+668 verbose mapToRegistry name grunt-open
+669 verbose mapToRegistry uri https://registry.npmjs.org/grunt-open
+670 silly addNameRange { name: 'open', range: '>=0.0.4-0 <0.1.0-0', hasData: false }
+671 verbose mapToRegistry name open
+672 verbose mapToRegistry uri https://registry.npmjs.org/open
+673 silly addNameRange { name: 'jshint-stylish',
+673 silly addNameRange   range: '>=0.1.5-0 <0.2.0-0',
+673 silly addNameRange   hasData: false }
+674 verbose mapToRegistry name jshint-stylish
+675 verbose mapToRegistry uri https://registry.npmjs.org/jshint-stylish
+676 silly addNameRange { name: 'connect-livereload',
+676 silly addNameRange   range: '>=0.4.0-0 <0.5.0-0',
+676 silly addNameRange   hasData: false }
+677 verbose mapToRegistry name connect-livereload
+678 verbose mapToRegistry uri https://registry.npmjs.org/connect-livereload
+679 silly addNameRange { name: 'karma-ng-scenario',
+679 silly addNameRange   range: '>=0.1.0-0 <0.2.0-0',
+679 silly addNameRange   hasData: false }
+680 verbose mapToRegistry name karma-ng-scenario
+681 verbose mapToRegistry uri https://registry.npmjs.org/karma-ng-scenario
+682 silly addNameRange { name: 'karma-firefox-launcher',
+682 silly addNameRange   range: '>=0.1.3-0 <0.2.0-0',
+682 silly addNameRange   hasData: false }
+683 verbose mapToRegistry name karma-firefox-launcher
+684 verbose mapToRegistry uri https://registry.npmjs.org/karma-firefox-launcher
+685 silly addNameRange { name: 'karma-script-launcher',
+685 silly addNameRange   range: '>=0.1.0-0 <0.2.0-0',
+685 silly addNameRange   hasData: false }
+686 verbose mapToRegistry name karma-script-launcher
+687 verbose mapToRegistry uri https://registry.npmjs.org/karma-script-launcher
+688 silly addNameRange { name: 'karma-html2js-preprocessor',
+688 silly addNameRange   range: '>=0.1.0-0 <0.2.0-0',
+688 silly addNameRange   hasData: false }
+689 verbose mapToRegistry name karma-html2js-preprocessor
+690 verbose mapToRegistry uri https://registry.npmjs.org/karma-html2js-preprocessor
+691 silly addNameRange { name: 'karma-ng-jade2js-preprocessor',
+691 silly addNameRange   range: '>=0.1.2-0 <0.2.0-0',
+691 silly addNameRange   hasData: false }
+692 verbose mapToRegistry name karma-ng-jade2js-preprocessor
+693 verbose mapToRegistry uri https://registry.npmjs.org/karma-ng-jade2js-preprocessor
+694 silly addNameRange { name: 'karma-jasmine',
+694 silly addNameRange   range: '>=0.1.5-0 <0.2.0-0',
+694 silly addNameRange   hasData: false }
+695 verbose mapToRegistry name karma-jasmine
+696 verbose mapToRegistry uri https://registry.npmjs.org/karma-jasmine
+697 silly addNameRange { name: 'karma-chrome-launcher',
+697 silly addNameRange   range: '>=0.1.3-0 <0.2.0-0',
+697 silly addNameRange   hasData: false }
+698 verbose mapToRegistry name karma-chrome-launcher
+699 verbose mapToRegistry uri https://registry.npmjs.org/karma-chrome-launcher
+700 silly addNameRange { name: 'requirejs',
+700 silly addNameRange   range: '>=2.1.11-0 <2.2.0-0',
+700 silly addNameRange   hasData: false }
+701 verbose mapToRegistry name requirejs
+702 verbose mapToRegistry uri https://registry.npmjs.org/requirejs
+703 silly addNameRange { name: 'karma-requirejs',
+703 silly addNameRange   range: '>=0.2.1-0 <0.3.0-0',
+703 silly addNameRange   hasData: false }
+704 verbose mapToRegistry name karma-requirejs
+705 verbose mapToRegistry uri https://registry.npmjs.org/karma-requirejs
+706 silly addNameRange { name: 'karma-coffee-preprocessor',
+706 silly addNameRange   range: '>=0.2.1-0 <0.3.0-0',
+706 silly addNameRange   hasData: false }
+707 verbose mapToRegistry name karma-coffee-preprocessor
+708 verbose mapToRegistry uri https://registry.npmjs.org/karma-coffee-preprocessor
+709 verbose mapToRegistry name karma-jade-preprocessor
+710 verbose mapToRegistry uri https://registry.npmjs.org/karma-jade-preprocessor
+711 silly addNameRange { name: 'karma-phantomjs-launcher',
+711 silly addNameRange   range: '>=0.1.4-0 <0.2.0-0',
+711 silly addNameRange   hasData: false }
+712 verbose mapToRegistry name karma-phantomjs-launcher
+713 verbose mapToRegistry uri https://registry.npmjs.org/karma-phantomjs-launcher
+714 silly addNameRange { name: 'karma', range: '>=0.12.9-0 <0.13.0-0', hasData: false }
+715 verbose mapToRegistry name karma
+716 verbose mapToRegistry uri https://registry.npmjs.org/karma
+717 silly addNameRange { name: 'karma-ng-html2js-preprocessor',
+717 silly addNameRange   range: '>=0.1.0-0 <0.2.0-0',
+717 silly addNameRange   hasData: false }
+718 verbose mapToRegistry name karma-ng-html2js-preprocessor
+719 verbose mapToRegistry uri https://registry.npmjs.org/karma-ng-html2js-preprocessor
+720 silly addNameRange { name: 'supertest',
+720 silly addNameRange   range: '>=0.11.0-0 <0.12.0-0',
+720 silly addNameRange   hasData: false }
+721 verbose mapToRegistry name supertest
+722 verbose mapToRegistry uri https://registry.npmjs.org/supertest
+723 silly addNameRange { name: 'should', range: '>=3.3.1-0 <3.4.0-0', hasData: false }
+724 verbose mapToRegistry name should
+725 verbose mapToRegistry uri https://registry.npmjs.org/should
+726 silly addNameRange { name: 'express', range: '>=4.0.0-0 <4.1.0-0', hasData: false }
+727 verbose mapToRegistry name express
+728 verbose mapToRegistry uri https://registry.npmjs.org/express
+729 silly addNameRange { name: 'morgan', range: '>=1.0.0-0 <1.1.0-0', hasData: false }
+730 verbose mapToRegistry name morgan
+731 verbose mapToRegistry uri https://registry.npmjs.org/morgan
+732 silly addNameRange { name: 'body-parser',
+732 silly addNameRange   range: '>=1.5.0-0 <1.6.0-0',
+732 silly addNameRange   hasData: false }
+733 verbose mapToRegistry name body-parser
+734 verbose mapToRegistry uri https://registry.npmjs.org/body-parser
+735 verbose request where is /lodash
+736 verbose request registry https://registry.npmjs.org/
+737 verbose request id 3fa4c472ab3ff2a1
+738 verbose request url raw /lodash
+739 verbose request url resolving [ 'https://registry.npmjs.org/', './lodash' ]
+740 verbose request url resolved https://registry.npmjs.org/lodash
+741 verbose request where is https://registry.npmjs.org/lodash
+742 verbose request no basic auth needed
+743 info trying registry request attempt 1 at 01:07:54
+744 verbose etag "9CIRM1QMYRMX2M8QHMPA6K5M3"
+745 http GET https://registry.npmjs.org/lodash
+746 verbose request where is /cookie-parser
+747 verbose request registry https://registry.npmjs.org/
+748 verbose request url raw /cookie-parser
+749 verbose request url resolving [ 'https://registry.npmjs.org/', './cookie-parser' ]
+750 verbose request url resolved https://registry.npmjs.org/cookie-parser
+751 verbose request where is https://registry.npmjs.org/cookie-parser
+752 verbose request no basic auth needed
+753 info trying registry request attempt 1 at 01:07:54
+754 verbose etag "D2I21Z55J0M83YHA636O1DW9K"
+755 http GET https://registry.npmjs.org/cookie-parser
+756 verbose request where is /serve-favicon
+757 verbose request registry https://registry.npmjs.org/
+758 verbose request url raw /serve-favicon
+759 verbose request url resolving [ 'https://registry.npmjs.org/', './serve-favicon' ]
+760 verbose request url resolved https://registry.npmjs.org/serve-favicon
+761 verbose request where is https://registry.npmjs.org/serve-favicon
+762 verbose request no basic auth needed
+763 info trying registry request attempt 1 at 01:07:54
+764 verbose etag "7DE7XCB1YNR2K4M0V914W2FL0"
+765 http GET https://registry.npmjs.org/serve-favicon
+766 verbose request where is /method-override
+767 verbose request registry https://registry.npmjs.org/
+768 verbose request url raw /method-override
+769 verbose request url resolving [ 'https://registry.npmjs.org/', './method-override' ]
+770 verbose request url resolved https://registry.npmjs.org/method-override
+771 verbose request where is https://registry.npmjs.org/method-override
+772 verbose request no basic auth needed
+773 info trying registry request attempt 1 at 01:07:54
+774 verbose etag "BK8UJ3NUZL6F7AUM9I9CBU9KK"
+775 http GET https://registry.npmjs.org/method-override
+776 verbose request where is /express-session
+777 verbose request registry https://registry.npmjs.org/
+778 verbose request url raw /express-session
+779 verbose request url resolving [ 'https://registry.npmjs.org/', './express-session' ]
+780 verbose request url resolved https://registry.npmjs.org/express-session
+781 verbose request where is https://registry.npmjs.org/express-session
+782 verbose request no basic auth needed
+783 info trying registry request attempt 1 at 01:07:54
+784 verbose etag "1C6HQ8REH1DNCR99F10LZP8VV"
+785 http GET https://registry.npmjs.org/express-session
+786 verbose request where is /compression
+787 verbose request registry https://registry.npmjs.org/
+788 verbose request url raw /compression
+789 verbose request url resolving [ 'https://registry.npmjs.org/', './compression' ]
+790 verbose request url resolved https://registry.npmjs.org/compression
+791 verbose request where is https://registry.npmjs.org/compression
+792 verbose request no basic auth needed
+793 info trying registry request attempt 1 at 01:07:54
+794 verbose etag "2Z3AE6PQ3AMDZHP06QZTHJID1"
+795 http GET https://registry.npmjs.org/compression
+796 verbose request where is /jsonwebtoken
+797 verbose request registry https://registry.npmjs.org/
+798 verbose request url raw /jsonwebtoken
+799 verbose request url resolving [ 'https://registry.npmjs.org/', './jsonwebtoken' ]
+800 verbose request url resolved https://registry.npmjs.org/jsonwebtoken
+801 verbose request where is https://registry.npmjs.org/jsonwebtoken
+802 verbose request no basic auth needed
+803 info trying registry request attempt 1 at 01:07:54
+804 verbose etag "97JORW9OGDNUEQBUVMIELFEVV"
+805 http GET https://registry.npmjs.org/jsonwebtoken
+806 verbose request where is /errorhandler
+807 verbose request registry https://registry.npmjs.org/
+808 verbose request url raw /errorhandler
+809 verbose request url resolving [ 'https://registry.npmjs.org/', './errorhandler' ]
+810 verbose request url resolved https://registry.npmjs.org/errorhandler
+811 verbose request where is https://registry.npmjs.org/errorhandler
+812 verbose request no basic auth needed
+813 info trying registry request attempt 1 at 01:07:54
+814 verbose etag "D08J2E8T0DKWLISZLRS4WYLUE"
+815 http GET https://registry.npmjs.org/errorhandler
+816 verbose request where is /jade
+817 verbose request registry https://registry.npmjs.org/
+818 verbose request url raw /jade
+819 verbose request url resolving [ 'https://registry.npmjs.org/', './jade' ]
+820 verbose request url resolved https://registry.npmjs.org/jade
+821 verbose request where is https://registry.npmjs.org/jade
+822 verbose request no basic auth needed
+823 info trying registry request attempt 1 at 01:07:54
+824 verbose etag "DA2LTTOPJ813Y2O1QM7OIRWK4"
+825 http GET https://registry.npmjs.org/jade
+826 verbose request where is /express-jwt
+827 verbose request registry https://registry.npmjs.org/
+828 verbose request url raw /express-jwt
+829 verbose request url resolving [ 'https://registry.npmjs.org/', './express-jwt' ]
+830 verbose request url resolved https://registry.npmjs.org/express-jwt
+831 verbose request where is https://registry.npmjs.org/express-jwt
+832 verbose request no basic auth needed
+833 info trying registry request attempt 1 at 01:07:54
+834 verbose etag "3JAN33CO6JKJY5T3EE5XCJ785"
+835 http GET https://registry.npmjs.org/express-jwt
+836 verbose request where is /passport-local
+837 verbose request registry https://registry.npmjs.org/
+838 verbose request url raw /passport-local
+839 verbose request url resolving [ 'https://registry.npmjs.org/', './passport-local' ]
+840 verbose request url resolved https://registry.npmjs.org/passport-local
+841 verbose request where is https://registry.npmjs.org/passport-local
+842 verbose request no basic auth needed
+843 info trying registry request attempt 1 at 01:07:54
+844 verbose etag "78J7YU7NXFKXVZ1IC7IY9990M"
+845 http GET https://registry.npmjs.org/passport-local
+846 verbose request where is /passport
+847 verbose request registry https://registry.npmjs.org/
+848 verbose request url raw /passport
+849 verbose request url resolving [ 'https://registry.npmjs.org/', './passport' ]
+850 verbose request url resolved https://registry.npmjs.org/passport
+851 verbose request where is https://registry.npmjs.org/passport
+852 verbose request no basic auth needed
+853 info trying registry request attempt 1 at 01:07:55
+854 verbose etag "CK37XX21BFNK0APGQ9NC325P8"
+855 http GET https://registry.npmjs.org/passport
+856 verbose request where is /mongoose
+857 verbose request registry https://registry.npmjs.org/
+858 verbose request url raw /mongoose
+859 verbose request url resolving [ 'https://registry.npmjs.org/', './mongoose' ]
+860 verbose request url resolved https://registry.npmjs.org/mongoose
+861 verbose request where is https://registry.npmjs.org/mongoose
+862 verbose request no basic auth needed
+863 info trying registry request attempt 1 at 01:07:55
+864 verbose etag "805G4W5J1CMG78GC6H9M6U2FK"
+865 http GET https://registry.npmjs.org/mongoose
+866 verbose request where is /passport-facebook
+867 verbose request registry https://registry.npmjs.org/
+868 verbose request url raw /passport-facebook
+869 verbose request url resolving [ 'https://registry.npmjs.org/', './passport-facebook' ]
+870 verbose request url resolved https://registry.npmjs.org/passport-facebook
+871 verbose request where is https://registry.npmjs.org/passport-facebook
+872 verbose request no basic auth needed
+873 info trying registry request attempt 1 at 01:07:55
+874 verbose etag "EKVW3Q4MRRPVKJAXS0HGVMYU3"
+875 http GET https://registry.npmjs.org/passport-facebook
+876 verbose request where is /composable-middleware
+877 verbose request registry https://registry.npmjs.org/
+878 verbose request url raw /composable-middleware
+879 verbose request url resolving [ 'https://registry.npmjs.org/', './composable-middleware' ]
+880 verbose request url resolved https://registry.npmjs.org/composable-middleware
+881 verbose request where is https://registry.npmjs.org/composable-middleware
+882 verbose request no basic auth needed
+883 info trying registry request attempt 1 at 01:07:55
+884 verbose etag "CYXNQIDTU78NO281KPB9TQK9T"
+885 http GET https://registry.npmjs.org/composable-middleware
+886 verbose request where is /connect-mongo
+887 verbose request registry https://registry.npmjs.org/
+888 verbose request url raw /connect-mongo
+889 verbose request url resolving [ 'https://registry.npmjs.org/', './connect-mongo' ]
+890 verbose request url resolved https://registry.npmjs.org/connect-mongo
+891 verbose request where is https://registry.npmjs.org/connect-mongo
+892 verbose request no basic auth needed
+893 info trying registry request attempt 1 at 01:07:55
+894 verbose etag "BBJ3C7T95VTPEYJA5GDI12YNN"
+895 http GET https://registry.npmjs.org/connect-mongo
+896 verbose request where is /grunt-wiredep
+897 verbose request registry https://registry.npmjs.org/
+898 verbose request url raw /grunt-wiredep
+899 verbose request url resolving [ 'https://registry.npmjs.org/', './grunt-wiredep' ]
+900 verbose request url resolved https://registry.npmjs.org/grunt-wiredep
+901 verbose request where is https://registry.npmjs.org/grunt-wiredep
+902 verbose request no basic auth needed
+903 info trying registry request attempt 1 at 01:07:55
+904 verbose etag "378QXDBWCXKKMQTBVU4TKSVQE"
+905 http GET https://registry.npmjs.org/grunt-wiredep
+906 verbose request where is /grunt-concurrent
+907 verbose request registry https://registry.npmjs.org/
+908 verbose request url raw /grunt-concurrent
+909 verbose request url resolving [ 'https://registry.npmjs.org/', './grunt-concurrent' ]
+910 verbose request url resolved https://registry.npmjs.org/grunt-concurrent
+911 verbose request where is https://registry.npmjs.org/grunt-concurrent
+912 verbose request no basic auth needed
+913 info trying registry request attempt 1 at 01:07:55
+914 verbose etag "78IXFFVBHGOL195BZJMUOF72E"
+915 http GET https://registry.npmjs.org/grunt-concurrent
+916 verbose request where is /grunt
+917 verbose request registry https://registry.npmjs.org/
+918 verbose request url raw /grunt
+919 verbose request url resolving [ 'https://registry.npmjs.org/', './grunt' ]
+920 verbose request url resolved https://registry.npmjs.org/grunt
+921 verbose request where is https://registry.npmjs.org/grunt
+922 verbose request no basic auth needed
+923 info trying registry request attempt 1 at 01:07:55
+924 verbose etag "DQOW15UFHG4N0NWKERC0BNONN"
+925 http GET https://registry.npmjs.org/grunt
+926 verbose request where is /grunt-autoprefixer
+927 verbose request registry https://registry.npmjs.org/
+928 verbose request url raw /grunt-autoprefixer
+929 verbose request url resolving [ 'https://registry.npmjs.org/', './grunt-autoprefixer' ]
+930 verbose request url resolved https://registry.npmjs.org/grunt-autoprefixer
+931 verbose request where is https://registry.npmjs.org/grunt-autoprefixer
+932 verbose request no basic auth needed
+933 info trying registry request attempt 1 at 01:07:55
+934 verbose etag "1DZXPFEXKZT1V9L3KUA471QX2"
+935 http GET https://registry.npmjs.org/grunt-autoprefixer
+936 verbose request where is /grunt-contrib-clean
+937 verbose request registry https://registry.npmjs.org/
+938 verbose request url raw /grunt-contrib-clean
+939 verbose request url resolving [ 'https://registry.npmjs.org/', './grunt-contrib-clean' ]
+940 verbose request url resolved https://registry.npmjs.org/grunt-contrib-clean
+941 verbose request where is https://registry.npmjs.org/grunt-contrib-clean
+942 verbose request no basic auth needed
+943 info trying registry request attempt 1 at 01:07:55
+944 verbose etag "5OHEBSZ3GOBG0CX88ZQU4CRWJ"
+945 http GET https://registry.npmjs.org/grunt-contrib-clean
+946 verbose request where is /grunt-contrib-concat
+947 verbose request registry https://registry.npmjs.org/
+948 verbose request url raw /grunt-contrib-concat
+949 verbose request url resolving [ 'https://registry.npmjs.org/', './grunt-contrib-concat' ]
+950 verbose request url resolved https://registry.npmjs.org/grunt-contrib-concat
+951 verbose request where is https://registry.npmjs.org/grunt-contrib-concat
+952 verbose request no basic auth needed
+953 info trying registry request attempt 1 at 01:07:55
+954 verbose etag "9FLDHDJDXOQHP4IXWCCMTQQXK"
+955 http GET https://registry.npmjs.org/grunt-contrib-concat
+956 verbose request where is /grunt-contrib-cssmin
+957 verbose request registry https://registry.npmjs.org/
+958 verbose request url raw /grunt-contrib-cssmin
+959 verbose request url resolving [ 'https://registry.npmjs.org/', './grunt-contrib-cssmin' ]
+960 verbose request url resolved https://registry.npmjs.org/grunt-contrib-cssmin
+961 verbose request where is https://registry.npmjs.org/grunt-contrib-cssmin
+962 verbose request no basic auth needed
+963 info trying registry request attempt 1 at 01:07:55
+964 verbose etag "7U7TFUBWLD4XMQUUSUX1OSA0C"
+965 http GET https://registry.npmjs.org/grunt-contrib-cssmin
+966 verbose request where is /grunt-contrib-copy
+967 verbose request registry https://registry.npmjs.org/
+968 verbose request url raw /grunt-contrib-copy
+969 verbose request url resolving [ 'https://registry.npmjs.org/', './grunt-contrib-copy' ]
+970 verbose request url resolved https://registry.npmjs.org/grunt-contrib-copy
+971 verbose request where is https://registry.npmjs.org/grunt-contrib-copy
+972 verbose request no basic auth needed
+973 info trying registry request attempt 1 at 01:07:55
+974 verbose etag "BO0AZWPEKD2ZGSOT8GAHJWGI0"
+975 http GET https://registry.npmjs.org/grunt-contrib-copy
+976 verbose request where is /grunt-contrib-jshint
+977 verbose request registry https://registry.npmjs.org/
+978 verbose request url raw /grunt-contrib-jshint
+979 verbose request url resolving [ 'https://registry.npmjs.org/', './grunt-contrib-jshint' ]
+980 verbose request url resolved https://registry.npmjs.org/grunt-contrib-jshint
+981 verbose request where is https://registry.npmjs.org/grunt-contrib-jshint
+982 verbose request no basic auth needed
+983 info trying registry request attempt 1 at 01:07:55
+984 verbose etag "4B9ZMLBECSFVK0H0YHLBJG9UN"
+985 http GET https://registry.npmjs.org/grunt-contrib-jshint
+986 verbose request where is /grunt-contrib-imagemin
+987 verbose request registry https://registry.npmjs.org/
+988 verbose request url raw /grunt-contrib-imagemin
+989 verbose request url resolving [ 'https://registry.npmjs.org/', './grunt-contrib-imagemin' ]
+990 verbose request url resolved https://registry.npmjs.org/grunt-contrib-imagemin
+991 verbose request where is https://registry.npmjs.org/grunt-contrib-imagemin
+992 verbose request no basic auth needed
+993 info trying registry request attempt 1 at 01:07:55
+994 verbose etag "BL74KM19JLISAHFINOBIT6KF7"
+995 http GET https://registry.npmjs.org/grunt-contrib-imagemin
+996 verbose request where is /grunt-contrib-uglify
+997 verbose request registry https://registry.npmjs.org/
+998 verbose request url raw /grunt-contrib-uglify
+999 verbose request url resolving [ 'https://registry.npmjs.org/', './grunt-contrib-uglify' ]
+1000 verbose request url resolved https://registry.npmjs.org/grunt-contrib-uglify
+1001 verbose request where is https://registry.npmjs.org/grunt-contrib-uglify
+1002 verbose request no basic auth needed
+1003 info trying registry request attempt 1 at 01:07:55
+1004 verbose etag "2I7W5MAY3S54C71QT430OGZ53"
+1005 http GET https://registry.npmjs.org/grunt-contrib-uglify
+1006 verbose request where is /grunt-contrib-jade
+1007 verbose request registry https://registry.npmjs.org/
+1008 verbose request url raw /grunt-contrib-jade
+1009 verbose request url resolving [ 'https://registry.npmjs.org/', './grunt-contrib-jade' ]
+1010 verbose request url resolved https://registry.npmjs.org/grunt-contrib-jade
+1011 verbose request where is https://registry.npmjs.org/grunt-contrib-jade
+1012 verbose request no basic auth needed
+1013 info trying registry request attempt 1 at 01:07:55
+1014 verbose etag "CYBCUGH8W0ZX63ZRBISOPZ8BW"
+1015 http GET https://registry.npmjs.org/grunt-contrib-jade
+1016 verbose request where is /grunt-contrib-htmlmin
+1017 verbose request registry https://registry.npmjs.org/
+1018 verbose request url raw /grunt-contrib-htmlmin
+1019 verbose request url resolving [ 'https://registry.npmjs.org/', './grunt-contrib-htmlmin' ]
+1020 verbose request url resolved https://registry.npmjs.org/grunt-contrib-htmlmin
+1021 verbose request where is https://registry.npmjs.org/grunt-contrib-htmlmin
+1022 verbose request no basic auth needed
+1023 info trying registry request attempt 1 at 01:07:55
+1024 verbose etag "F3MANHCT90F3X74QRMRCK0HQE"
+1025 http GET https://registry.npmjs.org/grunt-contrib-htmlmin
+1026 verbose request where is /grunt-google-cdn
+1027 verbose request registry https://registry.npmjs.org/
+1028 verbose request url raw /grunt-google-cdn
+1029 verbose request url resolving [ 'https://registry.npmjs.org/', './grunt-google-cdn' ]
+1030 verbose request url resolved https://registry.npmjs.org/grunt-google-cdn
+1031 verbose request where is https://registry.npmjs.org/grunt-google-cdn
+1032 verbose request no basic auth needed
+1033 info trying registry request attempt 1 at 01:07:55
+1034 verbose etag "3UOXXN3W4HK7HWTCGUF2A9LY8"
+1035 http GET https://registry.npmjs.org/grunt-google-cdn
+1036 verbose request where is /grunt-newer
+1037 verbose request registry https://registry.npmjs.org/
+1038 verbose request url raw /grunt-newer
+1039 verbose request url resolving [ 'https://registry.npmjs.org/', './grunt-newer' ]
+1040 verbose request url resolved https://registry.npmjs.org/grunt-newer
+1041 verbose request where is https://registry.npmjs.org/grunt-newer
+1042 verbose request no basic auth needed
+1043 info trying registry request attempt 1 at 01:07:55
+1044 verbose etag "6OKMAD6SG8IQXUV4ZZYOQF21V"
+1045 http GET https://registry.npmjs.org/grunt-newer
+1046 verbose request where is /grunt-contrib-watch
+1047 verbose request registry https://registry.npmjs.org/
+1048 verbose request url raw /grunt-contrib-watch
+1049 verbose request url resolving [ 'https://registry.npmjs.org/', './grunt-contrib-watch' ]
+1050 verbose request url resolved https://registry.npmjs.org/grunt-contrib-watch
+1051 verbose request where is https://registry.npmjs.org/grunt-contrib-watch
+1052 verbose request no basic auth needed
+1053 info trying registry request attempt 1 at 01:07:55
+1054 verbose etag "86RKODRC843ASKS2FLVS2CO5E"
+1055 http GET https://registry.npmjs.org/grunt-contrib-watch
+1056 verbose request where is /grunt-rev
+1057 verbose request registry https://registry.npmjs.org/
+1058 verbose request url raw /grunt-rev
+1059 verbose request url resolving [ 'https://registry.npmjs.org/', './grunt-rev' ]
+1060 verbose request url resolved https://registry.npmjs.org/grunt-rev
+1061 verbose request where is https://registry.npmjs.org/grunt-rev
+1062 verbose request no basic auth needed
+1063 info trying registry request attempt 1 at 01:07:55
+1064 verbose etag "B8WOWSAP2D6IF8BET8PIK69AX"
+1065 http GET https://registry.npmjs.org/grunt-rev
+1066 verbose request where is /grunt-svgmin
+1067 verbose request registry https://registry.npmjs.org/
+1068 verbose request url raw /grunt-svgmin
+1069 verbose request url resolving [ 'https://registry.npmjs.org/', './grunt-svgmin' ]
+1070 verbose request url resolved https://registry.npmjs.org/grunt-svgmin
+1071 verbose request where is https://registry.npmjs.org/grunt-svgmin
+1072 verbose request no basic auth needed
+1073 info trying registry request attempt 1 at 01:07:55
+1074 verbose etag "9FZW480C6QO5HT5HOW5TS2Q7M"
+1075 http GET https://registry.npmjs.org/grunt-svgmin
+1076 verbose request where is /grunt-ng-annotate
+1077 verbose request registry https://registry.npmjs.org/
+1078 verbose request url raw /grunt-ng-annotate
+1079 verbose request url resolving [ 'https://registry.npmjs.org/', './grunt-ng-annotate' ]
+1080 verbose request url resolved https://registry.npmjs.org/grunt-ng-annotate
+1081 verbose request where is https://registry.npmjs.org/grunt-ng-annotate
+1082 verbose request no basic auth needed
+1083 info trying registry request attempt 1 at 01:07:55
+1084 verbose etag "92AH3SNIMJM9VOXYAQLD8V7UH"
+1085 http GET https://registry.npmjs.org/grunt-ng-annotate
+1086 verbose request where is /grunt-usemin
+1087 verbose request registry https://registry.npmjs.org/
+1088 verbose request url raw /grunt-usemin
+1089 verbose request url resolving [ 'https://registry.npmjs.org/', './grunt-usemin' ]
+1090 verbose request url resolved https://registry.npmjs.org/grunt-usemin
+1091 verbose request where is https://registry.npmjs.org/grunt-usemin
+1092 verbose request no basic auth needed
+1093 info trying registry request attempt 1 at 01:07:55
+1094 verbose etag "5FN2ZMWTHBZOLU6964XRRV9DO"
+1095 http GET https://registry.npmjs.org/grunt-usemin
+1096 verbose request where is /grunt-env
+1097 verbose request registry https://registry.npmjs.org/
+1098 verbose request url raw /grunt-env
+1099 verbose request url resolving [ 'https://registry.npmjs.org/', './grunt-env' ]
+1100 verbose request url resolved https://registry.npmjs.org/grunt-env
+1101 verbose request where is https://registry.npmjs.org/grunt-env
+1102 verbose request no basic auth needed
+1103 info trying registry request attempt 1 at 01:07:55
+1104 verbose etag "7347NA8PO2GYF6XKI1TOGSXW2"
+1105 http GET https://registry.npmjs.org/grunt-env
+1106 verbose request where is /grunt-node-inspector
+1107 verbose request registry https://registry.npmjs.org/
+1108 verbose request url raw /grunt-node-inspector
+1109 verbose request url resolving [ 'https://registry.npmjs.org/', './grunt-node-inspector' ]
+1110 verbose request url resolved https://registry.npmjs.org/grunt-node-inspector
+1111 verbose request where is https://registry.npmjs.org/grunt-node-inspector
+1112 verbose request no basic auth needed
+1113 info trying registry request attempt 1 at 01:07:55
+1114 verbose etag "56VFCD6LS3T1PY1KQG7HKENUU"
+1115 http GET https://registry.npmjs.org/grunt-node-inspector
+1116 verbose request where is /grunt-nodemon
+1117 verbose request registry https://registry.npmjs.org/
+1118 verbose request url raw /grunt-nodemon
+1119 verbose request url resolving [ 'https://registry.npmjs.org/', './grunt-nodemon' ]
+1120 verbose request url resolved https://registry.npmjs.org/grunt-nodemon
+1121 verbose request where is https://registry.npmjs.org/grunt-nodemon
+1122 verbose request no basic auth needed
+1123 info trying registry request attempt 1 at 01:07:55
+1124 verbose etag "8C185L3IC2Q34KST8UW0QU45N"
+1125 http GET https://registry.npmjs.org/grunt-nodemon
+1126 verbose request where is /grunt-asset-injector
+1127 verbose request registry https://registry.npmjs.org/
+1128 verbose request url raw /grunt-asset-injector
+1129 verbose request url resolving [ 'https://registry.npmjs.org/', './grunt-asset-injector' ]
+1130 verbose request url resolved https://registry.npmjs.org/grunt-asset-injector
+1131 verbose request where is https://registry.npmjs.org/grunt-asset-injector
+1132 verbose request no basic auth needed
+1133 info trying registry request attempt 1 at 01:07:55
+1134 verbose etag "C0W1ZKW85KWVH77XZNHFBM3F4"
+1135 http GET https://registry.npmjs.org/grunt-asset-injector
+1136 verbose request where is /grunt-dom-munger
+1137 verbose request registry https://registry.npmjs.org/
+1138 verbose request url raw /grunt-dom-munger
+1139 verbose request url resolving [ 'https://registry.npmjs.org/', './grunt-dom-munger' ]
+1140 verbose request url resolved https://registry.npmjs.org/grunt-dom-munger
+1141 verbose request where is https://registry.npmjs.org/grunt-dom-munger
+1142 verbose request no basic auth needed
+1143 info trying registry request attempt 1 at 01:07:55
+1144 verbose etag "6Q36SQNUZ6B412YD1IMYZYHHS"
+1145 http GET https://registry.npmjs.org/grunt-dom-munger
+1146 verbose request where is /grunt-angular-templates
+1147 verbose request registry https://registry.npmjs.org/
+1148 verbose request url raw /grunt-angular-templates
+1149 verbose request url resolving [ 'https://registry.npmjs.org/', './grunt-angular-templates' ]
+1150 verbose request url resolved https://registry.npmjs.org/grunt-angular-templates
+1151 verbose request where is https://registry.npmjs.org/grunt-angular-templates
+1152 verbose request no basic auth needed
+1153 info trying registry request attempt 1 at 01:07:55
+1154 verbose etag "3Z95ZQAPNV5KS11FCZY37AGYY"
+1155 http GET https://registry.npmjs.org/grunt-angular-templates
+1156 verbose request where is /grunt-protractor-runner
+1157 verbose request registry https://registry.npmjs.org/
+1158 verbose request url raw /grunt-protractor-runner
+1159 verbose request url resolving [ 'https://registry.npmjs.org/', './grunt-protractor-runner' ]
+1160 verbose request url resolved https://registry.npmjs.org/grunt-protractor-runner
+1161 verbose request where is https://registry.npmjs.org/grunt-protractor-runner
+1162 verbose request no basic auth needed
+1163 info trying registry request attempt 1 at 01:07:55
+1164 verbose etag "E22OR6NF37L9255XE3S98N74B"
+1165 http GET https://registry.npmjs.org/grunt-protractor-runner
+1166 verbose request where is /grunt-karma
+1167 verbose request registry https://registry.npmjs.org/
+1168 verbose request url raw /grunt-karma
+1169 verbose request url resolving [ 'https://registry.npmjs.org/', './grunt-karma' ]
+1170 verbose request url resolved https://registry.npmjs.org/grunt-karma
+1171 verbose request where is https://registry.npmjs.org/grunt-karma
+1172 verbose request no basic auth needed
+1173 info trying registry request attempt 1 at 01:07:55
+1174 verbose etag "C7C1NSROEPSWFY3A0OUU8NXA2"
+1175 http GET https://registry.npmjs.org/grunt-karma
+1176 verbose request where is /grunt-mocha-test
+1177 verbose request registry https://registry.npmjs.org/
+1178 verbose request url raw /grunt-mocha-test
+1179 verbose request url resolving [ 'https://registry.npmjs.org/', './grunt-mocha-test' ]
+1180 verbose request url resolved https://registry.npmjs.org/grunt-mocha-test
+1181 verbose request where is https://registry.npmjs.org/grunt-mocha-test
+1182 verbose request no basic auth needed
+1183 info trying registry request attempt 1 at 01:07:55
+1184 verbose etag "B9ICRIDVTNO7ANIK28TM3VN6G"
+1185 http GET https://registry.npmjs.org/grunt-mocha-test
+1186 verbose request where is /grunt-contrib-sass
+1187 verbose request registry https://registry.npmjs.org/
+1188 verbose request url raw /grunt-contrib-sass
+1189 verbose request url resolving [ 'https://registry.npmjs.org/', './grunt-contrib-sass' ]
+1190 verbose request url resolved https://registry.npmjs.org/grunt-contrib-sass
+1191 verbose request where is https://registry.npmjs.org/grunt-contrib-sass
+1192 verbose request no basic auth needed
+1193 info trying registry request attempt 1 at 01:07:55
+1194 verbose etag "7C9TPN1VWX3YGTCXLYTF71XPH"
+1195 http GET https://registry.npmjs.org/grunt-contrib-sass
+1196 verbose request where is /jit-grunt
+1197 verbose request registry https://registry.npmjs.org/
+1198 verbose request url raw /jit-grunt
+1199 verbose request url resolving [ 'https://registry.npmjs.org/', './jit-grunt' ]
+1200 verbose request url resolved https://registry.npmjs.org/jit-grunt
+1201 verbose request where is https://registry.npmjs.org/jit-grunt
+1202 verbose request no basic auth needed
+1203 info trying registry request attempt 1 at 01:07:55
+1204 verbose etag "ACV3FFWK9SBJQYH9RW6XT0TPI"
+1205 http GET https://registry.npmjs.org/jit-grunt
+1206 verbose request where is /time-grunt
+1207 verbose request registry https://registry.npmjs.org/
+1208 verbose request url raw /time-grunt
+1209 verbose request url resolving [ 'https://registry.npmjs.org/', './time-grunt' ]
+1210 verbose request url resolved https://registry.npmjs.org/time-grunt
+1211 verbose request where is https://registry.npmjs.org/time-grunt
+1212 verbose request no basic auth needed
+1213 info trying registry request attempt 1 at 01:07:55
+1214 verbose etag "9EETXUDGO0FTE83EE8LO1RB8Q"
+1215 http GET https://registry.npmjs.org/time-grunt
+1216 verbose request where is /grunt-open
+1217 verbose request registry https://registry.npmjs.org/
+1218 verbose request url raw /grunt-open
+1219 verbose request url resolving [ 'https://registry.npmjs.org/', './grunt-open' ]
+1220 verbose request url resolved https://registry.npmjs.org/grunt-open
+1221 verbose request where is https://registry.npmjs.org/grunt-open
+1222 verbose request no basic auth needed
+1223 info trying registry request attempt 1 at 01:07:55
+1224 verbose etag "8WSJ5A1B9ENKDDYI1I9PL81UP"
+1225 http GET https://registry.npmjs.org/grunt-open
+1226 verbose request where is /open
+1227 verbose request registry https://registry.npmjs.org/
+1228 verbose request url raw /open
+1229 verbose request url resolving [ 'https://registry.npmjs.org/', './open' ]
+1230 verbose request url resolved https://registry.npmjs.org/open
+1231 verbose request where is https://registry.npmjs.org/open
+1232 verbose request no basic auth needed
+1233 info trying registry request attempt 1 at 01:07:55
+1234 verbose etag "EYVTQJT3SQIQDFJRFQ5RXHTPU"
+1235 http GET https://registry.npmjs.org/open
+1236 verbose request where is /grunt-express-server
+1237 verbose request registry https://registry.npmjs.org/
+1238 verbose request url raw /grunt-express-server
+1239 verbose request url resolving [ 'https://registry.npmjs.org/', './grunt-express-server' ]
+1240 verbose request url resolved https://registry.npmjs.org/grunt-express-server
+1241 verbose request where is https://registry.npmjs.org/grunt-express-server
+1242 verbose request no basic auth needed
+1243 info trying registry request attempt 1 at 01:07:55
+1244 verbose etag "6ORTQWMSKF3L0NDE1B3RWWQGW"
+1245 http GET https://registry.npmjs.org/grunt-express-server
+1246 verbose request where is /jshint-stylish
+1247 verbose request registry https://registry.npmjs.org/
+1248 verbose request url raw /jshint-stylish
+1249 verbose request url resolving [ 'https://registry.npmjs.org/', './jshint-stylish' ]
+1250 verbose request url resolved https://registry.npmjs.org/jshint-stylish
+1251 verbose request where is https://registry.npmjs.org/jshint-stylish
+1252 verbose request no basic auth needed
+1253 info trying registry request attempt 1 at 01:07:55
+1254 verbose etag "D902ETO03GQR09PMS031VFXBB"
+1255 http GET https://registry.npmjs.org/jshint-stylish
+1256 verbose request where is /karma-ng-scenario
+1257 verbose request registry https://registry.npmjs.org/
+1258 verbose request url raw /karma-ng-scenario
+1259 verbose request url resolving [ 'https://registry.npmjs.org/', './karma-ng-scenario' ]
+1260 verbose request url resolved https://registry.npmjs.org/karma-ng-scenario
+1261 verbose request where is https://registry.npmjs.org/karma-ng-scenario
+1262 verbose request no basic auth needed
+1263 info trying registry request attempt 1 at 01:07:55
+1264 verbose etag "7LL2DMZF8KP7RJ32Y7K6U9MMH"
+1265 http GET https://registry.npmjs.org/karma-ng-scenario
+1266 verbose request where is /karma-script-launcher
+1267 verbose request registry https://registry.npmjs.org/
+1268 verbose request url raw /karma-script-launcher
+1269 verbose request url resolving [ 'https://registry.npmjs.org/', './karma-script-launcher' ]
+1270 verbose request url resolved https://registry.npmjs.org/karma-script-launcher
+1271 verbose request where is https://registry.npmjs.org/karma-script-launcher
+1272 verbose request no basic auth needed
+1273 info trying registry request attempt 1 at 01:07:55
+1274 verbose etag "2T1RV4SJGELX2WQN5TRTPBMEC"
+1275 http GET https://registry.npmjs.org/karma-script-launcher
+1276 verbose request where is /connect-livereload
+1277 verbose request registry https://registry.npmjs.org/
+1278 verbose request url raw /connect-livereload
+1279 verbose request url resolving [ 'https://registry.npmjs.org/', './connect-livereload' ]
+1280 verbose request url resolved https://registry.npmjs.org/connect-livereload
+1281 verbose request where is https://registry.npmjs.org/connect-livereload
+1282 verbose request no basic auth needed
+1283 info trying registry request attempt 1 at 01:07:55
+1284 verbose etag "ETBQEQOYH2MS8WYN7IOVEAMWY"
+1285 http GET https://registry.npmjs.org/connect-livereload
+1286 verbose request where is /karma-firefox-launcher
+1287 verbose request registry https://registry.npmjs.org/
+1288 verbose request url raw /karma-firefox-launcher
+1289 verbose request url resolving [ 'https://registry.npmjs.org/', './karma-firefox-launcher' ]
+1290 verbose request url resolved https://registry.npmjs.org/karma-firefox-launcher
+1291 verbose request where is https://registry.npmjs.org/karma-firefox-launcher
+1292 verbose request no basic auth needed
+1293 info trying registry request attempt 1 at 01:07:55
+1294 verbose etag "CMTIVZQTM04VR75AEL80P899S"
+1295 http GET https://registry.npmjs.org/karma-firefox-launcher
+1296 verbose request where is /karma-html2js-preprocessor
+1297 verbose request registry https://registry.npmjs.org/
+1298 verbose request url raw /karma-html2js-preprocessor
+1299 verbose request url resolving [ 'https://registry.npmjs.org/',
+1299 verbose request   './karma-html2js-preprocessor' ]
+1300 verbose request url resolved https://registry.npmjs.org/karma-html2js-preprocessor
+1301 verbose request where is https://registry.npmjs.org/karma-html2js-preprocessor
+1302 verbose request no basic auth needed
+1303 info trying registry request attempt 1 at 01:07:55
+1304 verbose etag "67YH8N7D3M9CRY46PK8A9ZWEG"
+1305 http GET https://registry.npmjs.org/karma-html2js-preprocessor
+1306 verbose request where is /karma-ng-jade2js-preprocessor
+1307 verbose request registry https://registry.npmjs.org/
+1308 verbose request url raw /karma-ng-jade2js-preprocessor
+1309 verbose request url resolving [ 'https://registry.npmjs.org/',
+1309 verbose request   './karma-ng-jade2js-preprocessor' ]
+1310 verbose request url resolved https://registry.npmjs.org/karma-ng-jade2js-preprocessor
+1311 verbose request where is https://registry.npmjs.org/karma-ng-jade2js-preprocessor
+1312 verbose request no basic auth needed
+1313 info trying registry request attempt 1 at 01:07:55
+1314 verbose etag "C5XLBFTMBPUOGDQ2UVZ99F4EN"
+1315 http GET https://registry.npmjs.org/karma-ng-jade2js-preprocessor
+1316 verbose request where is /karma-jasmine
+1317 verbose request registry https://registry.npmjs.org/
+1318 verbose request url raw /karma-jasmine
+1319 verbose request url resolving [ 'https://registry.npmjs.org/', './karma-jasmine' ]
+1320 verbose request url resolved https://registry.npmjs.org/karma-jasmine
+1321 verbose request where is https://registry.npmjs.org/karma-jasmine
+1322 verbose request no basic auth needed
+1323 info trying registry request attempt 1 at 01:07:55
+1324 verbose etag "1JFKKFO99KRQ073BP173CHGIT"
+1325 http GET https://registry.npmjs.org/karma-jasmine
+1326 verbose request where is /requirejs
+1327 verbose request registry https://registry.npmjs.org/
+1328 verbose request url raw /requirejs
+1329 verbose request url resolving [ 'https://registry.npmjs.org/', './requirejs' ]
+1330 verbose request url resolved https://registry.npmjs.org/requirejs
+1331 verbose request where is https://registry.npmjs.org/requirejs
+1332 verbose request no basic auth needed
+1333 info trying registry request attempt 1 at 01:07:55
+1334 verbose etag "2XXM6AW9MGXVN0PRSYO8M6L22"
+1335 http GET https://registry.npmjs.org/requirejs
+1336 verbose request where is /karma-chrome-launcher
+1337 verbose request registry https://registry.npmjs.org/
+1338 verbose request url raw /karma-chrome-launcher
+1339 verbose request url resolving [ 'https://registry.npmjs.org/', './karma-chrome-launcher' ]
+1340 verbose request url resolved https://registry.npmjs.org/karma-chrome-launcher
+1341 verbose request where is https://registry.npmjs.org/karma-chrome-launcher
+1342 verbose request no basic auth needed
+1343 info trying registry request attempt 1 at 01:07:55
+1344 verbose etag "2FEA0SOIND5OPQ8YKFQ4PNXI5"
+1345 http GET https://registry.npmjs.org/karma-chrome-launcher
+1346 verbose request where is /karma-coffee-preprocessor
+1347 verbose request registry https://registry.npmjs.org/
+1348 verbose request url raw /karma-coffee-preprocessor
+1349 verbose request url resolving [ 'https://registry.npmjs.org/', './karma-coffee-preprocessor' ]
+1350 verbose request url resolved https://registry.npmjs.org/karma-coffee-preprocessor
+1351 verbose request where is https://registry.npmjs.org/karma-coffee-preprocessor
+1352 verbose request no basic auth needed
+1353 info trying registry request attempt 1 at 01:07:55
+1354 verbose etag "8RSG9LO6SZS4PEI4886ROV0MI"
+1355 http GET https://registry.npmjs.org/karma-coffee-preprocessor
+1356 verbose request where is /karma-requirejs
+1357 verbose request registry https://registry.npmjs.org/
+1358 verbose request url raw /karma-requirejs
+1359 verbose request url resolving [ 'https://registry.npmjs.org/', './karma-requirejs' ]
+1360 verbose request url resolved https://registry.npmjs.org/karma-requirejs
+1361 verbose request where is https://registry.npmjs.org/karma-requirejs
+1362 verbose request no basic auth needed
+1363 info trying registry request attempt 1 at 01:07:55
+1364 verbose etag "EBKXLN6SYJ4QAEVSF4BDRCFY6"
+1365 http GET https://registry.npmjs.org/karma-requirejs
+1366 verbose request where is /karma-phantomjs-launcher
+1367 verbose request registry https://registry.npmjs.org/
+1368 verbose request url raw /karma-phantomjs-launcher
+1369 verbose request url resolving [ 'https://registry.npmjs.org/', './karma-phantomjs-launcher' ]
+1370 verbose request url resolved https://registry.npmjs.org/karma-phantomjs-launcher
+1371 verbose request where is https://registry.npmjs.org/karma-phantomjs-launcher
+1372 verbose request no basic auth needed
+1373 info trying registry request attempt 1 at 01:07:55
+1374 verbose etag "2BFYUHPTQIYJ2TNJ46K2HV6TN"
+1375 http GET https://registry.npmjs.org/karma-phantomjs-launcher
+1376 verbose request where is /karma-jade-preprocessor
+1377 verbose request registry https://registry.npmjs.org/
+1378 verbose request url raw /karma-jade-preprocessor
+1379 verbose request url resolving [ 'https://registry.npmjs.org/', './karma-jade-preprocessor' ]
+1380 verbose request url resolved https://registry.npmjs.org/karma-jade-preprocessor
+1381 verbose request where is https://registry.npmjs.org/karma-jade-preprocessor
+1382 verbose request no basic auth needed
+1383 info trying registry request attempt 1 at 01:07:55
+1384 verbose etag "7MXUF6KNLTFUCMDET9A4IQPFC"
+1385 http GET https://registry.npmjs.org/karma-jade-preprocessor
+1386 verbose request where is /karma-ng-html2js-preprocessor
+1387 verbose request registry https://registry.npmjs.org/
+1388 verbose request url raw /karma-ng-html2js-preprocessor
+1389 verbose request url resolving [ 'https://registry.npmjs.org/',
+1389 verbose request   './karma-ng-html2js-preprocessor' ]
+1390 verbose request url resolved https://registry.npmjs.org/karma-ng-html2js-preprocessor
+1391 verbose request where is https://registry.npmjs.org/karma-ng-html2js-preprocessor
+1392 verbose request no basic auth needed
+1393 info trying registry request attempt 1 at 01:07:55
+1394 verbose etag "Q2LA1914W5GCP07UY1P1TMU3"
+1395 http GET https://registry.npmjs.org/karma-ng-html2js-preprocessor
+1396 verbose request where is /should
+1397 verbose request registry https://registry.npmjs.org/
+1398 verbose request url raw /should
+1399 verbose request url resolving [ 'https://registry.npmjs.org/', './should' ]
+1400 verbose request url resolved https://registry.npmjs.org/should
+1401 verbose request where is https://registry.npmjs.org/should
+1402 verbose request no basic auth needed
+1403 info trying registry request attempt 1 at 01:07:55
+1404 verbose etag "9D81VPB8RJICUWARP37VAPCFA"
+1405 http GET https://registry.npmjs.org/should
+1406 verbose request where is /supertest
+1407 verbose request registry https://registry.npmjs.org/
+1408 verbose request url raw /supertest
+1409 verbose request url resolving [ 'https://registry.npmjs.org/', './supertest' ]
+1410 verbose request url resolved https://registry.npmjs.org/supertest
+1411 verbose request where is https://registry.npmjs.org/supertest
+1412 verbose request no basic auth needed
+1413 info trying registry request attempt 1 at 01:07:55
+1414 verbose etag "EU0HUICVYNHERC3UW12VB6P1M"
+1415 http GET https://registry.npmjs.org/supertest
+1416 verbose request where is /karma
+1417 verbose request registry https://registry.npmjs.org/
+1418 verbose request url raw /karma
+1419 verbose request url resolving [ 'https://registry.npmjs.org/', './karma' ]
+1420 verbose request url resolved https://registry.npmjs.org/karma
+1421 verbose request where is https://registry.npmjs.org/karma
+1422 verbose request no basic auth needed
+1423 info trying registry request attempt 1 at 01:07:55
+1424 verbose etag "3Z5NA2ZQ8SZFNJFK9GK275JF9"
+1425 http GET https://registry.npmjs.org/karma
+1426 verbose request where is /morgan
+1427 verbose request registry https://registry.npmjs.org/
+1428 verbose request url raw /morgan
+1429 verbose request url resolving [ 'https://registry.npmjs.org/', './morgan' ]
+1430 verbose request url resolved https://registry.npmjs.org/morgan
+1431 verbose request where is https://registry.npmjs.org/morgan
+1432 verbose request no basic auth needed
+1433 info trying registry request attempt 1 at 01:07:55
+1434 verbose etag "8ELLH52SOJI9QYW7H7RPI0VL0"
+1435 http GET https://registry.npmjs.org/morgan
+1436 verbose request where is /express
+1437 verbose request registry https://registry.npmjs.org/
+1438 verbose request url raw /express
+1439 verbose request url resolving [ 'https://registry.npmjs.org/', './express' ]
+1440 verbose request url resolved https://registry.npmjs.org/express
+1441 verbose request where is https://registry.npmjs.org/express
+1442 verbose request no basic auth needed
+1443 info trying registry request attempt 1 at 01:07:55
+1444 verbose etag "NBVVNNMOKFHPH12Y0VLNAJV6"
+1445 http GET https://registry.npmjs.org/express
+1446 verbose git remote.origin.url https://github.com/DaftMonk/grunt-build-control
+1447 verbose request where is /body-parser
+1448 verbose request registry https://registry.npmjs.org/
+1449 verbose request url raw /body-parser
+1450 verbose request url resolving [ 'https://registry.npmjs.org/', './body-parser' ]
+1451 verbose request url resolved https://registry.npmjs.org/body-parser
+1452 verbose request where is https://registry.npmjs.org/body-parser
+1453 verbose request no basic auth needed
+1454 info trying registry request attempt 1 at 01:07:55
+1455 verbose etag "2Z3MRRW3UTD2PGDGVXU6ZKF4D"
+1456 http GET https://registry.npmjs.org/body-parser
+1457 http 304 https://registry.npmjs.org/lodash
+1458 silly registry.get cb [ 304,
+1458 silly registry.get   { date: 'Sat, 15 Nov 2014 06:07:56 GMT',
+1458 silly registry.get     server: 'Apache',
+1458 silly registry.get     via: '1.1 varnish',
+1458 silly registry.get     'last-modified': 'Sat, 15 Nov 2014 06:07:56 GMT',
+1458 silly registry.get     'cache-control': 'max-age=60',
+1458 silly registry.get     etag: '"9CIRM1QMYRMX2M8QHMPA6K5M3"',
+1458 silly registry.get     age: '60',
+1458 silly registry.get     'x-served-by': 'cache-atl6224-ATL',
+1458 silly registry.get     'x-cache': 'HIT',
+1458 silly registry.get     'x-cache-hits': '1',
+1458 silly registry.get     'x-timer': 'S1416031676.087861,VS0,VE1',
+1458 silly registry.get     vary: 'Accept',
+1458 silly registry.get     'content-length': '0',
+1458 silly registry.get     'keep-alive': 'timeout=10, max=50',
+1458 silly registry.get     connection: 'Keep-Alive' } ]
+1459 verbose etag https://registry.npmjs.org/lodash from cache
+1460 silly addNameRange number 2 { name: 'lodash', range: '>=2.4.1-0 <2.5.0-0', hasData: true }
+1461 silly addNameRange versions [ 'lodash',
+1461 silly addNameRange   [ '0.1.0',
+1461 silly addNameRange     '0.2.0',
+1461 silly addNameRange     '0.2.1',
+1461 silly addNameRange     '0.2.2',
+1461 silly addNameRange     '0.3.0',
+1461 silly addNameRange     '0.3.1',
+1461 silly addNameRange     '0.3.2',
+1461 silly addNameRange     '0.4.0',
+1461 silly addNameRange     '0.4.1',
+1461 silly addNameRange     '0.4.2',
+1461 silly addNameRange     '0.5.0-rc.1',
+1461 silly addNameRange     '0.5.0',
+1461 silly addNameRange     '0.5.1',
+1461 silly addNameRange     '0.5.2',
+1461 silly addNameRange     '0.6.0',
+1461 silly addNameRange     '0.6.1',
+1461 silly addNameRange     '0.7.0',
+1461 silly addNameRange     '0.8.0',
+1461 silly addNameRange     '0.8.1',
+1461 silly addNameRange     '0.8.2',
+1461 silly addNameRange     '0.9.0',
+1461 silly addNameRange     '0.9.1',
+1461 silly addNameRange     '0.9.2',
+1461 silly addNameRange     '0.10.0',
+1461 silly addNameRange     '1.0.0-rc.1',
+1461 silly addNameRange     '1.0.0-rc.2',
+1461 silly addNameRange     '1.0.0-rc.3',
+1461 silly addNameRange     '1.0.0',
+1461 silly addNameRange     '1.0.1',
+1461 silly addNameRange     '1.1.0',
+1461 silly addNameRange     '1.1.1',
+1461 silly addNameRange     '1.2.0',
+1461 silly addNameRange     '1.2.1',
+1461 silly addNameRange     '1.3.0',
+1461 silly addNameRange     '1.3.1',
+1461 silly addNameRange     '2.0.0',
+1461 silly addNameRange     '2.1.0',
+1461 silly addNameRange     '2.2.0',
+1461 silly addNameRange     '2.2.1',
+1461 silly addNameRange     '2.3.0',
+1461 silly addNameRange     '2.4.0',
+1461 silly addNameRange     '2.4.1' ] ]
+1462 verbose addNamed [ 'lodash', '2.4.1' ]
+1463 verbose addNamed [ '2.4.1', '2.4.1' ]
+1464 silly lockFile 8502be2a-lodash-2-4-1 lodash@2.4.1
+1465 verbose lock lodash@2.4.1 /Users/fa137/.npm/8502be2a-lodash-2-4-1.lock
+1466 silly lockFile 8502be2a-lodash-2-4-1 lodash@2.4.1
+1467 silly lockFile 8502be2a-lodash-2-4-1 lodash@2.4.1
+1468 silly lockFile ba1b6e8c-lodash-2-4-1-0-2-5-0-0 lodash@>=2.4.1-0 <2.5.0-0
+1469 silly lockFile ba1b6e8c-lodash-2-4-1-0-2-5-0-0 lodash@>=2.4.1-0 <2.5.0-0
+1470 http 304 https://registry.npmjs.org/cookie-parser
+1471 silly registry.get cb [ 304,
+1471 silly registry.get   { date: 'Sat, 15 Nov 2014 06:07:56 GMT',
+1471 silly registry.get     server: 'Apache',
+1471 silly registry.get     via: '1.1 varnish',
+1471 silly registry.get     'last-modified': 'Sat, 15 Nov 2014 06:07:56 GMT',
+1471 silly registry.get     'cache-control': 'max-age=60',
+1471 silly registry.get     etag: '"D2I21Z55J0M83YHA636O1DW9K"',
+1471 silly registry.get     age: '0',
+1471 silly registry.get     'x-served-by': 'cache-atl6226-ATL',
+1471 silly registry.get     'x-cache': 'HIT',
+1471 silly registry.get     'x-cache-hits': '1',
+1471 silly registry.get     'x-timer': 'S1416031676.089491,VS0,VE22',
+1471 silly registry.get     vary: 'Accept',
+1471 silly registry.get     'content-length': '0',
+1471 silly registry.get     'keep-alive': 'timeout=10, max=50',
+1471 silly registry.get     connection: 'Keep-Alive' } ]
+1472 verbose etag https://registry.npmjs.org/cookie-parser from cache
+1473 silly addNameRange number 2 { name: 'cookie-parser',
+1473 silly addNameRange   range: '>=1.0.1-0 <1.1.0-0',
+1473 silly addNameRange   hasData: true }
+1474 silly addNameRange versions [ 'cookie-parser',
+1474 silly addNameRange   [ '1.0.0',
+1474 silly addNameRange     '1.0.1',
+1474 silly addNameRange     '1.1.0',
+1474 silly addNameRange     '1.2.0',
+1474 silly addNameRange     '1.3.0',
+1474 silly addNameRange     '1.3.1',
+1474 silly addNameRange     '1.3.2',
+1474 silly addNameRange     '1.3.3' ] ]
+1475 verbose addNamed [ 'cookie-parser', '1.0.1' ]
+1476 verbose addNamed [ '1.0.1', '1.0.1' ]
+1477 silly lockFile 8d245ba8-cookie-parser-1-0-1 cookie-parser@1.0.1
+1478 verbose lock cookie-parser@1.0.1 /Users/fa137/.npm/8d245ba8-cookie-parser-1-0-1.lock
+1479 silly lockFile 8d245ba8-cookie-parser-1-0-1 cookie-parser@1.0.1
+1480 silly lockFile 8d245ba8-cookie-parser-1-0-1 cookie-parser@1.0.1
+1481 silly lockFile 4ba900e1-cookie-parser-1-0-1-0-1-1-0-0 cookie-parser@>=1.0.1-0 <1.1.0-0
+1482 silly lockFile 4ba900e1-cookie-parser-1-0-1-0-1-1-0-0 cookie-parser@>=1.0.1-0 <1.1.0-0
+1483 http 200 https://registry.npmjs.org/express-session
+1484 silly registry.get cb [ 200,
+1484 silly registry.get   { date: 'Sat, 15 Nov 2014 06:07:56 GMT',
+1484 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+1484 silly registry.get     etag: '"5XY51F8JB3BYHRZ4TZCWJO11C"',
+1484 silly registry.get     'content-type': 'application/json',
+1484 silly registry.get     'cache-control': 'max-age=60',
+1484 silly registry.get     'content-length': '59689',
+1484 silly registry.get     'accept-ranges': 'bytes',
+1484 silly registry.get     via: '1.1 varnish',
+1484 silly registry.get     age: '11',
+1484 silly registry.get     'x-served-by': 'cache-atl6232-ATL',
+1484 silly registry.get     'x-cache': 'HIT',
+1484 silly registry.get     'x-cache-hits': '1',
+1484 silly registry.get     'x-timer': 'S1416031676.088756,VS0,VE1',
+1484 silly registry.get     vary: 'Accept',
+1484 silly registry.get     'keep-alive': 'timeout=10, max=50',
+1484 silly registry.get     connection: 'Keep-Alive' } ]
+1485 silly addNameRange number 2 { name: 'express-session',
+1485 silly addNameRange   range: '>=1.0.2-0 <1.1.0-0',
+1485 silly addNameRange   hasData: true }
+1486 silly addNameRange versions [ 'express-session',
+1486 silly addNameRange   [ '1.0.0',
+1486 silly addNameRange     '1.0.1',
+1486 silly addNameRange     '1.0.2',
+1486 silly addNameRange     '1.0.3',
+1486 silly addNameRange     '1.0.4',
+1486 silly addNameRange     '1.1.0',
+1486 silly addNameRange     '1.2.0',
+1486 silly addNameRange     '1.2.1',
+1486 silly addNameRange     '1.3.0',
+1486 silly addNameRange     '1.3.1',
+1486 silly addNameRange     '1.4.0',
+1486 silly addNameRange     '1.5.0',
+1486 silly addNameRange     '1.5.1',
+1486 silly addNameRange     '1.5.2',
+1486 silly addNameRange     '1.6.0',
+1486 silly addNameRange     '1.6.1',
+1486 silly addNameRange     '1.6.2',
+1486 silly addNameRange     '1.6.3',
+1486 silly addNameRange     '1.6.4',
+1486 silly addNameRange     '1.6.5',
+1486 silly addNameRange     '1.7.0',
+1486 silly addNameRange     '1.7.1',
+1486 silly addNameRange     '1.7.2',
+1486 silly addNameRange     '1.7.3',
+1486 silly addNameRange     '1.7.4',
+1486 silly addNameRange     '1.7.5',
+1486 silly addNameRange     '1.7.6',
+1486 silly addNameRange     '1.8.0',
+1486 silly addNameRange     '1.8.1',
+1486 silly addNameRange     '1.8.2',
+1486 silly addNameRange     '1.9.0',
+1486 silly addNameRange     '1.9.1' ] ]
+1487 verbose addNamed [ 'express-session', '1.0.4' ]
+1488 verbose addNamed [ '1.0.4', '1.0.4' ]
+1489 silly lockFile 0c902971-express-session-1-0-4 express-session@1.0.4
+1490 verbose lock express-session@1.0.4 /Users/fa137/.npm/0c902971-express-session-1-0-4.lock
+1491 silly lockFile 0c902971-express-session-1-0-4 express-session@1.0.4
+1492 silly lockFile 0c902971-express-session-1-0-4 express-session@1.0.4
+1493 silly lockFile 94ffc0f3-express-session-1-0-2-0-1-1-0-0 express-session@>=1.0.2-0 <1.1.0-0
+1494 silly lockFile 94ffc0f3-express-session-1-0-2-0-1-1-0-0 express-session@>=1.0.2-0 <1.1.0-0
+1495 http 200 https://registry.npmjs.org/compression
+1496 silly registry.get cb [ 200,
+1496 silly registry.get   { date: 'Sat, 15 Nov 2014 06:07:56 GMT',
+1496 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+1496 silly registry.get     etag: '"1XEAQRB091EL0WC4DISJGWM7X"',
+1496 silly registry.get     'content-type': 'application/json',
+1496 silly registry.get     'cache-control': 'max-age=60',
+1496 silly registry.get     'content-length': '31699',
+1496 silly registry.get     'accept-ranges': 'bytes',
+1496 silly registry.get     via: '1.1 varnish',
+1496 silly registry.get     age: '0',
+1496 silly registry.get     'x-served-by': 'cache-atl6224-ATL',
+1496 silly registry.get     'x-cache': 'HIT',
+1496 silly registry.get     'x-cache-hits': '1',
+1496 silly registry.get     'x-timer': 'S1416031676.115834,VS0,VE22',
+1496 silly registry.get     vary: 'Accept',
+1496 silly registry.get     'keep-alive': 'timeout=10, max=49',
+1496 silly registry.get     connection: 'Keep-Alive' } ]
+1497 silly addNameRange number 2 { name: 'compression',
+1497 silly addNameRange   range: '>=1.0.1-0 <1.1.0-0',
+1497 silly addNameRange   hasData: true }
+1498 silly addNameRange versions [ 'compression',
+1498 silly addNameRange   [ '1.0.0',
+1498 silly addNameRange     '1.0.1',
+1498 silly addNameRange     '1.0.2',
+1498 silly addNameRange     '1.0.3',
+1498 silly addNameRange     '1.0.4',
+1498 silly addNameRange     '1.0.5',
+1498 silly addNameRange     '1.0.6',
+1498 silly addNameRange     '1.0.7',
+1498 silly addNameRange     '1.0.8',
+1498 silly addNameRange     '1.0.9',
+1498 silly addNameRange     '1.0.10',
+1498 silly addNameRange     '1.0.11',
+1498 silly addNameRange     '1.1.0',
+1498 silly addNameRange     '1.1.1',
+1498 silly addNameRange     '1.1.2',
+1498 silly addNameRange     '1.2.0' ] ]
+1499 verbose addNamed [ 'compression', '1.0.11' ]
+1500 verbose addNamed [ '1.0.11', '1.0.11' ]
+1501 silly lockFile 851d7241-compression-1-0-11 compression@1.0.11
+1502 verbose lock compression@1.0.11 /Users/fa137/.npm/851d7241-compression-1-0-11.lock
+1503 silly lockFile 851d7241-compression-1-0-11 compression@1.0.11
+1504 silly lockFile 851d7241-compression-1-0-11 compression@1.0.11
+1505 silly lockFile ccccdba5-compression-1-0-1-0-1-1-0-0 compression@>=1.0.1-0 <1.1.0-0
+1506 silly lockFile ccccdba5-compression-1-0-1-0-1-1-0-0 compression@>=1.0.1-0 <1.1.0-0
+1507 http 200 https://registry.npmjs.org/method-override
+1508 silly registry.get cb [ 200,
+1508 silly registry.get   { date: 'Sat, 15 Nov 2014 06:07:56 GMT',
+1508 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+1508 silly registry.get     etag: '"ARSLRG3HPV6L40NZ27OSUG5GE"',
+1508 silly registry.get     'content-type': 'application/json',
+1508 silly registry.get     'cache-control': 'max-age=60',
+1508 silly registry.get     'content-length': '27197',
+1508 silly registry.get     'accept-ranges': 'bytes',
+1508 silly registry.get     via: '1.1 varnish',
+1508 silly registry.get     age: '0',
+1508 silly registry.get     'x-served-by': 'cache-atl6222-ATL',
+1508 silly registry.get     'x-cache': 'HIT',
+1508 silly registry.get     'x-cache-hits': '1',
+1508 silly registry.get     'x-timer': 'S1416031676.086885,VS0,VE74',
+1508 silly registry.get     vary: 'Accept',
+1508 silly registry.get     'keep-alive': 'timeout=10, max=50',
+1508 silly registry.get     connection: 'Keep-Alive' } ]
+1509 silly addNameRange number 2 { name: 'method-override',
+1509 silly addNameRange   range: '>=1.0.0-0 <1.1.0-0',
+1509 silly addNameRange   hasData: true }
+1510 silly addNameRange versions [ 'method-override',
+1510 silly addNameRange   [ '1.0.0',
+1510 silly addNameRange     '1.0.1',
+1510 silly addNameRange     '1.0.2',
+1510 silly addNameRange     '2.0.0',
+1510 silly addNameRange     '2.0.1',
+1510 silly addNameRange     '2.0.2',
+1510 silly addNameRange     '2.1.0',
+1510 silly addNameRange     '2.1.1',
+1510 silly addNameRange     '2.1.2',
+1510 silly addNameRange     '2.1.3',
+1510 silly addNameRange     '2.2.0',
+1510 silly addNameRange     '2.3.0' ] ]
+1511 verbose addNamed [ 'method-override', '1.0.2' ]
+1512 verbose addNamed [ '1.0.2', '1.0.2' ]
+1513 silly lockFile 23338e91-method-override-1-0-2 method-override@1.0.2
+1514 verbose lock method-override@1.0.2 /Users/fa137/.npm/23338e91-method-override-1-0-2.lock
+1515 silly lockFile 23338e91-method-override-1-0-2 method-override@1.0.2
+1516 silly lockFile 23338e91-method-override-1-0-2 method-override@1.0.2
+1517 silly lockFile d40f10c6-method-override-1-0-0-0-1-1-0-0 method-override@>=1.0.0-0 <1.1.0-0
+1518 silly lockFile d40f10c6-method-override-1-0-0-0-1-1-0-0 method-override@>=1.0.0-0 <1.1.0-0
+1519 http 200 https://registry.npmjs.org/errorhandler
+1520 silly registry.get cb [ 200,
+1520 silly registry.get   { date: 'Sat, 15 Nov 2014 06:07:56 GMT',
+1520 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+1520 silly registry.get     etag: '"8OMILRR7LKS3NSD4595ZFCPCF"',
+1520 silly registry.get     'content-type': 'application/json',
+1520 silly registry.get     'cache-control': 'max-age=60',
+1520 silly registry.get     'content-length': '15035',
+1520 silly registry.get     'accept-ranges': 'bytes',
+1520 silly registry.get     via: '1.1 varnish',
+1520 silly registry.get     age: '0',
+1520 silly registry.get     'x-served-by': 'cache-atl6232-ATL',
+1520 silly registry.get     'x-cache': 'HIT',
+1520 silly registry.get     'x-cache-hits': '1',
+1520 silly registry.get     'x-timer': 'S1416031676.164698,VS0,VE73',
+1520 silly registry.get     vary: 'Accept',
+1520 silly registry.get     'keep-alive': 'timeout=10, max=49',
+1520 silly registry.get     connection: 'Keep-Alive' } ]
+1521 silly addNameRange number 2 { name: 'errorhandler',
+1521 silly addNameRange   range: '>=1.0.0-0 <1.1.0-0',
+1521 silly addNameRange   hasData: true }
+1522 silly addNameRange versions [ 'errorhandler',
+1522 silly addNameRange   [ '1.0.0',
+1522 silly addNameRange     '1.0.1',
+1522 silly addNameRange     '1.0.2',
+1522 silly addNameRange     '1.1.0',
+1522 silly addNameRange     '1.1.1',
+1522 silly addNameRange     '1.2.0',
+1522 silly addNameRange     '1.2.1',
+1522 silly addNameRange     '1.2.2' ] ]
+1523 verbose addNamed [ 'errorhandler', '1.0.2' ]
+1524 verbose addNamed [ '1.0.2', '1.0.2' ]
+1525 silly lockFile 3b5953c7-errorhandler-1-0-2 errorhandler@1.0.2
+1526 verbose lock errorhandler@1.0.2 /Users/fa137/.npm/3b5953c7-errorhandler-1-0-2.lock
+1527 silly lockFile 3b5953c7-errorhandler-1-0-2 errorhandler@1.0.2
+1528 silly lockFile 3b5953c7-errorhandler-1-0-2 errorhandler@1.0.2
+1529 silly lockFile e6585398-errorhandler-1-0-0-0-1-1-0-0 errorhandler@>=1.0.0-0 <1.1.0-0
+1530 silly lockFile e6585398-errorhandler-1-0-0-0-1-1-0-0 errorhandler@>=1.0.0-0 <1.1.0-0
+1531 http 200 https://registry.npmjs.org/passport-local
+1532 silly registry.get cb [ 200,
+1532 silly registry.get   { date: 'Sat, 15 Nov 2014 06:07:56 GMT',
+1532 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+1532 silly registry.get     etag: '"F2MBNKV8QACAF4X2DU6NVNKR8"',
+1532 silly registry.get     'content-type': 'application/json',
+1532 silly registry.get     'cache-control': 'max-age=60',
+1532 silly registry.get     'content-length': '13445',
+1532 silly registry.get     'accept-ranges': 'bytes',
+1532 silly registry.get     via: '1.1 varnish',
+1532 silly registry.get     age: '52',
+1532 silly registry.get     'x-served-by': 'cache-atl6232-ATL',
+1532 silly registry.get     'x-cache': 'HIT',
+1532 silly registry.get     'x-cache-hits': '1',
+1532 silly registry.get     'x-timer': 'S1416031676.265741,VS0,VE1',
+1532 silly registry.get     vary: 'Accept',
+1532 silly registry.get     'keep-alive': 'timeout=10, max=48',
+1532 silly registry.get     connection: 'Keep-Alive' } ]
+1533 silly addNameRange number 2 { name: 'passport-local',
+1533 silly addNameRange   range: '>=0.1.6-0 <0.2.0-0',
+1533 silly addNameRange   hasData: true }
+1534 silly addNameRange versions [ 'passport-local',
+1534 silly addNameRange   [ '0.1.0',
+1534 silly addNameRange     '0.1.1',
+1534 silly addNameRange     '0.1.2',
+1534 silly addNameRange     '0.1.3',
+1534 silly addNameRange     '0.1.4',
+1534 silly addNameRange     '0.1.5',
+1534 silly addNameRange     '0.1.6',
+1534 silly addNameRange     '1.0.0' ] ]
+1535 verbose addNamed [ 'passport-local', '0.1.6' ]
+1536 verbose addNamed [ '0.1.6', '0.1.6' ]
+1537 silly lockFile 91e070c6-passport-local-0-1-6 passport-local@0.1.6
+1538 verbose lock passport-local@0.1.6 /Users/fa137/.npm/91e070c6-passport-local-0-1-6.lock
+1539 http 304 https://registry.npmjs.org/express-jwt
+1540 silly registry.get cb [ 304,
+1540 silly registry.get   { date: 'Sat, 15 Nov 2014 06:07:56 GMT',
+1540 silly registry.get     server: 'Apache',
+1540 silly registry.get     via: '1.1 varnish',
+1540 silly registry.get     'last-modified': 'Sat, 15 Nov 2014 06:07:56 GMT',
+1540 silly registry.get     'cache-control': 'max-age=60',
+1540 silly registry.get     etag: '"3JAN33CO6JKJY5T3EE5XCJ785"',
+1540 silly registry.get     age: '0',
+1540 silly registry.get     'x-served-by': 'cache-atl6222-ATL',
+1540 silly registry.get     'x-cache': 'HIT',
+1540 silly registry.get     'x-cache-hits': '1',
+1540 silly registry.get     'x-timer': 'S1416031676.208197,VS0,VE75',
+1540 silly registry.get     vary: 'Accept',
+1540 silly registry.get     'content-length': '0',
+1540 silly registry.get     'keep-alive': 'timeout=10, max=49',
+1540 silly registry.get     connection: 'Keep-Alive' } ]
+1541 verbose etag https://registry.npmjs.org/express-jwt from cache
+1542 silly addNameRange number 2 { name: 'express-jwt',
+1542 silly addNameRange   range: '>=0.1.3-0 <0.2.0-0',
+1542 silly addNameRange   hasData: true }
+1543 silly addNameRange versions [ 'express-jwt',
+1543 silly addNameRange   [ '0.1.0',
+1543 silly addNameRange     '0.1.1',
+1543 silly addNameRange     '0.1.2',
+1543 silly addNameRange     '0.2.0',
+1543 silly addNameRange     '0.1.3',
+1543 silly addNameRange     '0.1.4',
+1543 silly addNameRange     '0.2.1',
+1543 silly addNameRange     '0.2.2',
+1543 silly addNameRange     '0.3.0',
+1543 silly addNameRange     '0.3.1',
+1543 silly addNameRange     '0.3.2',
+1543 silly addNameRange     '0.4.0' ] ]
+1544 verbose addNamed [ 'express-jwt', '0.1.4' ]
+1545 verbose addNamed [ '0.1.4', '0.1.4' ]
+1546 silly lockFile 64a8a352-express-jwt-0-1-4 express-jwt@0.1.4
+1547 verbose lock express-jwt@0.1.4 /Users/fa137/.npm/64a8a352-express-jwt-0-1-4.lock
+1548 silly lockFile 91e070c6-passport-local-0-1-6 passport-local@0.1.6
+1549 silly lockFile 91e070c6-passport-local-0-1-6 passport-local@0.1.6
+1550 silly lockFile 421cb9ef-passport-local-0-1-6-0-0-2-0-0 passport-local@>=0.1.6-0 <0.2.0-0
+1551 silly lockFile 421cb9ef-passport-local-0-1-6-0-0-2-0-0 passport-local@>=0.1.6-0 <0.2.0-0
+1552 silly lockFile 64a8a352-express-jwt-0-1-4 express-jwt@0.1.4
+1553 silly lockFile 64a8a352-express-jwt-0-1-4 express-jwt@0.1.4
+1554 silly lockFile af031a0d-express-jwt-0-1-3-0-0-2-0-0 express-jwt@>=0.1.3-0 <0.2.0-0
+1555 silly lockFile af031a0d-express-jwt-0-1-3-0-0-2-0-0 express-jwt@>=0.1.3-0 <0.2.0-0
+1556 http 200 https://registry.npmjs.org/passport
+1557 silly registry.get cb [ 200,
+1557 silly registry.get   { date: 'Sat, 15 Nov 2014 06:07:56 GMT',
+1557 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+1557 silly registry.get     etag: '"2T6LLQOTUE6LRP8RD8SUZ5MIG"',
+1557 silly registry.get     'content-type': 'application/json',
+1557 silly registry.get     'cache-control': 'max-age=60',
+1557 silly registry.get     'content-length': '33714',
+1557 silly registry.get     'accept-ranges': 'bytes',
+1557 silly registry.get     via: '1.1 varnish',
+1557 silly registry.get     age: '52',
+1557 silly registry.get     'x-served-by': 'cache-atl6232-ATL',
+1557 silly registry.get     'x-cache': 'HIT',
+1557 silly registry.get     'x-cache-hits': '2',
+1557 silly registry.get     'x-timer': 'S1416031676.297678,VS0,VE0',
+1557 silly registry.get     vary: 'Accept',
+1557 silly registry.get     'keep-alive': 'timeout=10, max=47',
+1557 silly registry.get     connection: 'Keep-Alive' } ]
+1558 silly addNameRange number 2 { name: 'passport', range: '>=0.2.0-0 <0.3.0-0', hasData: true }
+1559 silly addNameRange versions [ 'passport',
+1559 silly addNameRange   [ '0.1.0',
+1559 silly addNameRange     '0.1.1',
+1559 silly addNameRange     '0.1.2',
+1559 silly addNameRange     '0.1.3',
+1559 silly addNameRange     '0.1.4',
+1559 silly addNameRange     '0.1.5',
+1559 silly addNameRange     '0.1.6',
+1559 silly addNameRange     '0.1.7',
+1559 silly addNameRange     '0.1.8',
+1559 silly addNameRange     '0.1.9',
+1559 silly addNameRange     '0.1.10',
+1559 silly addNameRange     '0.1.11',
+1559 silly addNameRange     '0.1.12',
+1559 silly addNameRange     '0.1.13',
+1559 silly addNameRange     '0.1.14',
+1559 silly addNameRange     '0.1.15',
+1559 silly addNameRange     '0.1.16',
+1559 silly addNameRange     '0.1.17',
+1559 silly addNameRange     '0.1.18',
+1559 silly addNameRange     '0.2.0',
+1559 silly addNameRange     '0.2.1' ] ]
+1560 verbose addNamed [ 'passport', '0.2.1' ]
+1561 verbose addNamed [ '0.2.1', '0.2.1' ]
+1562 silly lockFile b563cf22-passport-0-2-1 passport@0.2.1
+1563 verbose lock passport@0.2.1 /Users/fa137/.npm/b563cf22-passport-0-2-1.lock
+1564 silly lockFile b563cf22-passport-0-2-1 passport@0.2.1
+1565 silly lockFile b563cf22-passport-0-2-1 passport@0.2.1
+1566 silly lockFile e7b1ce3d-passport-0-2-0-0-0-3-0-0 passport@>=0.2.0-0 <0.3.0-0
+1567 silly lockFile e7b1ce3d-passport-0-2-0-0-0-3-0-0 passport@>=0.2.0-0 <0.3.0-0
+1568 verbose git fetch -a origin (https://github.com/DaftMonk/grunt-build-control)
+1569 error Failed to change folder ownership under npm cache for %s /Users/fa137/.npm/_git-remotes/https-github-com-DaftMonk-grunt-build-control-7e4d577b
+1570 http 200 https://registry.npmjs.org/passport-facebook
+1571 silly registry.get cb [ 200,
+1571 silly registry.get   { date: 'Sat, 15 Nov 2014 06:07:56 GMT',
+1571 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+1571 silly registry.get     etag: '"3X8OKKBLSLK9O9GPF6FZLB1XW"',
+1571 silly registry.get     'content-type': 'application/json',
+1571 silly registry.get     'cache-control': 'max-age=60',
+1571 silly registry.get     'content-length': '19545',
+1571 silly registry.get     'accept-ranges': 'bytes',
+1571 silly registry.get     via: '1.1 varnish',
+1571 silly registry.get     age: '37',
+1571 silly registry.get     'x-served-by': 'cache-atl6232-ATL',
+1571 silly registry.get     'x-cache': 'HIT',
+1571 silly registry.get     'x-cache-hits': '21',
+1571 silly registry.get     'x-timer': 'S1416031676.349774,VS0,VE0',
+1571 silly registry.get     vary: 'Accept',
+1571 silly registry.get     'keep-alive': 'timeout=10, max=46',
+1571 silly registry.get     connection: 'Keep-Alive' } ]
+1572 silly lockFile 7e4d577b-com-DaftMonk-grunt-build-control https://github.com/DaftMonk/grunt-build-control
+1573 silly lockFile 7e4d577b-com-DaftMonk-grunt-build-control https://github.com/DaftMonk/grunt-build-control
+1574 error Error: ENOENT, readdir '/Users/fa137/.npm/_git-remotes/https-github-com-DaftMonk-grunt-build-control-7e4d577b/description'
+1575 error If you need help, you may report this *entire* log,
+1575 error including the npm and node versions, at:
+1575 error     <http://github.com/npm/npm/issues>
+1576 error System Darwin 14.0.0
+1577 error command "node" "/usr/local/bin/npm" "install"
+1578 error cwd /Users/fa137/GitHub/buildit
+1579 error node -v v0.10.29
+1580 error npm -v 2.0.0-alpha-5
+1581 error path /Users/fa137/.npm/_git-remotes/https-github-com-DaftMonk-grunt-build-control-7e4d577b/description
+1582 error code ENOENT
+1583 error errno 34
+1584 verbose exit [ 34, true ]
