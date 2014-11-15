@@ -14,6 +14,14 @@ $fa-font-path: "/bower_components/font-awesome/fonts";
     color: #000;
     padding: 0.2em 1;
 }
+<<<<<<< HEAD
+=======
+
+.hero-unit{
+	background:red !important;
+	}
+
+>>>>>>> 6490d5fc4ea30f8a3b05205880dafc2bb3a87478
 // Component styles are injected through grunt
 // injector
 @import 'account/login/login.scss';
