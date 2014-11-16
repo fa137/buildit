@@ -830,6 +830,53 @@ a:link {
       float: left;
       margin: 33px 0px 0px 8px; }
 
+.project .introduction {
+  text-align: left;
+  padding-bottom: 100px; }
+  .project .introduction .project-img {
+    margin-top: 30px;
+    position: relative; }
+    .project .introduction .project-img img {
+      width: 100%; }
+    .project .introduction .project-img .logo {
+      background: none repeat scroll 0 0 #fff;
+      border: 2px solid #eee;
+      border-radius: 85px;
+      bottom: -48px;
+      height: 100px;
+      left: 50%;
+      margin-left: -50px;
+      padding: 2px;
+      position: absolute;
+      width: 100px; }
+.project .roww {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 10px;
+  float: left; }
+  .project .roww:nth-child(2) {
+    margin-top: 10px; }
+  .project .roww:nth-child(3) img {
+    margin-left: 5px; }
+  .project .roww:nth-child(4) img {
+    margin-left: 5px; }
+  .project .roww:nth-child(5) img {
+    margin-left: 2px; }
+.project .contact img {
+  float: left;
+  margin-right: 18px; }
+.project .col3 {
+  float: left;
+  margin-right: 189px; }
+  .project .col3 p {
+    font-size: 20px; }
+  .project .col3 img {
+    float: left;
+    margin-right: 10px; }
+  .project .col3:last-child {
+    float: right;
+    margin-right: 0; }
+
 @media (max-width: 1024px) {
   .home .banner {
     height: auto;

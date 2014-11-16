@@ -1,0 +1,72 @@
+.project {
+	.introduction {
+		text-align:left;
+		padding-bottom:100px;
+		.project-img {
+			margin-top:30px;
+			position:relative;
+			img {
+				width:100%;
+			}
+			.logo {
+				 background: none repeat scroll 0 0 #fff;
+			    border: 2px solid #eee;
+			    border-radius: 85px;
+			    bottom: -48px;
+			    height: 100px;
+			    left: 50%;
+			    margin-left: -50px;
+			    padding: 2px;
+			    position: absolute;
+			    width: 100px;
+			}
+		}
+	}
+	.roww {
+		width:100%;
+		overflow:hidden;
+		margin-bottom:10px;
+		float: left;
+		&:nth-child(2) {
+				margin-top:10px;
+			
+		}
+		&:nth-child(3) {
+			img {
+				margin-left:5px;
+			}
+		}
+		&:nth-child(4) {
+			img {
+				margin-left:5px;
+			}
+		}
+		&:nth-child(5) {
+			img {
+				margin-left:2px;
+			}
+		}
+	}
+	.contact {
+		img {
+			float:left;
+			margin-right:18px;
+
+		}
+	}
+	.col3 {
+		float:left;
+		margin-right:189px;
+		p {
+			font-size:20px;
+		}
+		img {
+			float:left;
+			margin-right:10px;
+		}
+		&:last-child {
+			float:right;
+			margin-right:0;
+		}
+	}
+}
