@@ -13,6 +13,13 @@ $(document).ready(function() {
     $('#btnAddProject').on('click', addProject);
     // Login button
     $('#btnLogin').on('click', userLogin);
+    $('#btnLogout').on('click', userLogout);
+    if(window.localStorage.loggedIn == "true"){
+        $('#btnLogout').show().on('click', userLogout);
+    }else{
+        $('#btnLogout').hide();
+        console.log($('#btnLogout'));
+    }
 
 });
 
@@ -92,7 +99,6 @@ function addUser(event) {
         };
         // If it is, compile all user info into one object
         var newUser = {
-            'pic': $('#addUser fieldset input#inputUserProfilePic').val(),
             'profession': professions.toString(),
             'username': $('#addUser fieldset input#inputUserName').val(),
             'password': $('#addUser fieldset input#inputUserPassword').val(),
@@ -155,7 +161,6 @@ function addProject(event) {
         };
         // If it is, compile all Project info into one object
         var newProject = {
-            'pic': $('#addUser fieldset input#inputProjectPic').val(),
             'name': $('#addProject fieldset input#inputProjectName').val(),
             'description': $('#addProject fieldset input#inputProjectDescription').val(),
             'author': $('#addProject fieldset input#inputProjectAuthor').val(),
@@ -197,14 +202,29 @@ function addProject(event) {
     }
 };
 
+// JUST FOR HACKATHON!
+// FOR FUN... DO NOT USE IT IN PRODUCTION.
+
 function userLogin(event){
     event.preventDefault();
     var username = $("#inputLoginUsername").val();
     var password = $("#inputLoginPassword").val();
-    var url = "/user/" + username;
+    var url = "/users/get/" + username;
     $.getJSON(url, function( data ){
-        if(!data){alert("Username doesn't exist");}
-        else if(data.password == password){ alert("logged in!");}
-        else{ alert("incorrect password");}
+        var logged = false;
+        if(!data){logged=false;}
+        else if(data.password == password){
+            logged=true;
+            $('#btnLogout').show();
+            window.localStorage.loggedIn = logged;
+        }
+        else{ logged=false}
+
     });
+}
+
+function userLogout(event){
+    event.preventDefault();
+    $(this).hide();
+    window.localStorage.loggedIn = false;
 }
