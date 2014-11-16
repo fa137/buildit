@@ -480,7 +480,7 @@ header, nav, section, article, aside, footer {
     padding: 20px 0;
     position: fixed;
     top: 27px;
-    background: #ECECEC; }
+    background: #ececec; }
 
 .error {
   color: red !important;
@@ -500,7 +500,7 @@ input, textarea {
   font-size: 16px;
   border: 0;
   padding: 10px 15px;
-  background: #ECECEC;
+  background: #ececec;
   border-radius: 5px;
   margin-bottom: 10px; }
 
@@ -594,7 +594,8 @@ a:link {
   top: 0;
   left: 0;
   overflow: visible;
-  z-index: 9999; }
+  z-index: 9999;
+  border-bottom: 1px solid #eee; }
   .header .logo {
     float: left;
     color: #fff;
@@ -682,7 +683,7 @@ a:link {
   position: relative;
   width: 430px; }
   .secondary .searchbox input[type="text"] {
-    background: #ECECEC;
+    background: #ececec;
     border-radius: 5px; }
   .secondary .searchbox input[type="submit"] {
     position: absolute;
@@ -707,7 +708,7 @@ a:link {
     margin-top: 4px;
     display: block; }
 .secondary .body {
-  background: #ECECEC; }
+  background: #ececec; }
 .secondary .entry {
   width: 211px;
   float: left;
@@ -744,7 +745,7 @@ a:link {
     .secondary .entry .deadline .loader {
       width: 100%;
       border-radius: 10px;
-      background: #ECECEC;
+      background: #ececec;
       height: 7px;
       float: left;
       overflow: hidden;
@@ -761,7 +762,7 @@ a:link {
   padding-top: 120px !important; }
   .single .introduction {
     overflow: hidden;
-    padding-bottom: 130px;
+    padding-bottom: 80px;
     text-align: center; }
     .single .introduction img {
       margin: 0 auto;
@@ -887,6 +888,18 @@ a:link {
   height: 200px; }
 .setting input[type="submit"] {
   height: 60px !important; }
+.setting .col2 {
+  width: 50%;
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+  .setting .col2 label, .setting .col2 input {
+    float: left; }
+  .setting .col2 input {
+    width: 20px; }
+  .setting .col2 label {
+    line-height: 0.7em;
+    margin-left: 10px; }
 
 @media (max-width: 1024px) {
   .home .banner {
@@ -906,5 +919,3 @@ a:link {
     margin-top: 10px; }
   .home .corporate img {
     width: 45%; } }
-
-/*# sourceMappingURL=main.css.map */
