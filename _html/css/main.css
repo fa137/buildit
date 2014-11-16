@@ -489,6 +489,12 @@ section.everythingcentered {
 .show {
   display: block; }
 
+a:link {
+  text-decoration: none; }
+
+.button:hover {
+  background-color: #238841; }
+
 .btn {
   font-weight: 100;
   font-size: 24px;
@@ -533,6 +539,9 @@ section.everythingcentered {
 .home {
   background: url(../img/home-bg.png) no-repeat;
   background-size: cover; }
+  .home h1 {
+    font-size: 50px;
+    margin-top: 140px; }
   .home h1, .home p, .home .option {
     color: #fff; }
   .home p {
@@ -647,3 +656,5 @@ section.everythingcentered {
     margin-top: 10px; }
   .home .corporate img {
     width: 45%; } }
+
+/*# sourceMappingURL=main.css.map */
