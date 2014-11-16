@@ -30,6 +30,22 @@ $(document).ready(function() {
     if(window.localStorage.username != ""){
         $('.username').html(window.localStorage.username);
     }
+    if(window.location.href.indexOf("single-project.html#") > -1){
+        var objectID = window.location.hash.substr(1);
+
+        $.getJSON( '/projects/get/' + objectID, function( data ) {
+            $('#projectname').html(data.name);
+            $('#projectauthor').html(data.author);
+            $('#projectdescription').html(data.description);
+            $('#projectlookingfor').html(data.lookingFor);
+            $('#projectskills').html(data.skills);
+            var src = "images/userpics/" +data.pic;
+            $('#pic').attr("src", src);
+            $('#projecttags').html(data.tags);
+            $('#projecttime').html(data.time);
+        });
+
+    }
 
 });
 
