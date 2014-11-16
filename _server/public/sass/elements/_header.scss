@@ -1,0 +1,26 @@
+.header {
+	width:100%;
+	height:67px;
+	position:fixed;
+	top:0;
+	left:0;
+	overflow:visible;
+	.logo {
+		float:left;
+		color:#fff;
+		margin-top: 6px;
+		p {
+			font-size:35px;
+		}
+	}
+	.login {
+		float:right;
+		margin-top:18px;
+	}
+	.signup {
+		float:right;
+		margin-top:18px;
+		margin-right:20px;
+		background:#4183D7;
+	}
+}

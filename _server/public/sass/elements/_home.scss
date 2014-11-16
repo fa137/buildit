@@ -1,0 +1,80 @@
+.home-page {
+	.logo {
+		p {
+			color:#fff;
+		}
+	}
+	.arrow-down {
+		border-top-color:#fff;
+	}
+	form {
+		input {
+
+		}
+	}
+	.arrow-up {
+		left:113px;
+	}
+	.popup {
+	    padding: 10px;
+	    right: -60px;
+	    top: 60px;
+	    width: 260px;
+	}
+	.signup-popup {
+		right:92px;
+		input[type="submit"] {
+			background:#4183D7;
+		}
+	}
+	.wrapper {
+		position: relative;
+		overflow:visible;
+	}
+}
+.home {
+	background:url(../img/home-bg.png) no-repeat;
+	background-size:cover;
+	
+	h1 {
+		font-size:50px;
+		margin-top:140px;
+	}
+	h1, p, .option{
+		color:#fff;
+	}
+	p {
+		font-size:30px;
+		color:#eee;
+		float:left;
+		clear:both;
+	}	
+	.button {
+		float:left;
+		clear:both;
+		margin-top:20px;
+		font-size:30px;
+	}
+
+	h1{
+		margin-top:130px;
+		font-size:40px;
+	}
+	.styled-select {
+		margin-left:20px;
+		.option {
+			font-size:30px;
+			height:50px;
+		}
+	}
+	.content {
+		float:left;
+		overflow:hidden;
+	}
+	.signup {
+		text-transform:none;
+		font-weight:400;
+		font-size:25px;
+		margin-top:40px;
+	}
+}
