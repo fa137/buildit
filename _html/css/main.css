@@ -714,7 +714,8 @@ a:link {
   background: #fff;
   border-radius: 5px;
   margin-right: 60px;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  height: 300px; }
   .secondary .entry .info {
     padding: 10px 10px 30px 10px;
     width: 100%;
@@ -756,9 +757,6 @@ a:link {
         height: 100%;
         background: #3ac162;
         float: left; }
-
-.projects .intro {
-  margin-top: 50px; }
 
 .single {
   width: 100%;
