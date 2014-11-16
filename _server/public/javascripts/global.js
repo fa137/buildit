@@ -7,14 +7,13 @@ $(document).ready(function() {
     // Populate the user table on initial page load
     populateTable();
 
-    // Username link click
-    $('#userList table tbody').on('click', 'td a.linkshowuser', showUserInfo);
-
     // Add User button click
     $('#btnAddUser').on('click', addUser);
+    // Add Project button click
+    $('#btnAddProject').on('click', addProject);
 
     // Delete User link click
-    $('#userList table tbody').on('click', 'td a.linkdeleteuser', deleteUser);
+    $('#listOfusers table tbody').on('click', 'td a.linkdeleteuser', deleteUser);
 
 });
 
@@ -24,7 +23,8 @@ $(document).ready(function() {
 function populateTable() {
 
     // Empty content string
-    var tableContent = '';
+    var userTableContent = '';
+    var projectTableContent = '';
 
     // jQuery AJAX call for JSON
     $.getJSON( '/users/userlist', function( data ) {
@@ -32,17 +32,33 @@ function populateTable() {
         // Stick our user data array into a userlist variable in the global object
         userListData = data;
 
-        // For each item in our JSON, add a table row and cells to the content string
+        // For each item in our JSON, add a userTable row and cells to the content string
         $.each(data, function(){
-            tableContent += '<tr>';
-            tableContent += '<td><a href="#" class="linkshowuser" rel="' + this.username + '" title="Show Details">' + this.username + '</a></td>';
-            tableContent += '<td>' + this.email + '</td>';
-            tableContent += '<td><a href="#" class="linkdeleteuser" rel="' + this._id + '">delete</a></td>';
-            tableContent += '</tr>';
+            userTableContent += '<tr>';
+            userTableContent += '<td><a href="#" rel="' + this.username + '" title="Show Details">' + this.username + '</a></td>';
+            userTableContent += '<td>' + this.email + '</td>';
+            userTableContent += '</tr>';
         });
 
-        // Inject the whole content string into our existing HTML table
-        $('#userList table tbody').html(tableContent);
+        // Inject the whole content string into our existing HTML userTable
+        $('#listOfusers').html(userTableContent);
+    });
+    // jQuery AJAX call for JSON
+    $.getJSON( '/projects/projectlist', function( data ) {
+
+        // Stick our user data array into a userlist variable in the global object
+        projectListData = data;
+
+        // For each item in our JSON, add a projectTable row and cells to the content string
+        $.each(data, function(){
+            projectTableContent += '<tr>';
+            projectTableContent += '<td><a href="#" class="linkshowproject" rel="' + this.projectname + '" title="Show Details">' + this.projectname + '</a></td>';
+            projectTableContent += '<td>' + this.email + '</td>';
+            projectTableContent += '</tr>';
+        });
+
+        // Inject the whole content string into our existing HTML projectTable
+        $('#listOfprojects').html(projectTableContent);
     });
 };
 
@@ -120,8 +136,7 @@ function addUser(event) {
                 // Clear the form inputs
                 $('#addUser fieldset input').val('');
 
-                // Update the table
-                populateTable();
+                // Do stuff after user is added successfully
 
             }
             else {
@@ -138,42 +153,96 @@ function addUser(event) {
         return false;
     }
 };
-
-// Delete User
-function deleteUser(event) {
-
+// Add Project
+function addProject(event) {
     event.preventDefault();
 
-    // Pop up a confirmation dialog
-    var confirmation = confirm('Are you sure you want to delete this user?');
+    // Super basic validation - increase errorCount variable if any fields are blank
+    var errorCount = 0;
+    $('#addProject input').each(function(index, val) {
+        if($(this).val() === '') { errorCount++; }
+    });
 
-    // Check and make sure the user confirmed
-    if (confirmation === true) {
+    // Check and make sure errorCount's still at zero
+    if(errorCount === 0) {
+        // If it is, compile all Project info into one object
+        console.log(professions);
+        var newProject = {
+            'pic': professions.toString(),
+            'name': $('#addProject fieldset input#inputProjectName').val(),
+            'description': $('#addProject fieldset input#inputProjectEmail').val(),
+            'author': $('#addProject fieldset input#inputProjectFullname').val(),
+            'resume': $('#addProject fieldset input#inputProjectResumeLink').val(),
+            'bio': $('#addProject fieldset input#inputProjectBio').val(),
+            'skills': $('#addProject fieldset input#inputProjectSkills').val()
+        }
 
-        // If they did, do our delete
+        // Use AJAX to post the object to our addProject service
         $.ajax({
-            type: 'DELETE',
-            url: '/users/deleteuser/' + $(this).attr('rel')
+            type: 'POST',
+            data: newProject,
+            url: '/projects/addproject',
+            dataType: 'JSON'
         }).done(function( response ) {
 
-            // Check for a successful (blank) response
+            // Check for successful (blank) response
             if (response.msg === '') {
+
+                // Clear the form inputs
+                $('#addProject fieldset input').val('');
+
+                // Do stuff after user is added successfully
+
             }
             else {
+
+                // If something goes wrong, alert the error message that our service returned
                 alert('Error: ' + response.msg);
+
             }
-
-            // Update the table
-            populateTable();
-
         });
-
     }
     else {
-
-        // If they said no to the confirm, do nothing
+        // If errorCount is more than 0, error out
+        alert('Please fill in all fields');
         return false;
-
     }
-
 };
+// // Delete User
+// function deleteUser(event) {
+
+//     event.preventDefault();
+
+//     // Pop up a confirmation dialog
+//     var confirmation = confirm('Are you sure you want to delete this user?');
+
+//     // Check and make sure the user confirmed
+//     if (confirmation === true) {
+
+//         // If they did, do our delete
+//         $.ajax({
+//             type: 'DELETE',
+//             url: '/users/deleteuser/' + $(this).attr('rel')
+//         }).done(function( response ) {
+
+//             // Check for a successful (blank) response
+//             if (response.msg === '') {
+//             }
+//             else {
+//                 alert('Error: ' + response.msg);
+//             }
+
+//             // Update the table
+//             populateTable();
+
+//         });
+
+//     }
+//     else {
+
+//         // If they said no to the confirm, do nothing
+//         return false;
+
+//     }
+
+// };
