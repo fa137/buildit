@@ -9,15 +9,26 @@ $(document).ready(function() {
 
     // Add User button click
     $('#btnAddUser').on('click', addUser);
+    $('#btnUpdateUser').on('click', updateUser);
     // Add Project button click
     $('#btnAddProject').on('click', addProject);
+    // $('#btnUpdateProject').on('click', updateProject);
+
     // Login button
     $('#btnLogin').on('click', userLogin);
-    $('#btnLogout').on('click', userLogout);
+    // Menu
+    $('#editprofile').on('click', editProfile);
+    $('#postproject').on('click', postProject);
+    $('#signout').on('click', userLogout);
+
     if(window.localStorage.loggedIn == "true"){
         $('#btnLogout').show().on('click', userLogout);
+        populateTable();
     }else{
         $('#btnLogout').hide();
+    }
+    if(window.localStorage.username != ""){
+        $('.username').html(window.localStorage.username);
     }
 
 });
@@ -35,20 +46,26 @@ function populateTable() {
     $.getJSON( '/users/userlist', function( data ) {
         // Stick our user data array into a userlist variable in the global object
         userListData = data;
-
         // For each item in our JSON, add a userTable row and cells to the content string
         $.each(data, function(){
-            userTableContent += '<tr>';
-            userTableContent += '<td><a href="/users/get/' +this.username + '" title="Show Details">' + this.username + '</a></td>';
-            userTableContent += '<td>' + this.fullname + '</td>';
-            userTableContent += '<td>' + this.profession + '</td>';
-            userTableContent += '<td>' + this.skills + '</td>';
-            userTableContent += '<td>' + this.resume + '</td>';
-            userTableContent += '</tr>';
-        });
 
+                userTableContent +=
+                                    '<div class="entry">' +
+                                    '<a href="/users/get/' +
+                                    this.username  +
+                                    '">' +'<img src="images/userpics/' +
+                                    this.pic +
+                                    '" class="thumb"></a><div class="info"><p><strong>' +
+                                    this.fullname +
+                                    '</strong></p><a href="#" class="color-green">' +
+                                    this.profession +
+                                    '</a><p>Skills: ' +
+                                    this.skills +
+                                    '</p></div></div>';
+
+        });
         // Inject the whole content string into our existing HTML userTable
-        $('#listOfusers').html(userTableContent);
+        $('#entries').html(userTableContent);
     });
     // jQuery AJAX call for JSON
     $.getJSON( '/projects/projectlist', function( data ) {
@@ -58,19 +75,24 @@ function populateTable() {
 
         // For each item in our JSON, add a projectTable row and cells to the content string
         $.each(data, function(){
-            projectTableContent += '<tr>';
-            projectTableContent += '<td><a href="/projects/get/' +this._id+ '" title="Show Details">' + this.name + '</a></td>';
-            projectTableContent += '<td>' + this.description + '</td>';
-            projectTableContent += '<td>' + this.author + '</td>';
-            projectTableContent += '<td>' + this.skills + '</td>';
-            projectTableContent += '<td>' + this.tags + '</td>';
-            projectTableContent += '<td>' + this.lookingFor + '</td>';
-            projectTableContent += '<td>' + this.time + '</td>';
-            projectTableContent += '</tr>';
+            projectTableContent += '<div class="entry">' +
+                                    '<a href="/projects/get/' +
+                                    this._id  +
+                                    '">' +'<img src="images/userpics/' +
+                                    this.pic +
+                                    '" class="thumb"></a><div class="info"><p><strong>' +
+                                    this.name +
+                                    '</strong></p><a href="#" class="color-green">' +
+                                    this.lookingFor +
+                                    '</a><p>Skills: ' +
+                                    this.skills +
+                                    '</p><p class="info">Description: ' +
+                                    this.description +
+                                    '</p></div></div>';
         });
 
         // Inject the whole content string into our existing HTML projectTable
-        $('#listOfprojects').html(projectTableContent);
+        $('#projectEntries').html(projectTableContent);
     });
 };
 
@@ -99,9 +121,9 @@ function addUser(event) {
         // If it is, compile all user info into one object
         var newUser = {
             // 'profession': professions.toString(),
-            'username': $('#addUser fieldset input#inputUserName').val(),
-            'password': $('#addUser fieldset input#inputUserPassword').val(),
-            'email': $('#addUser fieldset input#inputUserEmail').val(),
+            'username': $('#addUser input#inputUserName').val(),
+            'password': $('#addUser input#inputUserPassword').val(),
+            'email': $('#addUser input#inputUserEmail').val(),
             // 'fullname': $('#addUser fieldset input#inputUserFullname').val(),
             // 'resume': $('#addUser fieldset input#inputUserResumeLink').val(),
             // 'bio': $('#addUser fieldset input#inputUserBio').val(),
@@ -123,7 +145,9 @@ function addUser(event) {
                 $('#addUser fieldset input').val('');
 
                 // Do stuff after user is added successfully
-
+                window.localStorage.loggedIn = true;
+                window.localStorage.username = $('#addUser input#inputUserName').val();
+                window.location = "single-profile.html";
             }
             else {
 
@@ -140,7 +164,8 @@ function addUser(event) {
     }
 };
 // Update User
-function updateUser(name) {
+function updateUser() {
+    var name = window.localStorage.username;
     // event.preventDefault();
 
     // Super basic validation - increase errorCount variable if any fields are blank
@@ -164,13 +189,13 @@ function updateUser(name) {
         // If it is, compile all user info into one object
         var newUser = {
             'profession': professions.toString(),
-            'username': $('#updateUser fieldset input#inputUserName').val(),
-            'password': $('#updateUser fieldset input#inputUserPassword').val(),
-            'email': $('#updateUser fieldset input#inputUserEmail').val(),
-            'fullname': $('#updateUser fieldset input#inputUserFullname').val(),
-            'resume': $('#updateUser fieldset input#inputUserResumeLink').val(),
-            'bio': $('#updateUser fieldset input#inputUserBio').val(),
-            'skills': $('#updateUser fieldset input#inputUserSkills').val()
+            'username': $('#updateUser input#inputUserName').val(),
+            'password': $('#updateUser input#inputUserPassword').val(),
+            'email': $('#updateUser input#inputUserEmail').val(),
+            'fullname': $('#updateUser input#inputUserFullname').val(),
+            'resume': $('#updateUser input#inputUserResumeLink').val(),
+            'bio': $('#updateUser input#inputUserBio').val(),
+            'skills': $('#updateUser input#inputUserSkills').val()
         }
 
         // Use AJAX to post the object to our adduser service
@@ -207,7 +232,6 @@ function updateUser(name) {
 // Add Project
 function addProject(event) {
     event.preventDefault();
-
     // Super basic validation - increase errorCount variable if any fields are blank
     var errorCount = 0;
     $('#addProject input').each(function(index, val) {
@@ -225,13 +249,13 @@ function addProject(event) {
         };
         // If it is, compile all Project info into one object
         var newProject = {
-            'name': $('#addProject fieldset input#inputProjectName').val(),
-            'description': $('#addProject fieldset input#inputProjectDescription').val(),
-            'author': $('#addProject fieldset input#inputProjectAuthor').val(),
-            'skills': $('#addProject fieldset input#inputProjectSkills').val(),
-            'tags': $('#addProject fieldset input#inputProjectTags').val(),
+            'name': $('#addProject input#inputProjectName').val(),
+            'description': $('#addProject input#inputProjectDescription').val(),
+            'author': $('#addProject input#inputProjectAuthor').val(),
+            'skills': $('#addProject input#inputProjectSkills').val(),
+            'tags': $('#addProject input#inputProjectTags').val(),
             'lookingFor': lookingFor,
-            'time': $('#addProject fieldset input#inputProjectTime').val()
+            'time': $('#addProject input#inputProjectTime').val()
         }
 
         // Use AJAX to post the object to our addProject service
@@ -246,10 +270,10 @@ function addProject(event) {
             if (response.msg === '') {
 
                 // Clear the form inputs
-                $('#addProject fieldset input').val('');
+                $('#addProject input').val('');
 
                 // Do stuff after user is added successfully
-
+                window.location = "projects.html";
             }
             else {
 
@@ -275,19 +299,32 @@ function userLogin(event){
     var url = "/users/get/" + username;
     $.getJSON(url, function( data ){
         var logged = false;
-        if(!data){logged=false;}
+        if(!data){logged=false;
+            alert("Incorrect username/password, try again...");
+        }
         else if(data.password == password){
             logged=true;
             $('#btnLogout').show();
             window.localStorage.loggedIn = logged;
+            window.localStorage.username = username;
+            window.location = "projects.html";
         }
-        else{ logged=false}
+        else{ logged=false
+            alert("Incorrect username/password, try again...");
+        }
 
     });
 }
-
+function editProfile(){
+    window.location = "profile-settings.html";
+}
 function userLogout(event){
     event.preventDefault();
     $(this).hide();
     window.localStorage.loggedIn = false;
+    window.localStorage.username = "";
+    window.location = "index.html";
+}
+function postProject(){
+    window.location = "project-create.html";
 }

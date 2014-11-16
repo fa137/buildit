@@ -37,16 +37,16 @@
 						<img src="img/profile-pic.png" height="38" width="43" alt="">
 					</div>
 					<div class="intro">
-						<h4>Hello, <span class="color-green">Yenny</span>!</h4>
+						<h4>Hello, <span class="color-green username">Yenny</span>!</h4>
 					</div>
 					<div class="setting">
 						<a href="#" class="icon-gear"><img src="img/icon-gear.png" height="33" width="33" alt=""></a>
 						<div class="popup">
 							<div class="arrow-up"><img src="img/uparrow.png" alt=""></div>
 							<ul>
-								<li><a href="#">Post Project</a></li>
-								<li><a href="#">Edit Profile</a></li>
-								<li><a href="#">Sign Out</a></li>
+								<li><a id="postproject" href="#">Post Project</a></li>
+								<li><a id="editprofile" href="#">Edit Profile</a></li>
+								<li><a id="signout" href="#">Sign Out</a></li>
 							</ul>
 						</div>
 					</div>
@@ -57,161 +57,26 @@
 			<div class="wrapper">
 				<div class="row intro">
 					<h2>Sort by </h2>
-					<div class="styled-select">
-						<div class="option active" role="developer">developer</div>
-						<div class="option" role="designer">designer</div>
-						<div class="option" role="entrepreneur">entrepreneur</div>	
+					<div class="styled-select" id="roles-filter">
+						<div class="option active" data-role="developer">developer</div>
+						<div class="option" data-role="designer">designer</div>
+						<div class="option" data-role="entrepreneur">entrepreneur</div>
 						<div class="arrow-down"></div>
 					</div><!-- end styled select -->
 				</div>
-				
-				<div class="entry">
-					<img src="img/project_thumb.png" class="thumb">
-					<div class="info">
-						<p><strong>Yenny Cheung</strong></p>
-						<a href="" class="color-green">Web Design</a>
-						<p>Skills: HTML, CSS, Javascript</p>	
-					
-						</div><!-- end info -->
-				</div><!-- end entry -->
 
-				<div class="entry">
-					<img src="img/project_thumb.png" class="thumb">
-					<div class="info">
-						<p><strong>Shivam Bhalla</strong></p>
-						<a href="" class="color-green">Web Design</a>
-						<p>Skills: HTML, CSS, Javascript</p>	
-					
-						</div><!-- end info -->
-				</div><!-- end entry -->
+				<div id="entries">
 
-				<div class="entry">
-					<img src="img/project_thumb.png" class="thumb">
-					<div class="info">
-						<p><strong>Fahimnur Alam</strong></p>
-						<a href="" class="color-green">Web Design</a>
-						<p>Skills: HTML, CSS, Javascript</p>	
-					
-						</div><!-- end info -->
-				</div><!-- end entry -->
-
-				<div class="entry">
-					<img src="img/project_thumb.png" class="thumb">
-					<div class="info">
-						<p><strong>Aleks Kruzel</strong></p>
-						<a href="" class="color-green">Web Design</a>
-						<p>Skills: HTML, CSS, Javascript</p>	
-					
-						</div><!-- end info -->
-				</div><!-- end entry -->
-
-				<div class="entry">
-					<img src="img/project_thumb.png" class="thumb">
-					<div class="info">
-						<p><strong>David</strong></p>
-						<a href="" class="color-green">Web Design</a>
-						<p>Skills: HTML, CSS, Javascript</p>	
-					
-						</div><!-- end info -->
-				</div><!-- end entry -->
-
-				<div class="entry">
-					<img src="img/project_thumb.png" class="thumb">
-					<div class="info">
-						<p><strong>Victoria</strong></p>
-						<a href="" class="color-green">Web Design</a>
-						<p>Skills: HTML, CSS, Javascript</p>	
-					
-						</div><!-- end info -->
-				</div><!-- end entry -->
-
-				<div class="entry">
-					<img src="img/project_thumb.png" class="thumb">
-					<div class="info">
-						<p><strong>John</strong></p>
-						<a href="" class="color-green">Web Design</a>
-						<p>Skills: HTML, CSS, Javascript</p>	
-					
-						</div><!-- end info -->
-				</div><!-- end entry -->
-
-				<div class="entry">
-					<img src="img/project_thumb.png" class="thumb">
-					<div class="info">
-						<p><strong>Stanley</strong></p>
-						<a href="" class="color-green">Web Design</a>
-						<p>Skills: HTML, CSS, Javascript</p>	
-					
-						</div><!-- end info -->
-				</div><!-- end entry -->
-
-				<div class="entry">
-					<img src="img/project_thumb.png" class="thumb">
-					<div class="info">
-						<p><strong>Barbara</strong></p>
-						<a href="" class="color-green">Web Design</a>
-						<p>Skills: HTML, CSS, Javascript</p>	
-					
-						</div><!-- end info -->
-				</div><!-- end entry -->
-
-				<div class="entry">
-					<img src="img/project_thumb.png" class="thumb">
-					<div class="info">
-						<p><strong>Chris</strong></p>
-						<a href="" class="color-green">Web Design</a>
-						<p>Skills: HTML, CSS, Javascript</p>	
-					
-						</div><!-- end info -->
-				</div><!-- end entry -->
-
-				<div class="entry">
-					<img src="img/project_thumb.png" class="thumb">
-					<div class="info">
-						<p><strong>Paul</strong></p>
-						<a href="" class="color-green">Web Design</a>
-						<p>Skills: HTML, CSS, Javascript</p>	
-					
-						</div><!-- end info -->
-				</div><!-- end entry -->
-
-				<div class="entry">
-					<img src="img/project_thumb.png" class="thumb">
-					<div class="info">
-						<p><strong>Emily</strong></p>
-						<a href="" class="color-green">Web Design</a>
-						<p>Skills: HTML, CSS, Javascript</p>	
-					
-						</div><!-- end info -->
-				</div><!-- end entry -->
-
-				<div class="entry">
-					<img src="img/project_thumb.png" class="thumb">
-					<div class="info">
-						<p><strong>Robert</strong></p>
-						<a href="" class="color-green">Web Design</a>
-						<p>Skills: HTML, CSS, Javascript</p>	
-					
-						</div><!-- end info -->
-				</div><!-- end entry -->
-
-				<div class="entry">
-					<img src="img/project_thumb.png" class="thumb">
-					<div class="info">
-						<p><strong>Matt</strong></p>
-						<a href="" class="color-green">Web Design</a>
-						<p>Skills: HTML, CSS, Javascript</p>	
-					
-						</div><!-- end info -->
-				</div><!-- end entry -->
+				</div>
 
 			</div><!-- end wrapper -->
 		</div><!-- end body -->
 	</div><!-- end container -->
 
-	
+
 	<!-- JS INCLUDES -->
 	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="javascripts/global.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

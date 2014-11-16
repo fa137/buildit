@@ -1,5 +1,48 @@
 $(function() {
 	// Styled Select
+	if(window.localStorage.loggedIn=="true"){
+		$(".header .button").hide();
+	}
+
+	$('#strt').on('click', function(e) {
+		var looking = $('#looking .active').data('role');
+		if(looking=="projects"){
+			window.location = "projects.html";
+		}else{
+			window.localStorage.looking = looking;
+			window.location = "profiles.html";
+		}
+		e.preventDefault();
+	});
+
+	if(window.localStorage.looking != "") {
+		var looking = window.localStorage.looking;
+		$('#roles-filter .active').removeClass('active');
+		var filters = $('#roles-filter .option');
+		for(var x = 0; x < filters.length; x++){
+			if($(filters[x]).data('role') == looking) {
+				$(filters[x]).addClass('active');
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	// Shivam
 	var selectBox = $('.styled-select');
 	var count = 0;
 	$('.option').click(function() {
@@ -29,7 +72,7 @@ $(function() {
 		}
 		e.stopPropagation();
 	});
-  	// Login Sign Up Toggle 
+  	// Login Sign Up Toggle
   	$('.button').click(function(e) {
   		if(iconCount == 0) {
 			$(this).next('.popup').animate({

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+
+	<title></title>
+
+	<!-- SASS INCLUDES -->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<!--[if lt IE 9]>
+	   <script>
+	      document.createElement('header');
+	      document.createElement('nav');
+	      document.createElement('section');
+	      document.createElement('article');
+	      document.createElement('aside');
+	      document.createElement('footer');
+	   </script>
+	<![endif]-->
+</head>
+<body>
+	<div class="container secondary">
+		<div class="header">
+			<div class="wrapper">
+				<div class="logo">
+					<p> < build.<strong>it</strong> /></p>
+				</div>
+				<form class="searchbox">
+					<input type="text" placeholder="search">
+					<input type="submit" value="">
+				</form>
+				<div class="mini-profile">
+					<div class="profile-img">
+						<img src="img/profile-pic.png" height="38" width="43" alt="">
+					</div>
+					<div class="intro">
+						<h4>Hello, <span class="color-green">Yenny</span>!</h4>
+					</div>
+					<div class="setting">
+						<a href="#" class="icon-gear"><img src="img/icon-gear.png" height="33" width="33" alt=""></a>
+					</div>
+				</div>
+			</div><!-- end wrapper -->
+		</div><!-- end header -->
+		<div class="body single setting">
+			<div class="wrapper">
+				<h3>Create a new Project</h3>
+				<br>
+				<form id="addProject">
+					<input id="inputProjectName" type="text" placeholder="Project Name">
+					<input id="inputProjectDescription" type="text" placeholder="Describe your project">
+					<input id="inputProjectTags" type="text" placeholder="tags- separate by commas">
+					<input id="inputProjectSkills" type="text" placeholder="Preferred skills">
+					<input id="inputProjectAuthor" type="text" placeholder="Author">
+					Postions:
+					<input type="checkbox" id="inputProjectLookingForDesigner"> Designer
+					<input type="checkbox" id="inputProjectLookingForDeveloper"> Developer
+					<input type="text" id="inputProjectTime" id="inputProjectTime">
+					<input type="submit" class="button green" id="btnAddProject" value="submit">
+				</form>
+
+
+			</div><!-- end wrapper -->
+		</div><!-- end body -->
+	</div><!-- end container -->
+
+
+	<!-- JS INCLUDES -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="javascripts/global.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

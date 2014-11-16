@@ -2,12 +2,14 @@
 	.body {
 		padding-top:170px;
 	}
+
 	.header {
 		background:#fff;
 		.logo {
 			color:$gray;
 		}
 	}
+
 	.styled-select {
 		border-bottom-color:$gray;
 	}
@@ -64,8 +66,9 @@
 		border-radius:5px;
 		margin-right:60px;
 		margin-bottom:50px;
+		height: 300px;
 		.info {
-			padding:10px;
+			padding:10px 10px 30px 10px;
 			width:100%;
 			overflow:hidden;
 			a {
@@ -75,8 +78,9 @@
 			    font-weight:bold;
 			    margin-bottom:10px;
 			}
-			p {
+			.skills {
 				font-size: 13px;
+				padding-bottom: 10px;
 			}
 		}
 		&:nth-child(4n+4) {

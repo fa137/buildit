@@ -17,6 +17,7 @@ router.get('/projectlist', function(req, res) {
 router.post('/addproject', function(req, res) {
     var db = req.db;
     req.body.pic = req.session.lastpic;
+    req.session.lastpic = null;
     db.collection('projectlist').insert(req.body, function(err, result){
         res.send(
             (err === null) ? { msg: '' } : { msg: err }

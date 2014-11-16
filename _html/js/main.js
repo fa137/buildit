@@ -29,7 +29,7 @@ $(function() {
 		}
 		e.stopPropagation();
 	});
-  	// Login Sign Up Toggle 
+  	// Login Sign Up Toggle
   	$('.button').click(function(e) {
   		if(iconCount == 0) {
 			$(this).next('.popup').animate({
