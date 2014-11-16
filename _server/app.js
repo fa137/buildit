@@ -9,7 +9,6 @@ var multer  = require('multer');
 // Database
 var mongo = require('mongoskin');
 var db = mongo.db("mongodb://localhost:27017/buildit-dev-fahim", {native_parser:true});
-var routes = require('./routes/index');
 var users = require('./routes/users');
 var projects = require('./routes/projects');
 
@@ -46,7 +45,6 @@ app.use(function(req,res,next){
 
 app.use('/users', users);
 app.use('/projects', projects);
-app.use('/', routes);
 
 /// catch 404 and forwarding to error handler
 app.use(function(req, res, next) {

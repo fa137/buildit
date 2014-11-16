@@ -17,6 +17,7 @@ router.get('/userlist', function(req, res) {
 router.post('/adduser', function(req, res) {
     var db = req.db;
     req.body.pic = req.session.lastpic;
+    req.session.lastpic = null;
     db.collection('userlist').insert(req.body, function(err, result){
         res.send(
             (err === null) ? { msg: '' } : { msg: err }
