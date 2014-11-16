@@ -362,6 +362,9 @@ th {
     .list-fix li a {
       text-decoration: none; }
 
+.green {
+  background: #3ac162; }
+
 /* INCLUDE FONTS */
 /* END INCLUDE FONTS */
 html {
@@ -444,9 +447,11 @@ section.everythingcentered {
   margin-bottom: 8px; }
 
 .button {
+  border-radius: 5px;
+  color: #fff;
   display: block;
-  padding: 10px 15px;
-  color: #fff; }
+  float: left;
+  padding: 10px 45px; }
 
 .header {
   width: 100%;
@@ -455,6 +460,8 @@ section.everythingcentered {
   position: fixed;
   top: 0;
   left: 0; }
+  .header .login {
+    float: right; }
 
 .home {
   background: url(../img/home-bg.png) no-repeat; }
