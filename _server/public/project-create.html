@@ -26,7 +26,7 @@
 		<div class="header">
 			<div class="wrapper">
 				<div class="logo">
-					<p><strong>Build</strong>It</p>
+					<p> < build.<strong>it</strong> /></p>
 				</div>
 				<form class="searchbox">
 					<input type="text" placeholder="search">
@@ -37,37 +37,31 @@
 						<img src="img/profile-pic.png" height="38" width="43" alt="">
 					</div>
 					<div class="intro">
-						<h4>Hello, <span class="color-green username">Yenny</span>!</h4>
+						<h4>Hello, <span class="color-green">Yenny</span>!</h4>
 					</div>
 					<div class="setting">
 						<a href="#" class="icon-gear"><img src="img/icon-gear.png" height="33" width="33" alt=""></a>
-						<div class="popup">
-							<div class="arrow-up"><img src="img/uparrow.png" alt=""></div>
-							<ul>
-								<li><a id="postproject" href="#">Post Project</a></li>
-								<li><a id="editprofile" href="#">Edit Profile</a></li>
-								<li><a id="signout" href="#">Sign Out</a></li>
-							</ul>
-						</div>
 					</div>
 				</div>
 			</div><!-- end wrapper -->
 		</div><!-- end header -->
-		<div class="body projects">
+		<div class="body single setting">
 			<div class="wrapper">
-				<div class="row intro">
-					<h2>Sort by </h2>
-					<div class="styled-select" id="roles-filter">
-						<div class="option active" data-role="developer">developer</div>
-						<div class="option" data-role="designer">designer</div>
-						<div class="option" data-role="entrepreneur">entrepreneur</div>
-						<div class="arrow-down"></div>
-					</div><!-- end styled select -->
-				</div>
+				<h3>Create a new Project</h3>
+				<br>
+				<form id="addProject">
+					<input id="inputProjectName" type="text" placeholder="Project Name">
+					<input id="inputProjectDescription" type="text" placeholder="Describe your project">
+					<input id="inputProjectTags" type="text" placeholder="tags- separate by commas">
+					<input id="inputProjectSkills" type="text" placeholder="Preferred skills">
+					<input id="inputProjectAuthor" type="text" placeholder="Author">
+					Postions:
+					<input type="checkbox" id="inputProjectLookingForDesigner"> Designer
+					<input type="checkbox" id="inputProjectLookingForDeveloper"> Developer
+					<input type="text" id="inputProjectTime" id="inputProjectTime">
+					<input type="submit" class="button green" id="btnAddProject" value="submit">
+				</form>
 
-				<div id="entries">
-
-				</div>
 
 			</div><!-- end wrapper -->
 		</div><!-- end body -->
