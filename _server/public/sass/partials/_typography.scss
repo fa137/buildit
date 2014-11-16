@@ -1,0 +1,65 @@
+/* INCLUDE FONTS */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+
+/* END INCLUDE FONTS */
+html {
+	font-family: 'Open Sans', sans-serif;
+}
+p, li, a, span {
+    font-size:16px;
+}
+p, li, span, h1, h3, h4, h5, h6 {
+    
+   
+}
+h1 {
+
+}
+h2 {
+    font-size:25px;
+    color:$gray;
+    margin-bottom: 10px;
+}
+h3 {
+    font-size:30px;
+    color:$gray;
+}
+h4 {
+    color:$gray;
+}
+h5 {
+    font-weight: 100;
+    font-size: 19px;
+}
+p {
+    color:$gray;
+    font-weight: 100;
+    float:left;
+    font-size: 15px;
+}
+a {
+    text-decoration:none;
+    color:$green;
+    font-weight: 100;
+    font-size: 15px;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+strong {
+    
+}
+ul {
+    list-style-position:inside;
+    li {
+        color:$green;
+        font-weight: 100;
+        font-size: 15px;
+        span {
+           color:$gray;
+            font-weight: 100;
+            font-size: 15px;
+        }
+    }
+}
+
