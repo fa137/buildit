@@ -3,9 +3,9 @@ Re-structurrized the application because of time restriction
 
 todo
 ====
-<!-- 1. singple pages (profile+project) sending json -->
-2. update api (PUT requests)
-3. login+password authentication
+1. done
+2. done
+3. done
 
 
 

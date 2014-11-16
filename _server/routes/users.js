@@ -16,6 +16,7 @@ router.get('/userlist', function(req, res) {
  */
 router.post('/adduser', function(req, res) {
     var db = req.db;
+    req.body.pic = req.session.lastpic;
     db.collection('userlist').insert(req.body, function(err, result){
         res.send(
             (err === null) ? { msg: '' } : { msg: err }
@@ -23,6 +24,9 @@ router.post('/adduser', function(req, res) {
     });
 });
 
+router.post('/pic',function(req, res){
+    res.redirect('/');
+})
 /*
  * DELETE to deleteuser.
  */
@@ -30,7 +34,7 @@ router.delete('/deleteuser/:id', function(req, res) {
     var db = req.db;
     var userToDelete = req.params.id;
     db.collection('userlist').removeById(userToDelete, function(err, result) {
-        res.send((result === 1) ? { msg: '' } : { msg:'error: ' + err });
+        res.send((result === 1) ? { msg: 'deleted' } : { msg:'error: ' + err });
     });
 });
 
@@ -41,6 +45,17 @@ router.get('/get/:name', function(req, res){
         res.json((result) ? result : {msg: "username not found!"});
     });
 
+});
+
+router.put('/update/:name', function(req, res){
+    var db = req.db;
+    var userNameReq = req.params.name;
+    db.collection('userlist').update({username: userNameReq},
+        {$set: req.body},
+        {safe: true, multi: false},
+        function(e, result){
+            res.send((result === 1) ? {msg:'success'} : {msg: 'error'})
+        });
 });
 
 module.exports = router;

@@ -13,6 +13,12 @@ $(document).ready(function() {
     $('#btnAddProject').on('click', addProject);
     // Login button
     $('#btnLogin').on('click', userLogin);
+    $('#btnLogout').on('click', userLogout);
+    if(window.localStorage.loggedIn == "true"){
+        $('#btnLogout').show().on('click', userLogout);
+    }else{
+        $('#btnLogout').hide();
+    }
 
 });
 
@@ -92,15 +98,14 @@ function addUser(event) {
         };
         // If it is, compile all user info into one object
         var newUser = {
-            'pic': $('#addUser fieldset input#inputUserProfilePic').val(),
-            'profession': professions.toString(),
+            // 'profession': professions.toString(),
             'username': $('#addUser fieldset input#inputUserName').val(),
             'password': $('#addUser fieldset input#inputUserPassword').val(),
             'email': $('#addUser fieldset input#inputUserEmail').val(),
-            'fullname': $('#addUser fieldset input#inputUserFullname').val(),
-            'resume': $('#addUser fieldset input#inputUserResumeLink').val(),
-            'bio': $('#addUser fieldset input#inputUserBio').val(),
-            'skills': $('#addUser fieldset input#inputUserSkills').val()
+            // 'fullname': $('#addUser fieldset input#inputUserFullname').val(),
+            // 'resume': $('#addUser fieldset input#inputUserResumeLink').val(),
+            // 'bio': $('#addUser fieldset input#inputUserBio').val(),
+            // 'skills': $('#addUser fieldset input#inputUserSkills').val()
         }
 
         // Use AJAX to post the object to our adduser service
@@ -108,6 +113,71 @@ function addUser(event) {
             type: 'POST',
             data: newUser,
             url: '/users/adduser',
+            dataType: 'JSON'
+        }).done(function( response ) {
+
+            // Check for successful (blank) response
+            if (response.msg === '') {
+
+                // Clear the form inputs
+                $('#addUser fieldset input').val('');
+
+                // Do stuff after user is added successfully
+
+            }
+            else {
+
+                // If something goes wrong, alert the error message that our service returned
+                alert('Error: ' + response.msg);
+
+            }
+        });
+    }
+    else {
+        // If errorCount is more than 0, error out
+        alert('Please fill in all fields');
+        return false;
+    }
+};
+// Update User
+function updateUser(name) {
+    // event.preventDefault();
+
+    // Super basic validation - increase errorCount variable if any fields are blank
+    var errorCount = 0;
+    $('#updateUser input').each(function(index, val) {
+        if($(this).val() === '') { errorCount++; }
+    });
+
+    // Check and make sure errorCount's still at zero
+    if(errorCount === 0) {
+        var professions = "";
+        if($('#inputUserProfessionDeveloper').is(':checked')){
+            professions+='Developer ';
+        };
+        if($('#inputUserProfessionDesigner').is(':checked')){
+            professions+='Designer ';
+        };
+        if($('#inputUserProfessionEntrepreneur').is(':checked')){
+            professions+='Entrepreneur ';
+        };
+        // If it is, compile all user info into one object
+        var newUser = {
+            'profession': professions.toString(),
+            'username': $('#updateUser fieldset input#inputUserName').val(),
+            'password': $('#updateUser fieldset input#inputUserPassword').val(),
+            'email': $('#updateUser fieldset input#inputUserEmail').val(),
+            'fullname': $('#updateUser fieldset input#inputUserFullname').val(),
+            'resume': $('#updateUser fieldset input#inputUserResumeLink').val(),
+            'bio': $('#updateUser fieldset input#inputUserBio').val(),
+            'skills': $('#updateUser fieldset input#inputUserSkills').val()
+        }
+
+        // Use AJAX to post the object to our adduser service
+        $.ajax({
+            type: 'PUT',
+            data: newUser,
+            url: '/users/update/' + name,
             dataType: 'JSON'
         }).done(function( response ) {
 
@@ -155,7 +225,6 @@ function addProject(event) {
         };
         // If it is, compile all Project info into one object
         var newProject = {
-            'pic': $('#addUser fieldset input#inputProjectPic').val(),
             'name': $('#addProject fieldset input#inputProjectName').val(),
             'description': $('#addProject fieldset input#inputProjectDescription').val(),
             'author': $('#addProject fieldset input#inputProjectAuthor').val(),
@@ -196,15 +265,29 @@ function addProject(event) {
         return false;
     }
 };
+// JUST FOR HACKATHON!
+// FOR FUN... DO NOT USE IT IN PRODUCTION.
 
 function userLogin(event){
     event.preventDefault();
     var username = $("#inputLoginUsername").val();
     var password = $("#inputLoginPassword").val();
-    var url = "/user/" + username;
+    var url = "/users/get/" + username;
     $.getJSON(url, function( data ){
-        if(!data){alert("Username doesn't exist");}
-        else if(data.password == password){ alert("logged in!");}
-        else{ alert("incorrect password");}
+        var logged = false;
+        if(!data){logged=false;}
+        else if(data.password == password){
+            logged=true;
+            $('#btnLogout').show();
+            window.localStorage.loggedIn = logged;
+        }
+        else{ logged=false}
+
     });
+}
+
+function userLogout(event){
+    event.preventDefault();
+    $(this).hide();
+    window.localStorage.loggedIn = false;
 }

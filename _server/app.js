@@ -3,12 +3,12 @@ var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
+var session = require('cookie-session');
 var bodyParser = require('body-parser');
 var multer  = require('multer');
 // Database
 var mongo = require('mongoskin');
 var db = mongo.db("mongodb://localhost:27017/buildit-dev-fahim", {native_parser:true});
-
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var projects = require('./routes/projects');
@@ -19,7 +19,9 @@ var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
-
+app.use(session({
+  keys: ['bigass', 'monkey']
+}));
 // uncomment after placing your favicon in /public
 //app.use(favicon(__dirname + '/public/favicon.ico'));
 app.use(logger('dev'));
@@ -27,7 +29,15 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-// app.use(multer({ dest: './public/images/userpics/'}));
+// working with shitty userpics...
+// why people love putting their pics online...
+// like why...
+app.use(multer({ dest: './public/images/userpics',
+onParseEnd: function (req, next) {
+    req.session.lastpic = req.files.userPic.name;
+    next();
+}
+}));
 // Make our db accessible to our router
 app.use(function(req,res,next){
     req.db = db;

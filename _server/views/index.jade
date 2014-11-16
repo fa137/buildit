@@ -8,11 +8,13 @@ block content
     #wrapper
 
         // ADD USER
+        | Profile picture:
+        form(action="/users/pic", method="post", enctype="multipart/form-data")
+            input#inputUserProfilePic(type="file", name="userPic")
+            button(type="submit") upload
         h2 Add User
         #addUser
             fieldset
-                | Profile picture:
-                input#inputUserProfilePic(type="file")
                 br
                 input#inputUserProfessionDeveloper(type='checkbox')
                 | Developer
@@ -47,16 +49,20 @@ block content
                 input#inputLoginPassword(type="password", required)
                 br
                 button#btnLogin Login
+                br
+                br
+                button#btnLogout Logout
 
 
         // ADD PROJECT
         br
+        | Project picture:
+        form(action="/users/pic", method="post", enctype="multipart/form-data")
+            input#inputUserProfilePic(type="file", name="userPic")
+            button(type="submit") upload
         h2 Add Project
         #addProject
             fieldset
-                | Project picture:
-                input#inputProjectPic(type="file")
-                br
                 input#inputProjectName(type='text', placeholder='Project Name')
                 br
                 input#inputProjectDescription(type='text', placeholder='Description')
