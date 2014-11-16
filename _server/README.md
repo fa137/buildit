@@ -1,0 +1,1 @@
+Re-structurrized the application because of time restriction
