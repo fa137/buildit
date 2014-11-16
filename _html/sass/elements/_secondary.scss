@@ -1,5 +1,6 @@
 .secondary {
 	.header {
+		background:#fff;
 		.logo {
 			color:$gray;
 		}
@@ -43,5 +44,8 @@
 			margin-top:4px;
 			display:block;
 		}
+	}
+	.body {
+		background:$light-gray;
 	}
 }

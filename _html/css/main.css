@@ -463,7 +463,6 @@ section.everythingcentered {
 .header {
   width: 100%;
   height: 67px;
-  border: 1px solid red;
   position: fixed;
   top: 0;
   left: 0; }
@@ -485,8 +484,10 @@ section.everythingcentered {
   .home h1, .home p {
     color: #fff; }
 
-.secondary .header .logo {
-  color: #474646; }
+.secondary .header {
+  background: #fff; }
+  .secondary .header .logo {
+    color: #474646; }
 .secondary .searchbox {
   float: left;
   margin-left: 27px;
@@ -517,6 +518,8 @@ section.everythingcentered {
   .secondary .mini-profile .icon-gear {
     margin-top: 4px;
     display: block; }
+.secondary .body {
+  background: #e5e5e5; }
 
 @media (max-width: 1024px) {
   .home .banner {
