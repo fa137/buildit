@@ -1,0 +1,54 @@
+extends layout
+
+block content
+    h1= title
+    p Welcome to our test
+
+    // Wrapper
+    #wrapper
+
+        // Project INFO
+        #ProjectInfo
+            h2 Project Info
+            p
+                strong Name:
+                |  <span id='ProjectInfoName'></span>
+                br
+                strong Age:
+                |  <span id='ProjectInfoAge'></span>
+                br
+                strong Gender:
+                |  <span id='ProjectInfoGender'></span>
+                br
+                strong Location:
+                |  <span id='ProjectInfoLocation'></span>
+        // /Project INFO
+
+        // Project LIST
+        h2 Project List
+        #ProjectList
+            table
+                thead
+                    th ProjectName
+                    th Email
+                    th Delete?
+                tbody
+        // /Project LIST
+
+        // ADD Project
+        h2 Add Project
+        #addProject
+            fieldset
+                input#inputProjectName(type='text', placeholder='Projectname')
+                input#inputProjectEmail(type='text', placeholder='Email')
+                br
+                input#inputProjectFullname(type='text', placeholder='Full Name')
+                input#inputProjectAge(type='text', placeholder='Age')
+                br
+                input#inputProjectLocation(type='text', placeholder='Location')
+                input#inputProjectGender(type='text', placeholder='gender')
+                br
+                button#btnAddProject Add Project
+        // /ADD Project
+
+    // /WRAPPER
