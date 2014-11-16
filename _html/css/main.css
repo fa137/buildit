@@ -365,6 +365,9 @@ th {
 .green {
   background: #3ac162; }
 
+.color-green {
+  color: #3ac162; }
+
 /* INCLUDE FONTS */
 /* END INCLUDE FONTS */
 html {
@@ -412,7 +415,10 @@ form {
   overflow: hidden; }
 
 input, textarea {
-  width: 100%; }
+  width: 100%;
+  font-size: 16px;
+  border: 0;
+  padding: 10px 15px; }
 
 section {
   width: 100%;
@@ -433,7 +439,7 @@ section.everythingcentered {
 .show {
   display: block; }
 
-.btn, input[type=submit] {
+.btn {
   font-weight: 100;
   font-size: 24px;
   line-height: 24px;
@@ -456,14 +462,14 @@ section.everythingcentered {
 
 .header {
   width: 100%;
-  height: 60px;
-  border: 1px solid red;
+  height: 67px;
   position: fixed;
   top: 0;
   left: 0; }
   .header .logo {
     float: left;
-    color: #fff; }
+    color: #fff;
+    margin-top: 6px; }
     .header .logo p {
       font-size: 35px; }
   .header .login {
@@ -477,6 +483,43 @@ section.everythingcentered {
   background-size: cover; }
   .home h1, .home p {
     color: #fff; }
+
+.secondary .header {
+  background: #fff; }
+  .secondary .header .logo {
+    color: #474646; }
+.secondary .searchbox {
+  float: left;
+  margin-left: 27px;
+  margin-top: 10px;
+  position: relative;
+  width: 430px; }
+  .secondary .searchbox input[type="text"] {
+    background: #e5e5e5;
+    border-radius: 5px; }
+  .secondary .searchbox input[type="submit"] {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background: url(../img/icon-search.png) no-repeat;
+    right: 0;
+    top: 10px; }
+.secondary .mini-profile {
+  float: right;
+  margin-top: 10px; }
+  .secondary .mini-profile .button {
+    float: left;
+    margin-right: 20px; }
+  .secondary .mini-profile > div {
+    float: left;
+    margin-right: 20px; }
+  .secondary .mini-profile .intro {
+    margin-top: 7px; }
+  .secondary .mini-profile .icon-gear {
+    margin-top: 4px;
+    display: block; }
+.secondary .body {
+  background: #e5e5e5; }
 
 @media (max-width: 1024px) {
   .home .banner {
