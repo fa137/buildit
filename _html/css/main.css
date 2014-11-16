@@ -376,6 +376,11 @@ html {
 p, li, a, span {
   font-size: 16px; }
 
+h2 {
+  font-size: 25px;
+  color: #474646;
+  margin-bottom: 10px; }
+
 a {
   text-decoration: none; }
   a:hover {
@@ -400,6 +405,43 @@ header, nav, section, article, aside, footer {
   min-height: 100%;
   background-size: cover;
   padding-top: 60px; }
+
+.styled-select {
+  border-bottom: 3px dotted #fff;
+  float: left;
+  height: 43px;
+  margin-left: 30px;
+  width: 230px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all .2s;
+  padding-bottom: 18px; }
+  .styled-select.opened {
+    height: auto; }
+  .styled-select .hide {
+    display: none; }
+  .styled-select .option {
+    font-size: 25px;
+    font-weight: bold;
+    color: #474646; }
+  .styled-select .arrow-down {
+    position: absolute;
+    right: 10px;
+    top: 14.0px; }
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #474646; }
+
+.row {
+  width: 100%;
+  overflow: hidden; }
+  .row.intro {
+    margin: 40px 0; }
 
 .error {
   color: red !important;
@@ -485,15 +527,6 @@ section.everythingcentered {
   background-size: cover; }
   .home h1, .home p, .home .option {
     color: #fff; }
-  .home .styled-select {
-    border-bottom: 3px dotted #fff;
-    float: left;
-    height: 49px;
-    margin-left: 30px;
-    width: 230px;
-    cursor: pointer; }
-    .home .styled-select .option:not(.active) {
-      display: none; }
   .home p {
     font-size: 30px;
     color: #eee;
@@ -509,6 +542,11 @@ section.everythingcentered {
   background: #fff; }
   .secondary .header .logo {
     color: #474646; }
+.secondary .styled-select {
+  border-bottom-color: #474646; }
+.secondary h2 {
+  width: 100px;
+  float: left; }
 .secondary .searchbox {
   float: left;
   margin-left: 27px;

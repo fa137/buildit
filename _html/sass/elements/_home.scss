@@ -4,17 +4,6 @@
 	h1, p, .option{
 		color:#fff;
 	}
-	.styled-select {
- 		border-bottom: 3px dotted #fff;
-    	float: left;
-   		height: 49px;
-    	margin-left: 30px;
-    	width: 230px;
-    	cursor:pointer;
-		.option:not(.active) {
-			display:none;
-		}
-	}
 	p {
 		font-size:30px;
 		color:#eee;
