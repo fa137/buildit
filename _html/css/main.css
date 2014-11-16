@@ -474,14 +474,16 @@ section.everythingcentered {
       font-size: 35px; }
   .header .login {
     float: right;
-    margin-right: 20px; }
+    margin-right: 20px;
+    margin-top: 8px; }
   .header .signup {
-    float: right; }
+    float: right;
+    margin-top: 8px; }
 
 .home {
   background: url(../img/home-bg.png) no-repeat;
   background-size: cover; }
-  .home h1, .home p {
+  .home h1, .home p, .home .option {
     color: #fff; }
 
 .secondary .header {
@@ -578,3 +580,5 @@ section.everythingcentered {
     margin-top: 10px; }
   .home .corporate img {
     width: 45%; } }
+
+/*# sourceMappingURL=main.css.map */
