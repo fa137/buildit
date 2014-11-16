@@ -593,7 +593,8 @@ a:link {
   position: fixed;
   top: 0;
   left: 0;
-  overflow: visible; }
+  overflow: visible;
+  z-index: 9999; }
   .header .logo {
     float: left;
     color: #fff;
