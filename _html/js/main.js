@@ -37,15 +37,14 @@ $(function() {
 				opacity : 1
 			}, 400);
 			iconCount = 1;
+		} else {
+			$(this).next('.popup').animate({
+				marginTop : '+=10px',
+				opacity : 0
+			}, 400);
+			iconCount = 0;
 		}
 		e.stopPropagation();
-  	});
-	$(document).click(function(){  
-  		$('.popup').animate({
-			marginTop : '+=10px',
-			opacity : 0
-		}, 400);
-		iconCount = 0;
   	});
 });
 
