@@ -4,6 +4,7 @@
 	position:fixed;
 	top:0;
 	left:0;
+	overflow:visible;
 	.logo {
 		float:left;
 		color:#fff;
@@ -19,7 +20,7 @@
 	.signup {
 		float:right;
 		margin-top:18px;
-		
 		margin-right:20px;
+		background:#4183D7;
 	}
 }

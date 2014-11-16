@@ -7,6 +7,30 @@
 	.arrow-down {
 		border-top-color:#fff;
 	}
+	form {
+		input {
+
+		}
+	}
+	.arrow-up {
+		left:113px;
+	}
+	.popup {
+	    padding: 10px;
+	    right: -60px;
+	    top: 60px;
+	    width: 260px;
+	}
+	.signup-popup {
+		right:92px;
+		input[type="submit"] {
+			background:#4183D7;
+		}
+	}
+	.wrapper {
+		position: relative;
+		overflow:visible;
+	}
 }
 .home {
 	background:url(../img/home-bg.png) no-repeat;

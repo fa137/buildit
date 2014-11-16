@@ -29,6 +29,17 @@ $(function() {
 		}
 		e.stopPropagation();
 	});
+  	// Login Sign Up Toggle 
+  	$('.button').click(function(e) {
+  		if(iconCount == 0) {
+			$(this).next('.popup').animate({
+				marginTop : '-=10px',
+				opacity : 1
+			}, 400);
+			iconCount = 1;
+		}
+		e.stopPropagation();
+  	});
 	$(document).click(function(){  
   		$('.popup').animate({
 			marginTop : '+=10px',

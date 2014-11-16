@@ -362,7 +362,7 @@ th {
     .list-fix li a {
       text-decoration: none; }
 
-.green {
+.green, input[type=submit] {
   background: #3ac162; }
 
 .color-green {
@@ -499,7 +499,10 @@ input, textarea {
   width: 100%;
   font-size: 16px;
   border: 0;
-  padding: 10px 15px; }
+  padding: 10px 15px;
+  background: #ececec;
+  border-radius: 5px;
+  margin-bottom: 10px; }
 
 section {
   width: 100%;
@@ -526,7 +529,7 @@ section.everythingcentered {
 a:link {
   text-decoration: none; }
 
-.button:hover {
+.button:hover, input[type=submit]:hover {
   background-color: #238841; }
 
 .popup {
@@ -575,7 +578,7 @@ a:link {
   border-top: 1px solid #0AB55F;
   margin-bottom: 8px; }
 
-.button {
+.button, input[type=submit] {
   border-radius: 5px;
   color: #fff;
   display: block;
@@ -589,7 +592,8 @@ a:link {
   height: 67px;
   position: fixed;
   top: 0;
-  left: 0; }
+  left: 0;
+  overflow: visible; }
   .header .logo {
     float: left;
     color: #fff;
@@ -602,12 +606,27 @@ a:link {
   .header .signup {
     float: right;
     margin-top: 18px;
-    margin-right: 20px; }
+    margin-right: 20px;
+    background: #4183D7; }
 
 .home-page .logo p {
   color: #fff; }
 .home-page .arrow-down {
   border-top-color: #fff; }
+.home-page .arrow-up {
+  left: 113px; }
+.home-page .popup {
+  padding: 10px;
+  right: -60px;
+  top: 60px;
+  width: 260px; }
+.home-page .signup-popup {
+  right: 92px; }
+  .home-page .signup-popup input[type="submit"] {
+    background: #4183D7; }
+.home-page .wrapper {
+  position: relative;
+  overflow: visible; }
 
 .home {
   background: url(../img/home-bg.png) no-repeat;
@@ -622,7 +641,7 @@ a:link {
     color: #eee;
     float: left;
     clear: both; }
-  .home .button {
+  .home .button, .home input[type=submit] {
     float: left;
     clear: both;
     margin-top: 20px;
@@ -674,7 +693,7 @@ a:link {
 .secondary .mini-profile {
   float: right;
   margin-top: 10px; }
-  .secondary .mini-profile .button {
+  .secondary .mini-profile .button, .secondary .mini-profile input[type=submit] {
     float: left;
     margin-right: 20px; }
   .secondary .mini-profile > div {
