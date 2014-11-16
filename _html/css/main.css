@@ -496,7 +496,6 @@ header, nav, section, article, aside, footer {
   height: 43px;
   margin-left: 30px;
   width: 230px;
-  cursor: pointer;
   position: relative;
   overflow: hidden;
   transition: all .2s;
@@ -505,10 +504,15 @@ header, nav, section, article, aside, footer {
     height: auto; }
   .styled-select .hide {
     display: none; }
+  .styled-select .option:not(.active) {
+    display: none; }
+  .styled-select .show {
+    display: block !important; }
   .styled-select .option {
     font-size: 25px;
     font-weight: bold;
-    color: #474646; }
+    color: #474646;
+    cursor: pointer; }
   .styled-select .arrow-down {
     position: absolute;
     right: 10px;
@@ -525,7 +529,11 @@ header, nav, section, article, aside, footer {
   width: 100%;
   overflow: hidden; }
   .row.intro {
-    margin: 40px 0; }
+    margin: 40px 0;
+    padding: 20px 0;
+    position: fixed;
+    top: 27px;
+    background: #e5e5e5; }
 
 .error {
   color: red !important;
@@ -564,6 +572,12 @@ section.everythingcentered {
 
 .show {
   display: block; }
+
+a:link {
+  text-decoration: none; }
+
+.button:hover {
+  background-color: #238841; }
 
 .btn {
   font-weight: 100;
@@ -609,6 +623,9 @@ section.everythingcentered {
 .home {
   background: url(../img/home-bg.png) no-repeat;
   background-size: cover; }
+  .home h1 {
+    font-size: 50px;
+    margin-top: 140px; }
   .home h1, .home p, .home .option {
     color: #fff; }
   .home p {
@@ -622,6 +639,8 @@ section.everythingcentered {
     margin-top: 20px;
     font-size: 30px; }
 
+.secondary .body {
+  padding-top: 170px; }
 .secondary .header {
   background: #fff; }
   .secondary .header .logo {
@@ -721,4 +740,9 @@ section.everythingcentered {
     margin-top: 10px; }
   .home .corporate img {
     width: 45%; } }
+<<<<<<< HEAD
 >>>>>>> a883dae0ba91073b081e1db2ca11a9cdfd7ae2e8
+=======
+
+/*# sourceMappingURL=main.css.map */
+>>>>>>> a429e859f64003e63117c817e8a2c11c0a371dce
