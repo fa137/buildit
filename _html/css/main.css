@@ -485,6 +485,9 @@ section.everythingcentered {
   background-size: cover; }
   .home h1, .home p, .home .option {
     color: #fff; }
+  .home h1 {
+    margin-top: 130px;
+    font-size: 40px; }
 
 .secondary .header {
   background: #fff; }
