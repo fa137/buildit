@@ -265,7 +265,6 @@ function addProject(event) {
         return false;
     }
 };
-
 // JUST FOR HACKATHON!
 // FOR FUN... DO NOT USE IT IN PRODUCTION.
 
