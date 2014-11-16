@@ -1,9 +1,15 @@
 .home {
 	background:url(../img/home-bg.png) no-repeat;
 	background-size:cover;
+	h1 {
+		font-size:55px;
+		margin-top:140px;
+	}
 	h1, p, .option{
 		color:#fff;
 	}
+	
+	
 	p {
 		font-size:30px;
 		color:#eee;
