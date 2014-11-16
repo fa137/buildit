@@ -381,10 +381,38 @@ h2 {
   color: #474646;
   margin-bottom: 10px; }
 
+h3 {
+  font-size: 30px;
+  color: #474646; }
+
+h5 {
+  font-weight: 100;
+  font-size: 19px; }
+
+p {
+  color: #474646;
+  font-weight: 100;
+  float: left;
+  font-size: 15px; }
+
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #3ac162;
+  font-weight: 100;
+  font-size: 15px; }
   a:hover {
     text-decoration: underline; }
+
+ul {
+  list-style-position: inside; }
+  ul li {
+    color: #3ac162;
+    font-weight: 100;
+    font-size: 15px; }
+    ul li span {
+      color: #474646;
+      font-weight: 100;
+      font-size: 15px; }
 
 html, body, .container {
   width: 100%;
@@ -449,7 +477,7 @@ header, nav, section, article, aside, footer {
     padding: 20px 0;
     position: fixed;
     top: 27px;
-    background: #e5e5e5; }
+    background: #ececec; }
 
 .error {
   color: red !important;
@@ -488,6 +516,9 @@ section.everythingcentered {
 
 .show {
   display: block; }
+
+.smalltxt {
+  font-size: 12px; }
 
 .btn {
   font-weight: 100;
@@ -564,7 +595,7 @@ section.everythingcentered {
   position: relative;
   width: 430px; }
   .secondary .searchbox input[type="text"] {
-    background: #e5e5e5;
+    background: #ececec;
     border-radius: 5px; }
   .secondary .searchbox input[type="submit"] {
     position: absolute;
@@ -588,7 +619,7 @@ section.everythingcentered {
     margin-top: 4px;
     display: block; }
 .secondary .body {
-  background: #e5e5e5; }
+  background: #ececec; }
 .secondary .entry {
   width: 211px;
   float: left;
@@ -617,7 +648,7 @@ section.everythingcentered {
     .secondary .entry .deadline .loader {
       width: 100%;
       border-radius: 10px;
-      background: #e5e5e5;
+      background: #ececec;
       height: 7px;
       float: left;
       overflow: hidden;
@@ -628,6 +659,81 @@ section.everythingcentered {
         height: 100%;
         background: #3ac162;
         float: left; }
+
+.single-profile {
+  width: 100%; }
+  .single-profile .introduction {
+    overflow: hidden;
+    padding-bottom: 130px;
+    text-align: center; }
+    .single-profile .introduction img {
+      margin: 0 auto;
+      display: block; }
+    .single-profile .introduction h4 {
+      font-size: 23px;
+      color: #3ac162;
+      font-weight: 100; }
+    .single-profile .introduction a {
+      color: #474646;
+      font-size: 19px; }
+  .single-profile .row {
+    border-radius: 5px;
+    background: #fff;
+    padding: 30px;
+    margin-bottom: 20px; }
+    .single-profile .row .col4 {
+      float: left;
+      margin-right: 69px; }
+      .single-profile .row .col4 img {
+        margin-right: 20px;
+        float: left; }
+      .single-profile .row .col4:first-child img {
+        margin-top: 5px; }
+      .single-profile .row .col4:last-child {
+        float: right;
+        margin-right: 0; }
+    .single-profile .row.half {
+      width: 49%; }
+    .single-profile .row.left {
+      float: left; }
+    .single-profile .row.right {
+      float: right; }
+    .single-profile .row .top {
+      margin-bottom: 15px;
+      overflow: hidden; }
+      .single-profile .row .top img {
+        float: left;
+        margin-right: 16px; }
+      .single-profile .row .top h4 {
+        font-size: 23px;
+        font-weight: 100;
+        color: #474646;
+        float: left;
+        line-height: 21px; }
+  .single-profile .smaller .row {
+    padding: 0; }
+    .single-profile .smaller .row p {
+      font-size: 11px; }
+    .single-profile .smaller .row .left {
+      float: left; }
+    .single-profile .smaller .row .right {
+      float: right; }
+  .single-profile .smaller p.text {
+    font-size: 13px;
+    padding: 15px;
+    border: 1px solid #eee;
+    width: 370px;
+    float: right; }
+  .single-profile .review {
+    margin-bottom: 30px;
+    overflow: hidden;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 30px; }
+    .single-profile .review:last-child {
+      margin-bottom: 0; }
+    .single-profile .review img {
+      float: left;
+      margin: 33px 0px 0px 8px; }
 
 @media (max-width: 1024px) {
   .home .banner {
