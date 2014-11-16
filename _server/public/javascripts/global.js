@@ -30,6 +30,37 @@ $(document).ready(function() {
     if(window.localStorage.username != ""){
         $('.username').html(window.localStorage.username);
     }
+    if(window.location.href.indexOf("single-project.html#") > -1){
+        var objectID = window.location.hash.substr(1);
+
+        $.getJSON( '/projects/get/' + objectID, function( data ) {
+            $('#projectname').html(data.name);
+            $('#projectauthor').html(data.author);
+            $('#projectdescription').html(data.description);
+            $('#projectlookingfor').html(data.lookingFor);
+            $('#projectskills').html(data.skills);
+            var src = "images/userpics/" +data.pic;
+            $('#pic').attr("src", src);
+            $('#projecttags').html(data.tags);
+            $('#projecttime').html(data.time);
+        });
+    }
+    if(window.location.href.indexOf("single-profile.html#") > -1){
+        var username = window.location.hash.substr(1);
+
+        $.getJSON( '/users/get/' + username, function( data ) {
+            console.log(data);
+            $('#userfullname').html(data.fullname);
+            $('#userdescription').html(data.bio);
+            $('#userprofession').html(data.profession);
+            $('#userskills').html(data.skills);
+            $('#userresume').html(data.resume);
+            $('#useremail').html(data.email);
+            var src = "images/userpics/" +data.pic;
+            $('#pic').attr("src", src);
+        });
+
+    }
 
 });
 
@@ -51,7 +82,7 @@ function populateTable() {
 
                 userTableContent +=
                                     '<div class="entry">' +
-                                    '<a href="/users/get/' +
+                                    '<a href="/single-profile.html#' +
                                     this.username  +
                                     '">' +'<img src="images/userpics/' +
                                     this.pic +
@@ -76,7 +107,7 @@ function populateTable() {
         // For each item in our JSON, add a projectTable row and cells to the content string
         $.each(data, function(){
             projectTableContent += '<div class="entry">' +
-                                    '<a href="/projects/get/' +
+                                    '<a href="/single-project.html#' +
                                     this._id  +
                                     '">' +'<img src="images/userpics/' +
                                     this.pic +
@@ -147,7 +178,7 @@ function addUser(event) {
                 // Do stuff after user is added successfully
                 window.localStorage.loggedIn = true;
                 window.localStorage.username = $('#addUser input#inputUserName').val();
-                window.location = "single-profile.html";
+                window.location = "profile-settings.html#" + window.localStorage.username;
             }
             else {
 
@@ -213,12 +244,12 @@ function updateUser() {
                 $('#addUser fieldset input').val('');
 
                 // Do stuff after user is added successfully
-
+                window.location = "single-profile.html#" + window.localStorage.username;
             }
             else {
 
                 // If something goes wrong, alert the error message that our service returned
-                alert('Error: ' + response.msg);
+                // alert('Error: ' + response.msg);
 
             }
         });

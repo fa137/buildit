@@ -48,15 +48,35 @@
 			<div class="wrapper">
 				<h3>Profile Settings</h3>
 				<br>
+				<form action="/users/pic" method="post" enctype="multipart/form-data" id="hideAfterUplod">
+					<input type="file" id="inputUserProfilePic" name="userPic">
+					<input type="submit" value="upload" style="width:200px;background:rgb(221, 142, 142)">
+				</form>
+				<script>
+				var data = window.location.hash.substr(1);
+				if(data=="uploaded"){
+					document.getElementById("hideAfterUplod").style.display = "none";
+				}
+				</script>
+				<br>
 				<form id="updateUser">
 					<input id="inputUserFullname" type="text" placeholder="Full Name">
 					<textarea id="inputUserBio" placeholder="Dont be shy, introduce your self!"></textarea>
-					<label for="inputUserProfessionDeveloper">Developer</label>
-					<input type="checkbox" id="inputUserProfessionDeveloper">
-					<label for="inputUserProfessionDesigner">Designer</label>
-					<input type="checkbox" id="inputUserProfessionDesigner">
-					<label for="inputUserProfessionEntrepreneur">Entrepreneur</label>
-					<input type="checkbox" id="inputUserProfessionEntrepreneur">
+					
+					<h4>Which are you?</h4>
+					<div class="col3">
+						<input type="checkbox" id="inputUserProfessionDeveloper"> 
+						<label for="inputUserProfessionDeveloper">Developer</label>
+					</div>
+					<div class="col3">
+						<input type="checkbox" id="inputUserProfessionDesigner"> 
+						<label for="inputUserProfessionDesigner">Designer</label>
+					</div>
+					<div class="col3">
+						<input type="checkbox" id="inputUserProfessionEntrepreneur"> 
+						<label for="inputUserProfessionEntrepreneur">Entrepreneur</label>
+					</div>
+
 					<input type="text" placeholder="Portfolio/Github URL" id="inputUserResumeLink">
 					<input type="text" id="inputUserSkills" placeholder="Skills">
 					<input type="submit" value="Update Profile" id="btnUpdateUser">

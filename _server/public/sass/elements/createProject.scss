@@ -8,6 +8,48 @@
 		height:200px;
 	}
 	input[type="submit"]{
-		height:60px !important;
+		height:46px !important;
 	}
+	.col2 {
+		width:50%;
+		float:left;
+		margin-top:10px;
+		margin-bottom:10px;
+		label, input {
+			float:left;
+		}
+		input {
+			width:20px;
+		}
+		label {
+			line-height:0.7em;
+			margin-left:10px;
+		}
+	}
+
+	.col3 {
+		width:33.3%;
+		float:left;
+		margin-top:10px;
+		margin-bottom:10px;
+		label, input {
+			float:left;
+		}
+		input {
+			width:20px;
+		}
+		label {
+			line-height:0.7em;
+			margin-left:10px;
+		}
+	}
+	
+	#hideAfterUplod {
+		#inputUserProfilePic {
+			width:78%;
+		}
+		input[type=submit] {
+			float:right;
+		}
+ 	}
 }

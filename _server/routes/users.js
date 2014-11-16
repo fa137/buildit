@@ -26,7 +26,7 @@ router.post('/adduser', function(req, res) {
 });
 
 router.post('/pic',function(req, res){
-    res.redirect('/');
+    res.redirect('/profile-settings.html#uploaded');
 })
 /*
  * DELETE to deleteuser.
