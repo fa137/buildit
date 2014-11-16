@@ -75,19 +75,24 @@ function populateTable() {
 
         // For each item in our JSON, add a projectTable row and cells to the content string
         $.each(data, function(){
-            projectTableContent += '<tr>';
-            projectTableContent += '<td><a href="/projects/get/' +this._id+ '" title="Show Details">' + this.name + '</a></td>';
-            projectTableContent += '<td>' + this.description + '</td>';
-            projectTableContent += '<td>' + this.author + '</td>';
-            projectTableContent += '<td>' + this.skills + '</td>';
-            projectTableContent += '<td>' + this.tags + '</td>';
-            projectTableContent += '<td>' + this.lookingFor + '</td>';
-            projectTableContent += '<td>' + this.time + '</td>';
-            projectTableContent += '</tr>';
+            projectTableContent += '<div class="entry">' +
+                                    '<a href="/projects/get/' +
+                                    this._id  +
+                                    '">' +'<img src="images/userpics/' +
+                                    this.pic +
+                                    '" class="thumb"></a><div class="info"><p><strong>' +
+                                    this.name +
+                                    '</strong></p><a href="#" class="color-green">' +
+                                    this.lookingFor +
+                                    '</a><p>Skills: ' +
+                                    this.skills +
+                                    '</p><p class="info">Description: ' +
+                                    this.description +
+                                    '</p></div></div>';
         });
 
         // Inject the whole content string into our existing HTML projectTable
-        $('#listOfprojects').html(projectTableContent);
+        $('#projectEntries').html(projectTableContent);
     });
 };
 
