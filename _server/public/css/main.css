@@ -887,7 +887,7 @@ a:link {
   padding: 0px 0px 160px 15px;
   height: 200px; }
 .setting input[type="submit"] {
-  height: 60px !important; }
+  height: 46px !important; }
 .setting .col2 {
   width: 50%;
   float: left;
@@ -900,6 +900,22 @@ a:link {
   .setting .col2 label {
     line-height: 0.7em;
     margin-left: 10px; }
+.setting .col3 {
+  width: 33.3%;
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+  .setting .col3 label, .setting .col3 input {
+    float: left; }
+  .setting .col3 input {
+    width: 20px; }
+  .setting .col3 label {
+    line-height: 0.7em;
+    margin-left: 10px; }
+.setting #hideAfterUplod #inputUserProfilePic {
+  width: 78%; }
+.setting #hideAfterUplod input[type=submit] {
+  float: right; }
 
 @media (max-width: 1024px) {
   .home .banner {
