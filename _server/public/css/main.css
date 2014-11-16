@@ -629,6 +629,8 @@ a:link {
 .home-page .wrapper {
   position: relative;
   overflow: visible; }
+.home-page .header {
+  border-bottom: 0; }
 
 .home {
   background: url(../img/home-bg.png) no-repeat;
@@ -665,6 +667,8 @@ a:link {
     font-size: 25px;
     margin-top: 40px; }
 
+.secondary img {
+  width: 100%; }
 .secondary .body {
   padding-top: 170px; }
 .secondary .header {
@@ -715,7 +719,9 @@ a:link {
   background: #fff;
   border-radius: 5px;
   margin-right: 60px;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  border-radius: 5px;
+  overflow: hidden; }
   .secondary .entry .info {
     padding: 10px;
     width: 100%;
