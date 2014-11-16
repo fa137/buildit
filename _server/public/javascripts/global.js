@@ -76,7 +76,7 @@ function populateTable() {
         // For each item in our JSON, add a projectTable row and cells to the content string
         $.each(data, function(){
             projectTableContent += '<div class="entry">' +
-                                    '<a href="/projects/get/' +
+                                    '<a href="/single-project.html#' +
                                     this._id  +
                                     '">' +'<img src="images/userpics/' +
                                     this.pic +
@@ -147,7 +147,7 @@ function addUser(event) {
                 // Do stuff after user is added successfully
                 window.localStorage.loggedIn = true;
                 window.localStorage.username = $('#addUser input#inputUserName').val();
-                window.location = "single-profile.html";
+                window.location = "profile-settings.html#" + window.localStorage.username;
             }
             else {
 
@@ -213,7 +213,7 @@ function updateUser() {
                 $('#addUser fieldset input').val('');
 
                 // Do stuff after user is added successfully
-
+                window.location = "single-profile.html#" + window.localStorage.username;
             }
             else {
 
