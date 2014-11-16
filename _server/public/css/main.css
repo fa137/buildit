@@ -667,8 +667,6 @@ a:link {
     font-size: 25px;
     margin-top: 40px; }
 
-.secondary img {
-  width: 100%; }
 .secondary .body {
   padding-top: 170px; }
 .secondary .header {
@@ -721,7 +719,10 @@ a:link {
   margin-right: 60px;
   margin-bottom: 50px;
   border-radius: 5px;
-  overflow: hidden; }
+  overflow: hidden;
+  height: 320px; }
+  .secondary .entry img {
+    width: 100%; }
   .secondary .entry .info {
     padding: 10px;
     width: 100%;
@@ -733,7 +734,8 @@ a:link {
       font-weight: bold;
       margin-bottom: 10px; }
     .secondary .entry .info p {
-      font-size: 13px; }
+      font-size: 13px;
+      padding: 3px 0; }
   .secondary .entry:nth-child(4n+4) {
     float: right;
     margin-right: 0; }
