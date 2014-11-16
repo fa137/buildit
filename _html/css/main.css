@@ -473,7 +473,10 @@ section.everythingcentered {
     float: right; }
 
 .home {
-  background: url(../img/home-bg.png) no-repeat; }
+  background: url(../img/home-bg.png) no-repeat;
+  background-size: cover; }
+  .home h1, .home p {
+    color: #fff; }
 
 @media (max-width: 1024px) {
   .home .banner {
