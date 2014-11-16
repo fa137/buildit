@@ -5,6 +5,13 @@
 			color:$gray;
 		}
 	}
+	.styled-select {
+		border-bottom-color:$gray;
+	}
+	h2 {
+		width:100px;
+		float:left;
+	}
 	.searchbox {
 		float: left;
 	    margin-left: 27px;
@@ -31,10 +38,8 @@
 			float:left;
 			margin-right:20px;
 		}
-
 		& > div {
 			float:left;
-
 			margin-right:20px;
 		}
 		.intro {

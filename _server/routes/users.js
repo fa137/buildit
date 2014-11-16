@@ -34,4 +34,13 @@ router.delete('/deleteuser/:id', function(req, res) {
     });
 });
 
+router.get('/get/:name', function(req, res){
+    var db = req.db;
+    var userNameReq = req.params.name;
+    db.collection('userlist').findOne({username: userNameReq}, function(err, result) {
+        res.json((result) ? result : {msg: "username not found!"});
+    });
+
+});
+
 module.exports = router;

@@ -11,6 +11,9 @@ block content
         h2 Add User
         #addUser
             fieldset
+                | Profile picture:
+                input#inputUserProfilePic(type="file")
+                br
                 input#inputUserProfessionDeveloper(type='checkbox')
                 | Developer
                 input#inputUserProfessionDesigner(type='checkbox')
@@ -19,6 +22,8 @@ block content
                 | Entrepreneur
                 br
                 input#inputUserName(type='text', placeholder='Username')
+                br
+                input#inputUserPassword(type='text', placeholder='Password')
                 br
                 input#inputUserEmail(type='text', placeholder='Email')
                 br
@@ -32,9 +37,20 @@ block content
                 br
                 button#btnAddUser Add User
         // /ADD USER
+        br
+        h2 Login
+        #login
+            fieldset
+                | Username
+                input#inputLoginUsername(type="text", placeholder="username", required)
+                | Password
+                input#inputLoginPassword(type="password", required)
+                br
+                button#btnLogin Login
 
 
         // ADD PROJECT
+        br
         h2 Add Project
         #addProject
             fieldset
@@ -49,21 +65,22 @@ block content
                 br
                 input#inputProjectSkills(type='text', placeholder='Preferred skills')
                 br
+                input#inputProjectTags(type='text', placeholder='Project tags')
+                br
                 | Positions:
                 input#inputProjectLookingForDesigner(type='checkbox')
                 | Designer
                 input#inputProjectLookingForDeveloper(type='checkbox')
                 | Developer
                 br
-                | Time left:
                 input#inputProjectTime(type='text', placeholder='Time left...')
-
+                br
                 button#btnAddProject Add Project
         // /ADD Project
         // Link them to project/folder that responses with json data
         h2 List of users
-            #listOfusers
+        #listOfusers
         h2 List of projects
-            #listOfprojects
+        #listOfprojects
 
     // /WRAPPER

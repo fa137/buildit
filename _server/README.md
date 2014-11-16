@@ -1,6 +1,14 @@
 Re-structurrized the application because of time restriction
 
 
+todo
+====
+<!-- 1. singple pages (profile+project) sending json -->
+2. update api (PUT requests)
+3. login+password authentication
+
+
+
 Profile
 ===
 -Developer or Designer or entrepreneur
@@ -31,3 +39,4 @@ Single Project Page
 -positions fulfilled/needed
 -time left til project is erased
 -skills wanted/required for project
+

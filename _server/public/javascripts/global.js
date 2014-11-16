@@ -11,9 +11,8 @@ $(document).ready(function() {
     $('#btnAddUser').on('click', addUser);
     // Add Project button click
     $('#btnAddProject').on('click', addProject);
-
-    // Delete User link click
-    $('#listOfusers table tbody').on('click', 'td a.linkdeleteuser', deleteUser);
+    // Login button
+    $('#btnLogin').on('click', userLogin);
 
 });
 
@@ -28,15 +27,17 @@ function populateTable() {
 
     // jQuery AJAX call for JSON
     $.getJSON( '/users/userlist', function( data ) {
-
         // Stick our user data array into a userlist variable in the global object
         userListData = data;
 
         // For each item in our JSON, add a userTable row and cells to the content string
         $.each(data, function(){
             userTableContent += '<tr>';
-            userTableContent += '<td><a href="#" rel="' + this.username + '" title="Show Details">' + this.username + '</a></td>';
-            userTableContent += '<td>' + this.email + '</td>';
+            userTableContent += '<td><a href="/users/get/' +this.username + '" title="Show Details">' + this.username + '</a></td>';
+            userTableContent += '<td>' + this.fullname + '</td>';
+            userTableContent += '<td>' + this.profession + '</td>';
+            userTableContent += '<td>' + this.skills + '</td>';
+            userTableContent += '<td>' + this.resume + '</td>';
             userTableContent += '</tr>';
         });
 
@@ -52,37 +53,19 @@ function populateTable() {
         // For each item in our JSON, add a projectTable row and cells to the content string
         $.each(data, function(){
             projectTableContent += '<tr>';
-            projectTableContent += '<td><a href="#" class="linkshowproject" rel="' + this.projectname + '" title="Show Details">' + this.projectname + '</a></td>';
-            projectTableContent += '<td>' + this.email + '</td>';
+            projectTableContent += '<td><a href="/projects/get/' +this._id+ '" title="Show Details">' + this.name + '</a></td>';
+            projectTableContent += '<td>' + this.description + '</td>';
+            projectTableContent += '<td>' + this.author + '</td>';
+            projectTableContent += '<td>' + this.skills + '</td>';
+            projectTableContent += '<td>' + this.tags + '</td>';
+            projectTableContent += '<td>' + this.lookingFor + '</td>';
+            projectTableContent += '<td>' + this.time + '</td>';
             projectTableContent += '</tr>';
         });
 
         // Inject the whole content string into our existing HTML projectTable
         $('#listOfprojects').html(projectTableContent);
     });
-};
-
-// Show User Info
-function showUserInfo(event) {
-
-    // Prevent Link from Firing
-    event.preventDefault();
-
-    // Retrieve username from link rel attribute
-    var thisUserName = $(this).attr('rel');
-
-    // Get Index of object based on id value
-    var arrayPosition = userListData.map(function(arrayItem) { return arrayItem.username; }).indexOf(thisUserName);
-
-    // Get our User Object
-    var thisUserObject = userListData[arrayPosition];
-
-    //Populate Info Box
-    $('#userInfoName').text(thisUserObject.fullname);
-    $('#userInfoAge').text(thisUserObject.age);
-    $('#userInfoGender').text(thisUserObject.gender);
-    $('#userInfoLocation').text(thisUserObject.location);
-
 };
 
 // Add User
@@ -100,21 +83,19 @@ function addUser(event) {
         var professions = "";
         if($('#inputUserProfessionDeveloper').is(':checked')){
             professions+='Developer ';
-            console.log(professions);
         };
         if($('#inputUserProfessionDesigner').is(':checked')){
             professions+='Designer ';
-            console.log(professions);
         };
         if($('#inputUserProfessionEntrepreneur').is(':checked')){
             professions+='Entrepreneur ';
-            console.log(professions);
         };
         // If it is, compile all user info into one object
-        console.log(professions);
         var newUser = {
+            'pic': $('#addUser fieldset input#inputUserProfilePic').val(),
             'profession': professions.toString(),
             'username': $('#addUser fieldset input#inputUserName').val(),
+            'password': $('#addUser fieldset input#inputUserPassword').val(),
             'email': $('#addUser fieldset input#inputUserEmail').val(),
             'fullname': $('#addUser fieldset input#inputUserFullname').val(),
             'resume': $('#addUser fieldset input#inputUserResumeLink').val(),
@@ -165,16 +146,23 @@ function addProject(event) {
 
     // Check and make sure errorCount's still at zero
     if(errorCount === 0) {
+        var lookingFor = "";
+        if($('#inputProjectLookingForDesigner').is(':checked')){
+            lookingFor+='Designer ';
+        };
+        if($('#inputProjectLookingForDeveloper').is(':checked')){
+            lookingFor+='Developer ';
+        };
         // If it is, compile all Project info into one object
-        console.log(professions);
         var newProject = {
-            'pic': professions.toString(),
+            'pic': $('#addUser fieldset input#inputProjectPic').val(),
             'name': $('#addProject fieldset input#inputProjectName').val(),
-            'description': $('#addProject fieldset input#inputProjectEmail').val(),
-            'author': $('#addProject fieldset input#inputProjectFullname').val(),
-            'resume': $('#addProject fieldset input#inputProjectResumeLink').val(),
-            'bio': $('#addProject fieldset input#inputProjectBio').val(),
-            'skills': $('#addProject fieldset input#inputProjectSkills').val()
+            'description': $('#addProject fieldset input#inputProjectDescription').val(),
+            'author': $('#addProject fieldset input#inputProjectAuthor').val(),
+            'skills': $('#addProject fieldset input#inputProjectSkills').val(),
+            'tags': $('#addProject fieldset input#inputProjectTags').val(),
+            'lookingFor': lookingFor,
+            'time': $('#addProject fieldset input#inputProjectTime').val()
         }
 
         // Use AJAX to post the object to our addProject service
@@ -208,41 +196,15 @@ function addProject(event) {
         return false;
     }
 };
-// // Delete User
-// function deleteUser(event) {
 
-//     event.preventDefault();
-
-//     // Pop up a confirmation dialog
-//     var confirmation = confirm('Are you sure you want to delete this user?');
-
-//     // Check and make sure the user confirmed
-//     if (confirmation === true) {
-
-//         // If they did, do our delete
-//         $.ajax({
-//             type: 'DELETE',
-//             url: '/users/deleteuser/' + $(this).attr('rel')
-//         }).done(function( response ) {
-
-//             // Check for a successful (blank) response
-//             if (response.msg === '') {
-//             }
-//             else {
-//                 alert('Error: ' + response.msg);
-//             }
-
-//             // Update the table
-//             populateTable();
-
-//         });
-
-//     }
-//     else {
-
-//         // If they said no to the confirm, do nothing
-//         return false;
-
-//     }
-
-// };
+function userLogin(event){
+    event.preventDefault();
+    var username = $("#inputLoginUsername").val();
+    var password = $("#inputLoginPassword").val();
+    var url = "/user/" + username;
+    $.getJSON(url, function( data ){
+        if(!data){alert("Username doesn't exist");}
+        else if(data.password == password){ alert("logged in!");}
+        else{ alert("incorrect password");}
+    });
+}
