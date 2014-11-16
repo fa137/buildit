@@ -3,6 +3,36 @@
 	background-size:cover;
 	h1, p, .option{
 		color:#fff;
-
+<<<<<<< HEAD
+=======
 	}
+	.styled-select {
+ 		border-bottom: 3px dotted #fff;
+    	float: left;
+   		height: 33px;
+    	margin-left: 30px;
+    	width: 230px;
+		.option:not(.active) {
+			display:none;
+		}
+	}
+	p {
+		font-size:30px;
+		color:#eee;
+		float:left;
+		clear:both;
+	}	
+	.button {
+		float:left;
+		clear:both;
+		margin-top:20px;
+		font-size:30px;
+>>>>>>> 02f4d0c7581a69f1534bd559aa2e842ef155355f
+	}
+	h1{
+		margin-top:130px;
+		font-size:40px;
+		}
+	
+	
 }
