@@ -67,8 +67,11 @@ header, nav, section, article, aside, footer {
 	width:100%;
 	overflow:hidden;
 	&.intro {
-		margin:40px 0;
-
+	    margin: 40px 0;
+	    padding: 20px 0;
+	    position: fixed;
+	    top: 27px;
+		background:$light-gray;
 	}
 }
 .error {
