@@ -885,6 +885,8 @@ a:link {
 .setting input[name="describe"] {
   padding: 0px 0px 160px 15px;
   height: 200px; }
+.setting input[type="submit"] {
+  height: 60px !important; }
 
 @media (max-width: 1024px) {
   .home .banner {
