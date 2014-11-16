@@ -488,9 +488,10 @@ section.everythingcentered {
   .home .styled-select {
     border-bottom: 3px dotted #fff;
     float: left;
-    height: 33px;
+    height: 49px;
     margin-left: 30px;
-    width: 230px; }
+    width: 230px;
+    cursor: pointer; }
     .home .styled-select .option:not(.active) {
       display: none; }
   .home p {
