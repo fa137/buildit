@@ -48,6 +48,18 @@
 			<div class="wrapper">
 				<h3>Profile Settings</h3>
 				<br>
+				<form action="/projects/pic" method="post" enctype="multipart/form-data" id="hideAfterUplod">
+					<input type="file" id="inputUserProfilePic" name="userPic">
+					<input type="submit" value="upload" style="width:200px;background:rgb(221, 142, 142)">
+				</form>
+				<script>
+				var data = window.location.hash.substr(1);
+				console.log(data);
+				if(data=="uploaded"){
+					document.getElementById("hideAfterUplod").style.display = "none";
+				}
+				</script>
+				<br>
 				<form id="updateUser">
 					<input id="inputUserFullname" type="text" placeholder="Full Name">
 					<textarea id="inputUserBio" placeholder="Dont be shy, introduce your self!"></textarea>

@@ -47,7 +47,20 @@
 		</div><!-- end header -->
 		<div class="body single setting">
 			<div class="wrapper">
+
 				<h3>Create a new Project</h3>
+				<br>
+				<form action="/projects/pic" method="post" enctype="multipart/form-data" id="hideAfterUplod">
+					<input type="file" id="inputUserProfilePic" name="userPic">
+					<input type="submit" value="upload" style="width:200px;background:rgb(221, 142, 142)">
+				</form>
+				<script>
+				var data = window.location.hash.substr(1);
+				console.log(data);
+				if(data=="uploaded"){
+					document.getElementById("hideAfterUplod").style.display = "none";
+				}
+				</script>
 				<br>
 				<form id="addProject">
 					<input id="inputProjectName" type="text" placeholder="Project Name">

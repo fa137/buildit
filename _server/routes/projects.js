@@ -24,7 +24,10 @@ router.post('/addproject', function(req, res) {
         );
     });
 });
-
+router.post('/pic',function(req, res){
+    req.session.picMSG = "upload complete!"
+    res.redirect('/project-create.html#uploaded');
+})
 /*
  * DELETE to deleteproject.
  */
