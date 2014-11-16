@@ -11,11 +11,11 @@ block content
         h2 Add User
         #addUser
             fieldset
-                input.inputUserProfession(type='checkbox', name='developer', value='developer')
+                input#inputUserProfessionDeveloper(type='checkbox')
                 | Developer
-                input.inputUserProfession(type='checkbox', name='designer', value='designer')
+                input#inputUserProfessionDesigner(type='checkbox')
                 | Designer
-                input.inputUserProfession(type='checkbox', name='entrepreneur', value='entrepreneur')
+                input#inputUserProfessionEntrepreneur(type='checkbox')
                 | Entrepreneur
                 br
                 input#inputUserName(type='text', placeholder='Username')
@@ -28,7 +28,7 @@ block content
                 br
                 input#inputUserBio(type='text', placeholder='Bio')
                 br
-                input#inputUserFullname(type='text', placeholder='List your skills')
+                input#inputUserSkills(type='text', placeholder='List your skills')
                 br
                 button#btnAddUser Add User
         // /ADD USER
@@ -57,5 +57,10 @@ block content
                 br
                 button#btnAddProject Add Project
         // /ADD Project
+        // Link them to project/folder that responses with json data
+        h2 List of users
+            #listOfusers
+        h2 List of projects
+            #listOfprojects
 
     // /WRAPPER

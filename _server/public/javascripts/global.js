@@ -81,15 +81,29 @@ function addUser(event) {
 
     // Check and make sure errorCount's still at zero
     if(errorCount === 0) {
-
+        var professions = "";
+        if($('#inputUserProfessionDeveloper').is(':checked')){
+            professions+='Developer ';
+            console.log(professions);
+        };
+        if($('#inputUserProfessionDesigner').is(':checked')){
+            professions+='Designer ';
+            console.log(professions);
+        };
+        if($('#inputUserProfessionEntrepreneur').is(':checked')){
+            professions+='Entrepreneur ';
+            console.log(professions);
+        };
         // If it is, compile all user info into one object
+        console.log(professions);
         var newUser = {
+            'profession': professions.toString(),
             'username': $('#addUser fieldset input#inputUserName').val(),
             'email': $('#addUser fieldset input#inputUserEmail').val(),
             'fullname': $('#addUser fieldset input#inputUserFullname').val(),
-            'age': $('#addUser fieldset input#inputUserAge').val(),
-            'location': $('#addUser fieldset input#inputUserLocation').val(),
-            'gender': $('#addUser fieldset input#inputUserGender').val()
+            'resume': $('#addUser fieldset input#inputUserResumeLink').val(),
+            'bio': $('#addUser fieldset input#inputUserBio').val(),
+            'skills': $('#addUser fieldset input#inputUserSkills').val()
         }
 
         // Use AJAX to post the object to our adduser service
