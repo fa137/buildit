@@ -485,6 +485,24 @@ section.everythingcentered {
   background-size: cover; }
   .home h1, .home p, .home .option {
     color: #fff; }
+  .home .styled-select {
+    border-bottom: 3px dotted #fff;
+    float: left;
+    height: 33px;
+    margin-left: 30px;
+    width: 230px; }
+    .home .styled-select .option:not(.active) {
+      display: none; }
+  .home p {
+    font-size: 30px;
+    color: #eee;
+    float: left;
+    clear: both; }
+  .home .button {
+    float: left;
+    clear: both;
+    margin-top: 20px;
+    font-size: 30px; }
 
 .secondary .header {
   background: #fff; }
@@ -580,5 +598,3 @@ section.everythingcentered {
     margin-top: 10px; }
   .home .corporate img {
     width: 45%; } }
-
-/*# sourceMappingURL=main.css.map */
