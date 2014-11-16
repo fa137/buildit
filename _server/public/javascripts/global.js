@@ -44,6 +44,21 @@ $(document).ready(function() {
             $('#projecttags').html(data.tags);
             $('#projecttime').html(data.time);
         });
+    }
+    if(window.location.href.indexOf("single-profile.html#") > -1){
+        var username = window.location.hash.substr(1);
+
+        $.getJSON( '/users/get/' + username, function( data ) {
+            console.log(data);
+            $('#userfullname').html(data.fullname);
+            $('#userdescription').html(data.bio);
+            $('#userprofession').html(data.profession);
+            $('#userskills').html(data.skills);
+            $('#userresume').html(data.resume);
+            $('#useremail').html(data.email);
+            var src = "images/userpics/" +data.pic;
+            $('#pic').attr("src", src);
+        });
 
     }
 
@@ -67,7 +82,7 @@ function populateTable() {
 
                 userTableContent +=
                                     '<div class="entry">' +
-                                    '<a href="/users/get/' +
+                                    '<a href="/single-profile.html#' +
                                     this.username  +
                                     '">' +'<img src="images/userpics/' +
                                     this.pic +
@@ -234,7 +249,7 @@ function updateUser() {
             else {
 
                 // If something goes wrong, alert the error message that our service returned
-                alert('Error: ' + response.msg);
+                // alert('Error: ' + response.msg);
 
             }
         });
