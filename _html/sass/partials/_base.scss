@@ -133,4 +133,46 @@ a:link{
 	
 .button:hover{
 	background-color:#238841;
+}
+.popup {
+	background: none repeat scroll 0 0 #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    margin-left: -71px;
+    margin-top: 40px;
+    position: absolute;
+    width: 180px;
+    z-index: 100;
+    opacity:0;
+	ul {
+		list-style:none;
+		li {
+			width:100%;
+			text-align:center;
+			a {
+				display:block;
+				padding:10px 0 10px 0;
+				border-bottom:1px solid #ddd;
+				font-weight:400;
+			}
+			a:hover {
+			opacity:.9;
+			}
+
+			&:last-child {
+				a {
+					border-bottom:0;
+				}
+			}
+		}
 	}
+} 
+
+.arrow-up {
+	left: 74px;
+    position: absolute;
+    top: -18px;
+	img {
+		width:30px;
+	}
+}
