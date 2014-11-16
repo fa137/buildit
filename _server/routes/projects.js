@@ -34,4 +34,25 @@ router.delete('/deleteproject/:id', function(req, res) {
     });
 });
 
+router.get('/get/:id', function(req, res){
+    var db = req.db;
+    var projectID = req.params.id;
+    console.log(projectID);
+    db.collection('projectlist').findById(projectID, function(err, result) {
+        res.json((result)? result: {msg: "project not found!"});
+    });
+
+});
+
+router.put('/update/:id', function(req, res){
+    var db = req.db;
+    var projectID = req.params.id;
+    console.log(projectID);
+    db.collection('projectlist').findById(projectID, function(err, result) {
+        res.json((result)? result: {msg: "project not found!"});
+    });
+
+});
+
+
 module.exports = router;
