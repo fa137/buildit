@@ -26,7 +26,7 @@
 		<div class="header">
 			<div class="wrapper">
 				<div class="logo">
-					<p> < build.<strong>it</strong> /></p>
+					<a href="index.html"><p> < build.<strong>it</strong> /></p></a>
 				</div>
 				<form class="searchbox">
 					<input type="text" placeholder="search">
@@ -41,6 +41,16 @@
 					</div>
 					<div class="setting">
 						<a href="#" class="icon-gear"><img src="img/icon-gear.png" height="33" width="33" alt=""></a>
+						<div class="popup">
+							<div class="arrow-up"><img src="img/uparrow.png" alt=""></div>
+							<ul>
+								<li><a id="postproject" href="#">Post Project</a></li>
+								<li><a id="editprofile" href="#">Edit Profile</a></li>
+								<li><a id="postproject" href="projects.html">View all Projects</a></li>
+								<li><a id="editprofile" href="profiles.html">View all Profiles</a></li>
+								<li><a id="signout" href="#">Sign Out</a></li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div><!-- end wrapper -->
@@ -70,11 +80,11 @@
 					<input id="inputProjectAuthor" type="text" placeholder="Author">
 					<h4>Position Wanted:</h4>
 					<div class="col2">
-						<input type="checkbox" id="inputProjectLookingForDesigner"> 
+						<input type="checkbox" id="inputProjectLookingForDesigner">
 						<label for="inputProjectLookingForDesigner">Designer</label>
 					</div>
 					<div class="col2">
-						<input type="checkbox" id="inputProjectLookingForDeveloper"> 
+						<input type="checkbox" id="inputProjectLookingForDeveloper">
 						<label for="inputProjectLookingForDeveloper">Developer</label>
 					</div>
 					<input type="text" id="inputProjectTime" id="inputProjectTime">

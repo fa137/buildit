@@ -50,6 +50,7 @@ router.get('/get/:name', function(req, res){
 
 router.put('/update/:name', function(req, res){
     var db = req.db;
+    req.body.pic = req.session.lastpic;
     var userNameReq = req.params.name;
     db.collection('userlist').update({username: userNameReq},
         {$set: req.body},

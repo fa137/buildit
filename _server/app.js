@@ -33,7 +33,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // like why...
 app.use(multer({ dest: './public/images/userpics',
 onParseEnd: function (req, next) {
-    req.session.lastpic = req.files.userPic.name;
+    req.session.lastpic = req.files.userPic.name || "profile_thumb.png";
     next();
 }
 }));

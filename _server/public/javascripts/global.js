@@ -79,7 +79,9 @@ function populateTable() {
         userListData = data;
         // For each item in our JSON, add a userTable row and cells to the content string
         $.each(data, function(){
-
+                        if(this.pic == null){
+                            this.pic = "profile_thumb.png";
+                        }
                 userTableContent +=
                                     '<div class="entry">' +
                                     '<a href="/single-profile.html#' +
@@ -103,7 +105,6 @@ function populateTable() {
 
         // Stick our user data array into a userlist variable in the global object
         projectListData = data;
-
         // For each item in our JSON, add a projectTable row and cells to the content string
         $.each(data, function(){
             projectTableContent += '<div class="entry">' +
@@ -244,7 +245,6 @@ function updateUser() {
                 $('#addUser fieldset input').val('');
 
                 // Do stuff after user is added successfully
-                window.location = "single-profile.html#" + window.localStorage.username;
             }
             else {
 
@@ -252,6 +252,7 @@ function updateUser() {
                 // alert('Error: ' + response.msg);
 
             }
+            window.location = "single-profile.html#" + name;;
         });
     }
     else {

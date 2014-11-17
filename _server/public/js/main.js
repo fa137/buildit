@@ -25,22 +25,16 @@ $(function() {
 			}
 		}
 	}
+	var username = window.localStorage.username;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	$('#updateUser').submit(function(e) {
+			window.location = "single-profile.html#"+username;
+			e.preventDefault();
+	});
+	if(window.localStorage.loggedIn == "false") {
+		$('.profile-img, .intro').hide();
+	}
+	$('.profile-img').remove();
 
 	// Shivam
 	var selectBox = $('.styled-select');

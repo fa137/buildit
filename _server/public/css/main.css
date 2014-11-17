@@ -720,7 +720,7 @@ a:link {
   margin-bottom: 50px;
   border-radius: 5px;
   overflow: hidden;
-  height: 320px; }
+  height: 340px; }
   .secondary .entry img {
     width: 100%; }
   .secondary .entry .info {
@@ -846,7 +846,11 @@ a:link {
   padding-bottom: 100px; }
   .project .introduction .project-img {
     margin-top: 30px;
-    position: relative; }
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+     }
     .project .introduction .project-img img {
       width: 100%; }
     .project .introduction .project-img .logo {
