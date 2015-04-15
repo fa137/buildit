@@ -3,14 +3,14 @@
 
 
 # \<build.it/\>
-----------
+
 build.it is a web application that connects startups with students who are looking for side projects.
 
 *Contributors:* Shivam Bhalla, Fahimnur Alam, Yenny Chung and Aleksandra Kruzel
 
 
+
 ##### Profile
---
 - Developer or Designer or Entrepreneur
 - Major
 - School
@@ -21,15 +21,17 @@ build.it is a web application that connects startups with students who are looki
 - Projects worked on (from this site?)
 - Reviews(projects owners write the reviews)
 
+
+
 ##### Homepage
---
 - Mission statement
 - Search
 - Register
 - Login
 
+
+
 ##### Single Project Page
---
 - Project pic
 - Description(mission statement)
 - Author
