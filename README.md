@@ -1,11 +1,15 @@
-**Description**
+![image](http://www.devncode.com/img/projects/large/buildit.jpg "buildit front page")
+
+
+
+# \<build.it/\>
 ----------
 build.it is a web application that connects startups with students who are looking for side projects.
 
 *Contributors:* Shivam Bhalla, Fahimnur Alam, Yenny Chung and Aleksandra Kruzel
 
 
-Profile
+##### Profile
 --
 - Developer or Designer or Entrepreneur
 - Major
@@ -17,14 +21,14 @@ Profile
 - Projects worked on (from this site?)
 - Reviews(projects owners write the reviews)
 
-Homepage
+##### Homepage
 --
 - Mission statement
 - Search
 - Register
 - Login
 
-Single Project Page
+##### Single Project Page
 --
 - Project pic
 - Description(mission statement)
@@ -35,6 +39,3 @@ Single Project Page
 - Time left til project is erased
 - Skills wanted/required for project
 
-
-
-<img src="http://www.devncode.com/img/projects/large/buildit.jpg" align="left" width="850px">
