@@ -1,42 +1,40 @@
-Re-structurrized the application because of time restriction
+**Description**
+----------
+<build.it/> is a web application that connects startups with students who are looking for side projects.
 
-
-todo
-====
-1. done
-2. done
-3. done
-
+*Contributors:* Shivam Bhalla, Fahimnur Alam, Yenny Chung and Aleksandra Kruzel
 
 
 Profile
-===
--Developer or Designer or entrepreneur
+--
+- Developer or Designer or Entrepreneur
 - Major
--School
--Bio (introduction)
--Resume/portfolio site
--What your looking for
--skills(edu)
--projects worked on (from this site?)
--reviews(projects owners write the reviews)
-
+- School
+- Bio (introduction)
+- Resume/portfolio site
+- What you are looking for [...]
+- Skills
+- Projects worked on (from this site?)
+- Reviews(projects owners write the reviews)
 
 Homepage
-===
--mission statement
--search
--register
--login
+--
+- Mission statement
+- Search
+- Register
+- Login
 
 Single Project Page
-===
--project pic
--description(mission statement)
--author
--rating
--comments
--positions fulfilled/needed
--time left til project is erased
--skills wanted/required for project
+--
+- Project pic
+- Description(mission statement)
+- Author
+- Rating
+- Comments
+- Positions fulfilled/needed
+- Time left til project is erased
+- Skills wanted/required for project
 
+
+
+<img src="http://www.devncode.com/img/projects/large/buildit.jpg" align="left" width="850px">
