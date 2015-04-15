@@ -1,6 +1,6 @@
 **Description**
 ----------
-<build.it/> is a web application that connects startups with students who are looking for side projects.
+build.it is a web application that connects startups with students who are looking for side projects.
 
 *Contributors:* Shivam Bhalla, Fahimnur Alam, Yenny Chung and Aleksandra Kruzel
 
